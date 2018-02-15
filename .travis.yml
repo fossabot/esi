@@ -1,0 +1,21 @@
+language: php
+dist: trusty
+
+php:
+  - 7.1
+  - 7.2
+  - nightly
+
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+
+install:
+  - composer install --no-interaction
+
+script:
+  - vendor/bin/phpunit --coverage-clover build/logs/clover.xml
+
+after_script:
+- ./cc-test-reporter after-build --coverage-input-type clover --exit-code $TRAVIS_TEST_RESULT

@@ -6,7 +6,7 @@ use Http\Client\Common\Plugin;
 use Psr\Http\Message\RequestInterface;
 
 /**
- * Designate data source to use
+ * Designate data source to use.
  *
  * @author Anthony Grimes <contact@anthonygrimes.co.uk>
  */
