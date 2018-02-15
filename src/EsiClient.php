@@ -44,9 +44,9 @@ class EsiClient
                     ->createUri('https://esi.tech.ccp.is'))
         );
 
-        $this->httpClientFactory->addPlugin(new ApiVersion()); // TODO Allow user to set apiversion
+        $this->httpClientFactory->addPlugin(new ApiVersion());
 
-        $this->httpClientFactory->addPlugin(new DataSource()); // TODO Allow user to set datasource
+        $this->httpClientFactory->addPlugin(new DataSource());
     }
 
     /**
