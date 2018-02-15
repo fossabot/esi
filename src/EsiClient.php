@@ -37,11 +37,12 @@ class EsiClient
         $this->httpClientFactory = $httpClientFactory ?: new HttpClientFactory();
 
         $this->httpClientFactory->addPlugin(new HeaderDefaultsPlugin([
-            'User-Agent' => 'agrimes94-esi (https://github.com/aGrimes94/esi)', ]));
+            'User-Agent' => 'agrimes94-esi (https://github.com/aGrimes94/esi)',]));
 
         $this->httpClientFactory->addPlugin(new AddHostPlugin(
-            UriFactoryDiscovery::find()
-                ->createUri('https://esi.tech.ccp.is')));
+                UriFactoryDiscovery::find()
+                    ->createUri('https://esi.tech.ccp.is'))
+        );
 
         $this->httpClientFactory->addPlugin(new ApiVersion()); // TODO Allow user to set apiversion
 
