@@ -10,11 +10,11 @@ use Http\Client\Common\Plugin\AddHostPlugin;
 use Http\Client\Common\Plugin\AuthenticationPlugin;
 use Http\Client\Common\Plugin\HeaderDefaultsPlugin;
 use Http\Client\HttpClient;
-use Http\Message\Authentication\Bearer;
 use Http\Discovery\UriFactoryDiscovery;
+use Http\Message\Authentication\Bearer;
 
 /**
- * PHP Http Client for ESI (EVE Swagger Interface)
+ * PHP Http Client for ESI (EVE Swagger Interface).
  *
  * @author Anthony Grimes <contact@anthonygrimes.co.uk>
  */
@@ -37,7 +37,7 @@ class EsiClient
         $this->httpClientFactory = $httpClientFactory ?: new HttpClientFactory();
 
         $this->httpClientFactory->addPlugin(new HeaderDefaultsPlugin([
-            'User-Agent' => 'agrimes94-esi (https://github.com/aGrimes94/esi)',]));
+            'User-Agent' => 'agrimes94-esi (https://github.com/aGrimes94/esi)', ]));
 
         $this->httpClientFactory->addPlugin(new AddHostPlugin(
             UriFactoryDiscovery::find()
@@ -53,9 +53,10 @@ class EsiClient
      *
      * @return EsiClient
      */
-    public static function create(): EsiClient
+    public static function create(): self
     {
         $client = new self();
+
         return $client;
     }
 
@@ -66,9 +67,10 @@ class EsiClient
      *
      * @return EsiClient
      */
-    public static function createWithHttpClient(HttpClient $httpClient): EsiClient
+    public static function createWithHttpClient(HttpClient $httpClient): self
     {
         $builder = new HttpClientFactory($httpClient);
+
         return new self($builder);
     }
 
@@ -89,7 +91,7 @@ class EsiClient
      *
      * @return $this
      */
-    public function authenticate($accessToken): EsiClient
+    public function authenticate($accessToken): self
     {
         $this->httpClientFactory->removePlugin(AuthenticationPlugin::class);
         $this->httpClientFactory->addPlugin(new AuthenticationPlugin(new Bearer($accessToken)));

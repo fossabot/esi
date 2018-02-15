@@ -6,7 +6,7 @@ use Http\Client\Common\Plugin;
 use Psr\Http\Message\RequestInterface;
 
 /**
- * Prefix path with desired api version to query
+ * Prefix path with desired api version to query.
  *
  * @author Anthony Grimes <contact@anthonygrimes.co.uk>
  */

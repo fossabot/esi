@@ -14,7 +14,7 @@ use Http\Message\RequestFactory;
 use Http\Message\StreamFactory;
 
 /**
- * HttpClientFactory constructs HttpClient/PluginClient with specified options
+ * HttpClientFactory constructs HttpClient/PluginClient with specified options.
  *
  * @author Anthony Grimes <contact@anthonygrimes.co.uk>
  */
@@ -63,16 +63,15 @@ class HttpClientFactory
     private $plugins = [];
 
     /**
-     * @param HttpClient $httpClient
+     * @param HttpClient     $httpClient
      * @param RequestFactory $requestFactory
-     * @param StreamFactory $streamFactory
+     * @param StreamFactory  $streamFactory
      */
     public function __construct(
         HttpClient $httpClient = null,
         RequestFactory $requestFactory = null,
         StreamFactory $streamFactory = null
-    )
-    {
+    ) {
         $this->httpClient = $httpClient ?: HttpClientDiscovery::find();
         $this->requestFactory = $requestFactory ?: MessageFactoryDiscovery::find();
         $this->streamFactory = $streamFactory ?: StreamFactoryDiscovery::find();
@@ -92,6 +91,7 @@ class HttpClientFactory
                 $this->requestFactory
             );
         }
+
         return $this->pluginClient;
     }
 
