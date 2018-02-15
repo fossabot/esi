@@ -92,7 +92,7 @@ class EsiClient
      *
      * @return $this
      */
-    public function authenticate($accessToken): self
+    public function authenticate(string $accessToken): self
     {
         $this->httpClientFactory->removePlugin(AuthenticationPlugin::class);
         $this->httpClientFactory->addPlugin(new AuthenticationPlugin(new Bearer($accessToken)));
@@ -107,7 +107,7 @@ class EsiClient
      *
      * @return $this
      */
-    public function dataSource($dataSource): self
+    public function dataSource(string $dataSource): self
     {
         $this->httpClientFactory->removePlugin(DataSourcePlugin::class);
         $this->httpClientFactory->addPlugin(new DataSourcePlugin($dataSource));
@@ -122,7 +122,7 @@ class EsiClient
      *
      * @return $this
      */
-    public function apiVersion($apiVersion): self
+    public function apiVersion(string $apiVersion): self
     {
         $this->httpClientFactory->removePlugin(ApiVersionPlugin::class);
         $this->httpClientFactory->addPlugin(new ApiVersionPlugin($apiVersion));
