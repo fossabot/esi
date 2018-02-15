@@ -10,7 +10,7 @@ use Psr\Http\Message\RequestInterface;
  *
  * @author Anthony Grimes <contact@anthonygrimes.co.uk>
  */
-class ApiVersion implements Plugin
+class ApiVersionPlugin implements Plugin
 {
     /**
      * @var string
