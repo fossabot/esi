@@ -36,6 +36,10 @@ class EsiClient
     {
         $this->httpClientFactory = $httpClientFactory ?: new HttpClientFactory();
 
+        $this->httpClientFactory->addPlugin(new DataSourcePlugin());
+
+        $this->httpClientFactory->addPlugin(new ApiVersionPlugin());
+
         $this->httpClientFactory->addPlugin(new HeaderDefaultsPlugin([
             'User-Agent' => 'agrimes94-esi (https://github.com/aGrimes94/esi)', ]));
 
@@ -43,10 +47,6 @@ class EsiClient
                 UriFactoryDiscovery::find()
                     ->createUri('https://esi.tech.ccp.is'))
         );
-
-        $this->httpClientFactory->addPlugin(new ApiVersionPlugin());
-
-        $this->httpClientFactory->addPlugin(new DataSourcePlugin());
     }
 
     /**
@@ -96,6 +96,36 @@ class EsiClient
     {
         $this->httpClientFactory->removePlugin(AuthenticationPlugin::class);
         $this->httpClientFactory->addPlugin(new AuthenticationPlugin(new Bearer($accessToken)));
+
+        return $this;
+    }
+
+    /**
+     * Alter data source in request.
+     *
+     * @param string $dataSource
+     *
+     * @return $this
+     */
+    public function dataSource($dataSource): self
+    {
+        $this->httpClientFactory->removePlugin(DataSourcePlugin::class);
+        $this->httpClientFactory->addPlugin(new DataSourcePlugin($dataSource));
+
+        return $this;
+    }
+
+    /**
+     * Alter api version in request.
+     *
+     * @param string $apiVersion
+     *
+     * @return $this
+     */
+    public function apiVersion($apiVersion): self
+    {
+        $this->httpClientFactory->removePlugin(ApiVersionPlugin::class);
+        $this->httpClientFactory->addPlugin(new ApiVersionPlugin($apiVersion));
 
         return $this;
     }
