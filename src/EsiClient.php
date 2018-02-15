@@ -3,8 +3,8 @@
 namespace AGrimes94\Esi;
 
 use AGrimes94\Esi\HttpClient\HttpClientFactory;
-use AGrimes94\Esi\HttpClient\Plugin\ApiVersion;
-use AGrimes94\Esi\HttpClient\Plugin\DataSource;
+use AGrimes94\Esi\HttpClient\Plugin\ApiVersionPlugin;
+use AGrimes94\Esi\HttpClient\Plugin\DataSourcePlugin;
 use Http\Client\Common\HttpMethodsClient;
 use Http\Client\Common\Plugin\AddHostPlugin;
 use Http\Client\Common\Plugin\AuthenticationPlugin;
@@ -44,9 +44,9 @@ class EsiClient
                     ->createUri('https://esi.tech.ccp.is'))
         );
 
-        $this->httpClientFactory->addPlugin(new ApiVersion());
+        $this->httpClientFactory->addPlugin(new ApiVersionPlugin());
 
-        $this->httpClientFactory->addPlugin(new DataSource());
+        $this->httpClientFactory->addPlugin(new DataSourcePlugin());
     }
 
     /**

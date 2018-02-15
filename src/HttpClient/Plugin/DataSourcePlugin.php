@@ -10,7 +10,7 @@ use Psr\Http\Message\RequestInterface;
  *
  * @author Anthony Grimes <contact@anthonygrimes.co.uk>
  */
-class DataSource implements Plugin
+class DataSourcePlugin implements Plugin
 {
     /**
      * @var string
