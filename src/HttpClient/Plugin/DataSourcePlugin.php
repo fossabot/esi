@@ -33,7 +33,7 @@ class DataSourcePlugin implements Plugin
         $uri = $request->getUri();
 
         if ($uri->getQuery() !== 'datasource=tranquility') {
-            $request = $request->withUri($uri->withQuery('datasource=' . $this->dataSource));
+            $request = $request->withUri($uri->withQuery($request->getUri()->getQuery() . '&datasource=' . $this->dataSource));
         }
 
         return $next($request);
