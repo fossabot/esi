@@ -91,8 +91,8 @@ abstract class AbstractApi
 
         $body = null;
         if (empty($files) && !empty($parameters)) {
-            $body = $this->streamFactory->createStream(QueryStringBuilder::build($parameters));
-            $requestHeaders['Content-Type'] = 'application/x-www-form-urlencoded';
+            $body = json_encode($parameters);
+            $requestHeaders['Content-Type'] = 'application/json';
         } elseif (!empty($files)) {
             $builder = new MultipartStreamBuilder($this->streamFactory);
 
@@ -110,7 +110,7 @@ abstract class AbstractApi
             }
 
             $body = $builder->build();
-            $requestHeaders['Content-Type'] = 'multipart/form-data; boundary='.$builder->getBoundary();
+            $requestHeaders['Content-Type'] = 'multipart/form-data; boundary=' . $builder->getBoundary();
         }
 
         $response = $this->esiClient->getHttpClient()->post($path, $requestHeaders, $body);
@@ -209,5 +209,21 @@ abstract class AbstractApi
         $finfo = new \finfo(FILEINFO_MIME_TYPE);
 
         return $finfo->file($file);
+    }
+
+    /**
+     * Allows a query to be paginated by constructing buildable array structure for QueryStringBuilder.
+     *
+     * @param int $page
+     *
+     * @return array
+     */
+    protected function paginateQuery(int $page)
+    {
+        $params = [
+            'page' => $page
+        ];
+
+        return $params;
     }
 }
