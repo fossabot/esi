@@ -39,7 +39,7 @@ class DataSourcePlugin implements Plugin
         $uri = $request->getUri();
 
         if ($uri->getQuery() == '') {
-            $request = $request->withUri($uri->withQuery($uri->getQuery() . '&datasource=' . $this->dataSource));
+            $request = $request->withUri($uri->withQuery($uri->getQuery() . 'datasource=' . $this->dataSource));
         }
 
         return $next($request);
