@@ -8,7 +8,7 @@ use Psr\Http\Message\RequestInterface;
 /**
  * Prefix path with desired api version to query.
  *
- * @author Anthony Grimes <contact@anthonygrimes.co.uk>
+ * @license LGPL-3.0 (https://www.gnu.org/licenses/lgpl-3.0.en.html)
  */
 class ApiVersionPlugin implements Plugin
 {
