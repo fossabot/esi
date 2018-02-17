@@ -22,6 +22,8 @@ class DataSourcePlugin implements Plugin
     private $dataSource;
 
     /**
+     * DataSourcePlugin constructor.
+     *
      * @param string $dataSource
      */
     public function __construct($dataSource = 'tranquility')

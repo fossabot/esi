@@ -18,6 +18,8 @@ class ApiVersionPlugin implements Plugin
     private $apiVersion;
 
     /**
+     * ApiVersionPlugin constructor.
+     *
      * @param string $apiVersion
      */
     public function __construct($apiVersion = 'latest')
