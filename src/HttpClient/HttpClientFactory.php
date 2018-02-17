@@ -16,7 +16,7 @@ use Http\Message\StreamFactory;
 /**
  * HttpClientFactory constructs HttpClient/PluginClient with specified options.
  *
- * @author Anthony Grimes <contact@anthonygrimes.co.uk>
+ * @license LGPL-3.0 (https://www.gnu.org/licenses/lgpl-3.0.en.html)
  */
 class HttpClientFactory
 {
