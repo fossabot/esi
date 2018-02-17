@@ -24,6 +24,21 @@ class ResponseMediator
         if (strpos($response->getHeaderLine('Content-Type'), 'application/json') === 0) {
             $content = json_decode($body, true);
             if (JSON_ERROR_NONE === json_last_error()) {
+
+                /**
+                 * If endpoint is paginated prepend array with page count array of structure:
+                 *
+                 *      ['pages' => 10, ]
+                 *
+                 * Can then be accessed as [0] index element in return array.
+                 */
+                if ($response->hasHeader('X-Pages')) {
+                    array_unshift($content, [
+                            'pages' => $response->getHeader('X-Pages')[0],
+                        ]
+                    );
+                }
+
                 return $content;
             }
         }
