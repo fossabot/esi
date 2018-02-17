@@ -6,13 +6,17 @@ use Http\Client\Common\Plugin;
 use Psr\Http\Message\RequestInterface;
 
 /**
- * Designate data source to use.
+ * Plugin to designate data source to query against.
  *
- * @author Anthony Grimes <contact@anthonygrimes.co.uk>
+ * @license LGPL-3.0 (https://www.gnu.org/licenses/lgpl-3.0.en.html)
  */
 class DataSourcePlugin implements Plugin
 {
     /**
+     * Data source to query against.
+     *
+     * Possible: tranquility, singularity
+     *
      * @var string
      */
     private $dataSource;
@@ -32,8 +36,8 @@ class DataSourcePlugin implements Plugin
     {
         $uri = $request->getUri();
 
-        if ($uri->getQuery() !== 'datasource=tranquility') {
-            $request = $request->withUri($uri->withQuery($request->getUri()->getQuery() . '&datasource=' . $this->dataSource));
+        if ($uri->getQuery() == '') {
+            $request = $request->withUri($uri->withQuery($uri->getQuery() . '&datasource=' . $this->dataSource));
         }
 
         return $next($request);
