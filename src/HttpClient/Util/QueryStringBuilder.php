@@ -5,7 +5,7 @@ namespace AGrimes94\Esi\HttpClient\Util;
 /**
  * Utility class for QueryString related functions.
  *
- * @author Anthony Grimes <contact@anthonygrimes.co.uk>
+ * @license LGPL-3.0 (https://www.gnu.org/licenses/lgpl-3.0.en.html)
  */
 final class QueryStringBuilder
 {
