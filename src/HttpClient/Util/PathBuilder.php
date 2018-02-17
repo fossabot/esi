@@ -5,12 +5,12 @@ namespace AGrimes94\Esi\HttpClient\Util;
 /**
  * Utility class for Path related functions.
  *
- * @author Anthony Grimes <contact@anthonygrimes.co.uk>
+ * @license LGPL-3.0 (https://www.gnu.org/licenses/lgpl-3.0.en.html)
  */
 final class PathBuilder
 {
     /**
-     * Builds a viable path given a "unfull" path
+     * Builds a viable path given a path with incomplete parameters
      *
      * given:   '/characters/{character_id}/skills/', ['character_id' => 1234,]
      * returns: '/characters/1234/skills/'
