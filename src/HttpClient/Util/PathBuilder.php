@@ -10,9 +10,9 @@ namespace AGrimes94\Esi\HttpClient\Util;
 final class PathBuilder
 {
     /**
-     * Builds a viable path given a path with incomplete parameters
+     * Builds a viable path given a path with incomplete parameters.
      *
-     * given:   '/characters/{character_id}/skills/', ['character_id' => 1234,]
+     * given:   '/characters/{character_id}/skills/', ['character_id' => 1234, ]
      * returns: '/characters/1234/skills/'
      *
      * @param string $path
