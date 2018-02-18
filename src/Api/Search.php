@@ -26,14 +26,7 @@ class Search extends AbstractApi
      */
     public function searchPublic(array $categories = [], string $language = 'en-us', string $search = '', bool $strict = false)
     {
-        $categories = implode(",", $categories);
-
-        $params = [
-            'categories' => $categories,
-            'language' => $language,
-            'search' => $search,
-            'strict' => $strict,
-        ];
+        $params = $this->buildSearchParams($categories, $language, $search, $strict);
 
         return $this->get('/search/', $params);
     }
@@ -56,15 +49,30 @@ class Search extends AbstractApi
      */
     public function searchPrivate(int $characterId, array $categories = [], string $language = 'en-us', string $search = '', bool $strict = false)
     {
+        $params = $this->buildSearchParams($categories, $language, $search, $strict);
+
+        return $this->get('/characters/' . $this->encodePath($characterId) . '/search/', $params);
+    }
+
+    /**
+     * Build a buildable array structure for QueryStringBuilder.
+     *
+     * @param array $categories
+     * @param string $language
+     * @param string $search
+     * @param bool $strict
+     *
+     * @return array
+     */
+    private function buildSearchParams(array $categories = [], string $language = 'en-us', string $search = '', bool $strict = false)
+    {
         $categories = implode(",", $categories);
 
-        $params = [
+        return $params = [
             'categories' => $categories,
             'language' => $language,
             'search' => $search,
             'strict' => $strict,
         ];
-
-        return $this->get('/characters/' . $this->encodePath($characterId) . '/search/', $params);
     }
 }
