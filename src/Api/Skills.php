@@ -11,7 +11,7 @@ class Skills extends AbstractApi
 {
     /**
      * Endpoint: /characters/{character_id}/attributes/
-     * HTTP Type: GET
+     * HTTP Method: GET
      *
      * Return attributes of a character.
      *
@@ -28,7 +28,7 @@ class Skills extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/skillqueue/
-     * HTTP Type: GET
+     * HTTP Method: GET
      *
      * List the configured skill queue for the given character.
      *
@@ -45,7 +45,7 @@ class Skills extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/skills/
-     * HTTP Type: GET
+     * HTTP Method: GET
      *
      * List all trained skills for the given character
      *

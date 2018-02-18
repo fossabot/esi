@@ -11,7 +11,7 @@ class Calendar extends AbstractApi
 {
     /**
      * Endpoint: /characters/{character_id}/calendar/
-     * HTTP Type: GET
+     * HTTP Method: GET
      *
      * Get 50 event summaries from the calendar.
      * If no from_event ID is given, the resource will return the next 50 chronological event summaries from now.
@@ -38,7 +38,7 @@ class Calendar extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/calendar/{event_id}/
-     * HTTP Type: GET
+     * HTTP Method: GET
      *
      * Get all the information for a specific event.
      *
@@ -56,7 +56,7 @@ class Calendar extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/calendar/{event_id}/
-     * HTTP Type: PUT
+     * HTTP Method: PUT
      *
      * Set your response status to an event.
      *
@@ -75,7 +75,7 @@ class Calendar extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/calendar/{event_id}/attendees/
-     * HTTP Type: GET
+     * HTTP Method: GET
      *
      * Get all invited attendees for a given event.
      *

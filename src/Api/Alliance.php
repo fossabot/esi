@@ -11,7 +11,7 @@ class Alliance extends AbstractApi
 {
     /**
      * Endpoint: /alliances/
-     * HTTP Type: GET
+     * HTTP Method: GET
      *
      * List all active player alliances.
      *
@@ -26,7 +26,7 @@ class Alliance extends AbstractApi
 
     /**
      * Endpoint: /alliances/{alliance_id}/
-     * HTTP Type: GET
+     * HTTP Method: GET
      *
      * Public information about an alliance
      *
@@ -43,7 +43,7 @@ class Alliance extends AbstractApi
 
     /**
      * Endpoint: /alliances/{alliance_id}/corporations/
-     * HTTP Type: GET
+     * HTTP Method: GET
      *
      * List all current member corporations of an alliance.
      *
@@ -60,7 +60,7 @@ class Alliance extends AbstractApi
 
     /**
      * Endpoint: /alliances/{alliance_id}/icons/
-     * HTTP Type: GET
+     * HTTP Method: GET
      *
      * Get the icon urls for a alliance.
      *
@@ -77,7 +77,7 @@ class Alliance extends AbstractApi
 
     /**
      * Endpoint: /alliances/names/
-     * HTTP Type: GET
+     * HTTP Method: GET
      *
      * Resolve a set of alliance IDs to alliance names.
      *
