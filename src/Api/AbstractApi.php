@@ -135,8 +135,8 @@ abstract class AbstractApi
 
         $body = null;
         if (!empty($parameters)) {
-            $body = $this->streamFactory->createStream(http_build_query($parameters));
-            $requestHeaders['Content-Type'] = 'application/x-www-form-urlencoded';
+            $body = json_encode($parameters);
+            $requestHeaders['Content-Type'] = 'application/json';
         }
 
         $response = $this->esiClient->getHttpClient()->put($path, $requestHeaders, $body);
