@@ -93,6 +93,7 @@ abstract class AbstractApi
         if (empty($files) && !empty($parameters)) {
             $body = json_encode($parameters);
             $requestHeaders['Content-Type'] = 'application/json';
+
         } elseif (!empty($files)) {
             $builder = new MultipartStreamBuilder($this->streamFactory);
 
@@ -172,7 +173,7 @@ abstract class AbstractApi
      *
      * @return string
      */
-    private function preparePath($path, array $parameters = [])
+    protected function preparePath($path, array $parameters = []): string
     {
         if (count($parameters) > 0) {
             $path .= '?' . QueryStringBuilder::build($parameters);
@@ -185,9 +186,10 @@ abstract class AbstractApi
      * Encodes a path string.
      *
      * @param string $path
+     *
      * @return string
      */
-    protected function encodePath($path)
+    protected function encodePath($path): string
     {
         $path = rawurlencode($path);
 
@@ -201,7 +203,7 @@ abstract class AbstractApi
      *
      * @return string
      */
-    private function guessContentType($file)
+    private function guessContentType($file): string
     {
         if (!class_exists(\finfo::class, false)) {
             return 'application/octet-stream';
@@ -218,7 +220,7 @@ abstract class AbstractApi
      *
      * @return array
      */
-    protected function paginateQuery(int $page)
+    protected function paginateQuery(int $page): array
     {
         $params = [
             'page' => $page
