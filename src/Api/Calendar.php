@@ -28,8 +28,7 @@ class Calendar extends AbstractApi
     public function listEventSummaries(int $characterId, int $fromEvent = null)
     {
         $params = [];
-
-        if ($fromEvent !== null) {
+        if (!is_null($fromEvent)) {
             $params['from_event'] = $fromEvent;
         }
 
