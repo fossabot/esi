@@ -15,18 +15,18 @@ class Search extends AbstractApi
      *
      * Search for entities that match a given sub-string.
      *
-     * @param array $categories
-     * @param string $language
+     * @param array $categories ['agent', 'alliance', 'character', 'constellation, 'corporation', 'faction', 'inventory_type', 'region', 'solar_system', 'station']
      * @param string $search
+     * @param string $language 'en-us', 'de', 'fr', 'ja', 'ru', 'zh'
      * @param bool $strict
      *
      * @return mixed
      *
      * @throws \Http\Client\Exception
      */
-    public function searchPublic(array $categories = [], string $language = 'en-us', string $search = '', bool $strict = false)
+    public function searchPublic(array $categories = [], string $search = '', string $language = 'en-us', bool $strict = false)
     {
-        $params = $this->buildSearchParams($categories, $language, $search, $strict);
+        $params = $this->buildSearchParams($categories, $search, $language, $strict);
 
         return $this->get('/search/', $params);
     }
@@ -38,18 +38,18 @@ class Search extends AbstractApi
      * Search for entities that match a given sub-string.
      *
      * @param int $characterId
-     * @param array $categories
-     * @param string $language
+     * @param array $categories ['agent', 'alliance', 'character', 'constellation, 'corporation', 'faction', 'inventory_type', 'region', 'solar_system', 'station']
      * @param string $search
+     * @param string $language 'en-us', 'de', 'fr', 'ja', 'ru', 'zh'
      * @param bool $strict
      *
      * @return mixed
      *
      * @throws \Http\Client\Exception
      */
-    public function searchPrivate(int $characterId, array $categories = [], string $language = 'en-us', string $search = '', bool $strict = false)
+    public function searchPrivate(int $characterId, array $categories = [], string $search = '', string $language = 'en-us', bool $strict = false)
     {
-        $params = $this->buildSearchParams($categories, $language, $search, $strict);
+        $params = $this->buildSearchParams($categories, $search, $language, $strict);
 
         return $this->get('/characters/' . $this->encodePath($characterId) . '/search/', $params);
     }
@@ -58,20 +58,20 @@ class Search extends AbstractApi
      * Build a buildable array structure for QueryStringBuilder.
      *
      * @param array $categories
-     * @param string $language
      * @param string $search
+     * @param string $language
      * @param bool $strict
      *
      * @return array
      */
-    private function buildSearchParams(array $categories = [], string $language = 'en-us', string $search = '', bool $strict = false)
+    private function buildSearchParams(array $categories = [], string $search = '', string $language = 'en-us', bool $strict = false)
     {
         $categories = implode(",", $categories);
 
         return $params = [
             'categories' => $categories,
-            'language' => $language,
             'search' => $search,
+            'language' => $language,
             'strict' => $strict,
         ];
     }
