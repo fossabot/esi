@@ -11,6 +11,7 @@ class Bookmarks extends AbstractApi
 {
     /**
      * Endpoint: /characters/{character_id}/bookmarks/
+     * HTTP Type: GET
      *
      * A list of your character's personal bookmarks.
      *
@@ -28,6 +29,7 @@ class Bookmarks extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/bookmarks/folders/
+     * HTTP Type: GET
      *
      * A list of your character's personal bookmark folders.
      *
@@ -45,6 +47,7 @@ class Bookmarks extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/bookmarks/
+     * HTTP Type: GET
      *
      * A list of your corporation's bookmarks.
      *
@@ -62,6 +65,7 @@ class Bookmarks extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/bookmarks/folders/
+     * HTTP Type: GET
      *
      * A list of your corporation's bookmark folders.
      *
