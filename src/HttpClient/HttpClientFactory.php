@@ -16,7 +16,7 @@ use Http\Message\StreamFactory;
 /**
  * HttpClientFactory constructs HttpClient/PluginClient with specified options.
  *
- * @author Anthony Grimes <contact@anthonygrimes.co.uk>
+ * @license LGPL-3.0 (https://www.gnu.org/licenses/lgpl-3.0.en.html)
  */
 class HttpClientFactory
 {
@@ -63,9 +63,11 @@ class HttpClientFactory
     private $plugins = [];
 
     /**
-     * @param HttpClient     $httpClient
-     * @param RequestFactory $requestFactory
-     * @param StreamFactory  $streamFactory
+     * Either find or implement given client implementation and construct a client.
+     *
+     * @param HttpClient|null $httpClient
+     * @param RequestFactory|null $requestFactory
+     * @param StreamFactory|null $streamFactory
      */
     public function __construct(
         HttpClient $httpClient = null,
