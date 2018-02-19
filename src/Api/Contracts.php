@@ -22,7 +22,7 @@ class Contracts extends AbstractApi
      * @return mixed
      * @throws \Http\Client\Exception
      */
-    public function getCharacterContracts(int $characterId, int $page)
+    public function getCharacterContracts(int $characterId, int $page = 1)
     {
         return $this->get('/characters/' . $this->encodePath($characterId) . '/contracts/', $this->paginateQuery($page));
     }
@@ -101,11 +101,12 @@ class Contracts extends AbstractApi
      *
      * @param int $corporationId
      * @param int $contractId
+     * @param int $page
      * @return mixed
      * @throws \Http\Client\Exception
      */
-    public function getCorporationContractBids(int $corporationId, int $contractId)
+    public function getCorporationContractBids(int $corporationId, int $contractId, $page = 1)
     {
-        return $this->get('/corporations/' . $this->encodePath($corporationId) . '/contracts/' . $this->encodePath($contractId) . '/bids/');
+        return $this->get('/corporations/' . $this->encodePath($corporationId) . '/contracts/' . $this->encodePath($contractId) . '/bids/', $this->paginateQuery($page));
     }
 }
