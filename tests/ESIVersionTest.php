@@ -51,8 +51,6 @@ class ESIVersionTest extends TestCase
         '/alliances/{alliance_id}/contacts/',
         '/characters/{character_id}/contacts/labels/',
         '/characters/{character_id}/contracts/',
-        '/characters/{character_id}/contacts/labels/',
-        '/characters/{character_id}/contracts/',
         '/characters/{character_id}/contracts/{contract_id}/items/',
         '/characters/{character_id}/contracts/{contract_id}/bids/',
         '/corporations/{corporation_id}/contracts/',
@@ -227,10 +225,13 @@ class ESIVersionTest extends TestCase
         $this->assertEquals(self::ESI_VERSION, $this->json['info']['version']);
     }
 
-    public function testEsiPaths()
+    public function testEsiPathsEquality()
     {
+        $paths = [];
         foreach ($this->json['paths'] as $key => $value) {
-            $this->assertContains($key, self::ESI_PATHS);
+            array_push($paths, $key);
         }
+
+        $this->assertEquals(self::ESI_PATHS, $paths, $message = '', $delta = 0.0, $maxDepth = 10, $canonicalize = true);
     }
 }
