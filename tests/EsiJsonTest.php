@@ -277,6 +277,8 @@ class EsiJsonTest extends TestCase
 
     /**
      * This method is called before each test.
+     * Retrieve the latest version of swagger.json, the reference implementation of ESI and
+     * decode the json string into a comparable array structure.
      */
     public function setUp()
     {
