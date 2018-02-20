@@ -275,6 +275,9 @@ class EsiJsonTest extends TestCase
 
     private $json;
 
+    /**
+     * This method is called before each test.
+     */
     public function setUp()
     {
         $curl = curl_init();
@@ -292,11 +295,19 @@ class EsiJsonTest extends TestCase
         curl_close($curl);
     }
 
+    /**
+     * This method tests that the retrieved latest version of the json swagger reference for esi
+     * has the same version as the one currently being developed for. I.e. ESI hasn't been incremented/changed.
+     */
     public function testEsiVersion()
     {
         $this->assertEquals(self::ESI_VERSION, $this->json['info']['version']);
     }
 
+    /**
+     * This method tests that the retrieved latest version of the json swagger reference for esi
+     * has the same paths as the one currently being developed for. I.e. ESI hasn't been incremented/changed.
+     */
     public function testEsiPathsEquality()
     {
         $paths = [];
@@ -307,6 +318,10 @@ class EsiJsonTest extends TestCase
         $this->assertEquals(self::ESI_PATHS, $paths, $message = '', $delta = 0.0, $maxDepth = 10, $canonicalize = true);
     }
 
+    /**
+     * This method tests that the retrieved latest version of the json swagger reference for esi
+     * has the same scopes as the one currently being developed for. I.e. ESI hasn't been incremented/changed.
+     */
     public function testEsiScopesEquality()
     {
         $scopes = [];
