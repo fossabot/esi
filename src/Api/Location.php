@@ -9,5 +9,52 @@ namespace AGrimes94\Esi\Api;
  */
 class Location extends AbstractApi
 {
+    /**
+     * Endpoint: /characters/{character_id}/location/
+     *
+     * HTTP Method: GET
+     *
+     * Information about the characters current location.
+     * Returns the current solar system id, and also the current station or structure ID if applicable.
+     *
+     * @param int $characterId
+     * @return mixed
+     * @throws \Http\Client\Exception
+     */
+    public function getCharacterLocation(int $characterId)
+    {
+        return $this->get('/characters/' . $this->encodePath($characterId) . '/location/');
+    }
 
+    /**
+     * Endpoint: /characters/{character_id}/ship/
+     *
+     * HTTP Method: GET
+     *
+     * Get the current ship type, name and id.
+     *
+     * @param int $characterId
+     * @return mixed
+     * @throws \Http\Client\Exception
+     */
+    public function getCharacterCurrentShip(int $characterId)
+    {
+        return $this->get('/characters/' . $this->encodePath($characterId) . '/ship/');
+    }
+
+    /**
+     * Endpoint: /characters/{character_id}/online/
+     *
+     * HTTP Method: GET
+     *
+     * Checks if the character is currently online.
+     *
+     * @param int $characterId
+     * @return mixed
+     * @throws \Http\Client\Exception
+     */
+    public function getCharacterOnline(int $characterId)
+    {
+        return $this->get('/characters/' . $this->encodePath($characterId) . '/online/');
+    }
 }
