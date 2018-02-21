@@ -9,5 +9,52 @@ namespace AGrimes94\Esi\Api;
  */
 class Killmails extends AbstractApi
 {
+    /**
+     * Endpoint: /killmails/{killmail_id}/{killmail_hash}/
+     *
+     * HTTP Method: GET
+     *
+     * Return a single killmail from its ID and hash.
+     *
+     * @param int $killmailId
+     * @param string $killmailHash
+     * @return mixed
+     * @throws \Http\Client\Exception
+     */
+    public function getKillmail(int $killmailId, string $killmailHash)
+    {
+        return $this->get('/killmails/' . $this->encodePath($killmailId) . '/' . $this->encodePath($killmailHash) . '/');
+    }
 
+    /**
+     * Endpoint: /characters/{character_id}/killmails/recent/
+     *
+     * HTTP Method: GET
+     *
+     * Return a list of character's recent kills and losses.
+     *
+     * @param int $characterId
+     * @return mixed
+     * @throws \Http\Client\Exception
+     */
+    public function getCharacterRecentKillmails(int $characterId)
+    {
+        return $this->get('/characters/' . $this->encodePath($characterId) . '/killmails/recent/');
+    }
+
+    /**
+     * Endpoint: /corporations/{corporation_id}/killmails/recent/
+     *
+     * HTTP Method: GET
+     *
+     * Get a list of corporation's recent kills and losses.
+     *
+     * @param int $corporationId
+     * @return mixed
+     * @throws \Http\Client\Exception
+     */
+    public function getCorporationRecentKillmails(int $corporationId)
+    {
+        return $this->get('/corporations/' . $this->encodePath($corporationId) . '/killmails/recent/');
+    }
 }
