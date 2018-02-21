@@ -9,7 +9,7 @@ use Psr\Http\Message\ResponseInterface;
  *
  * @license LGPL-3.0 (https://www.gnu.org/licenses/lgpl-3.0.en.html)
  */
-class ResponseMediator
+final class ResponseMediator
 {
     /**
      * Return the response body as a string or json array if content type is application/json.
