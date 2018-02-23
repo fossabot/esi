@@ -9,5 +9,35 @@ namespace AGrimes94\Esi\Api;
  */
 class Loyalty extends AbstractApi
 {
+    /**
+     * Endpoint: /characters/{character_id}/loyalty/points/
+     *
+     * HTTP Method: GET
+     *
+     * Return a list of loyalty points for all corporations the character has worked for.
+     *
+     * @param int $characterId
+     * @return mixed
+     * @throws \Http\Client\Exception
+     */
+    public function getLoyaltyPoints(int $characterId)
+    {
+        return $this->get('/characters/' . $this->encodePath($characterId) . '/loyalty/points/');
+    }
 
+    /**
+     * Endpoint: /loyalty/stores/{corporation_id}/offers/
+     *
+     * HTTP Method: GET
+     *
+     * Return a list of offers from a specific corporation’s loyalty store.
+     *
+     * @param int $corporationId
+     * @return mixed
+     * @throws \Http\Client\Exception
+     */
+    public function getStoreOffers(int $corporationId)
+    {
+        return $this->get('/loyalty/stores/' . $this->encodePath($corporationId) . '/offers/');
+    }
 }
