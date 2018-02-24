@@ -10,15 +10,17 @@ namespace AGrimes94\Esi\Api;
 class Fleets extends AbstractApi
 {
     /**
-     * Endpoint: /characters/{character_id}/fleet/
+     * Endpoint: /characters/{character_id}/fleet/.
      *
      * HTTP Method: GET
      *
      * Return the fleet ID the character is in, if any.
      *
      * @param int $characterId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getCharacterFleetInformation(int $characterId)
     {
@@ -26,15 +28,17 @@ class Fleets extends AbstractApi
     }
 
     /**
-     * Endpoint: /fleets/{fleet_id}/
+     * Endpoint: /fleets/{fleet_id}/.
      *
      * HTTP Method: GET
      *
      * Return details about a fleet.
      *
      * @param int $fleetId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getFleetInformation(int $fleetId)
     {
@@ -42,16 +46,18 @@ class Fleets extends AbstractApi
     }
 
     /**
-     * Endpoint: /fleets/{fleet_id}/
+     * Endpoint: /fleets/{fleet_id}/.
      *
      * HTTP Method: PUT
      *
      * Update settings about a fleet.
      *
-     * @param int $fleetId
+     * @param int   $fleetId
      * @param array $settings
-     * @return array|string
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return array|string
      */
     public function updateSettings(int $fleetId, array $settings = [])
     {
@@ -59,15 +65,17 @@ class Fleets extends AbstractApi
     }
 
     /**
-     * Endpoint: /fleets/{fleet_id}/members/
+     * Endpoint: /fleets/{fleet_id}/members/.
      *
      * HTTP Method: GET
      *
      * Return information about fleet members.
      *
      * @param int $fleetId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getMembers(int $fleetId)
     {
@@ -75,7 +83,7 @@ class Fleets extends AbstractApi
     }
 
     /**
-     * Endpoint: /fleets/{fleet_id}/members/
+     * Endpoint: /fleets/{fleet_id}/members/.
      *
      * HTTP Method: POST
      *
@@ -84,10 +92,12 @@ class Fleets extends AbstractApi
      * If a character has a CSPA charge set it is not possible
      * to invite them to the fleet using ESI.
      *
-     * @param int $fleetId
+     * @param int   $fleetId
      * @param array $invite
-     * @return array|string
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return array|string
      */
     public function createInvite(int $fleetId, array $invite = [])
     {
@@ -95,7 +105,7 @@ class Fleets extends AbstractApi
     }
 
     /**
-     * Endpoint: /fleets/{fleet_id}/members/{member_id}/
+     * Endpoint: /fleets/{fleet_id}/members/{member_id}/.
      *
      * HTTP Method: DELETE
      *
@@ -103,8 +113,10 @@ class Fleets extends AbstractApi
      *
      * @param int $fleetId
      * @param int $memberId
-     * @return array|string
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return array|string
      */
     public function kickMember(int $fleetId, int $memberId)
     {
@@ -112,17 +124,19 @@ class Fleets extends AbstractApi
     }
 
     /**
-     * Endpoint: /fleets/{fleet_id}/members/{member_id}/
+     * Endpoint: /fleets/{fleet_id}/members/{member_id}/.
      *
      * HTTP Method: PUT
      *
      * Move a fleet member around.
      *
-     * @param int $fleetId
-     * @param int $memberId
+     * @param int   $fleetId
+     * @param int   $memberId
      * @param array $movement
-     * @return array|string
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return array|string
      */
     public function moveMember(int $fleetId, int $memberId, array $movement = [])
     {
@@ -130,7 +144,7 @@ class Fleets extends AbstractApi
     }
 
     /**
-     * Endpoint: /fleets/{fleet_id}/wings/{wing_id}/squads/
+     * Endpoint: /fleets/{fleet_id}/wings/{wing_id}/squads/.
      *
      * HTTP Method: GET
      *
@@ -138,8 +152,10 @@ class Fleets extends AbstractApi
      *
      * @param int $fleetId
      * @param int $wingId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function createSquad(int $fleetId, int $wingId)
     {
@@ -147,17 +163,19 @@ class Fleets extends AbstractApi
     }
 
     /**
-     * Endpoint: /fleets/{fleet_id}/squads/{squad_id}/
+     * Endpoint: /fleets/{fleet_id}/squads/{squad_id}/.
      *
      * HTTP Method: PUT
      *
      * Rename a fleet squad.
      *
-     * @param int $fleetId
-     * @param int $squadId
+     * @param int   $fleetId
+     * @param int   $squadId
      * @param array $naming
-     * @return array|string
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return array|string
      */
     public function renameSquad(int $fleetId, int $squadId, array $naming = [])
     {
@@ -165,7 +183,7 @@ class Fleets extends AbstractApi
     }
 
     /**
-     * Endpoint: /fleets/{fleet_id}/squads/{squad_id}/
+     * Endpoint: /fleets/{fleet_id}/squads/{squad_id}/.
      *
      * HTTP Method: DELETE
      *
@@ -173,8 +191,10 @@ class Fleets extends AbstractApi
      *
      * @param int $fleetId
      * @param int $squadId
-     * @return array|string
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return array|string
      */
     public function deleteSquad(int $fleetId, int $squadId)
     {
@@ -182,15 +202,17 @@ class Fleets extends AbstractApi
     }
 
     /**
-     * Endpoint: /fleets/{fleet_id}/wings/
+     * Endpoint: /fleets/{fleet_id}/wings/.
      *
      * HTTP Method: GET
      *
      * Return information about wings in a fleet.
      *
      * @param int $fleetId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getWings(int $fleetId)
     {
@@ -198,15 +220,17 @@ class Fleets extends AbstractApi
     }
 
     /**
-     * Endpoint: /fleets/{fleet_id}/wings/
+     * Endpoint: /fleets/{fleet_id}/wings/.
      *
      * HTTP Method: POST
      *
      * Create a new wing in a fleet.
      *
      * @param int $fleetId
-     * @return array|string
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return array|string
      */
     public function createWing(int $fleetId)
     {
@@ -214,17 +238,19 @@ class Fleets extends AbstractApi
     }
 
     /**
-     * Endpoint: /fleets/{fleet_id}/wings/{wing_id}/
+     * Endpoint: /fleets/{fleet_id}/wings/{wing_id}/.
      *
      * HTTP Method: PUT
      *
      * Rename a fleet wing.
      *
-     * @param int $fleetId
-     * @param int $wingId
+     * @param int   $fleetId
+     * @param int   $wingId
      * @param array $naming
-     * @return array|string
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return array|string
      */
     public function renameWing(int $fleetId, int $wingId, array $naming = [])
     {
@@ -232,7 +258,7 @@ class Fleets extends AbstractApi
     }
 
     /**
-     * Endpoint: /fleets/{fleet_id}/wings/{wing_id}/
+     * Endpoint: /fleets/{fleet_id}/wings/{wing_id}/.
      *
      * HTTP Method: DELETE
      *
@@ -242,8 +268,10 @@ class Fleets extends AbstractApi
      *
      * @param int $fleetId
      * @param int $wingId
-     * @return array|string
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return array|string
      */
     public function deleteWing(int $fleetId, int $wingId)
     {

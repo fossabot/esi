@@ -10,14 +10,15 @@ namespace AGrimes94\Esi\Api;
 class FactionWarfare extends AbstractApi
 {
     /**
-     * Endpoint: /fw/wars/
+     * Endpoint: /fw/wars/.
      *
      * HTTP Method: GET
      *
      * Data about which NPC factions are at war.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getNpcWars()
     {
@@ -25,14 +26,15 @@ class FactionWarfare extends AbstractApi
     }
 
     /**
-     * Endpoint: /fw/systems/
+     * Endpoint: /fw/systems/.
      *
      * HTTP Method: GET
      *
      * An overview of the current ownership of faction warfare solar systems.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getSystemOwners()
     {
@@ -40,14 +42,15 @@ class FactionWarfare extends AbstractApi
     }
 
     /**
-     * Endpoint: /fw/stats/
+     * Endpoint: /fw/stats/.
      *
      * HTTP Method: GET
      *
      * Statistical overviews of factions involved in faction warfare.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getFactionStats()
     {
@@ -55,15 +58,17 @@ class FactionWarfare extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/fw/stats/
+     * Endpoint: /characters/{character_id}/fw/stats/.
      *
      * HTTP Method: GET
      *
      * Statistical overview of a character involved in faction warfare.
      *
      * @param int $characterId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getCharacterStats(int $characterId)
     {
@@ -71,15 +76,17 @@ class FactionWarfare extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/fw/stats/
+     * Endpoint: /corporations/{corporation_id}/fw/stats/.
      *
      * HTTP Method: GET
      *
      * Statistics about a corporation involved in faction warfare.
      *
      * @param int $corporationId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getCorporationStats(int $corporationId)
     {
@@ -87,14 +94,15 @@ class FactionWarfare extends AbstractApi
     }
 
     /**
-     * Endpoint: /fw/leaderboards/
+     * Endpoint: /fw/leaderboards/.
      *
      * HTTP Method: GET
      *
      * Top 4 leaderboard of factions for kills and victory points separated by total, last week and yesterday.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getFactionLeaderboard()
     {
@@ -102,14 +110,15 @@ class FactionWarfare extends AbstractApi
     }
 
     /**
-     * Endpoint: /fw/leaderboards/characters/
+     * Endpoint: /fw/leaderboards/characters/.
      *
      * HTTP Method: GET
      *
      * Top 100 leaderboard of pilots for kills and victory points separated by total, last week and yesterday.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getCharacterLeaderboard()
     {
@@ -117,14 +126,15 @@ class FactionWarfare extends AbstractApi
     }
 
     /**
-     * Endpoint: /fw/leaderboards/corporations/
+     * Endpoint: /fw/leaderboards/corporations/.
      *
      * HTTP Method: GET
      *
      * Top 10 leaderboard of corporations for kills and victory points separated by total, last week and yesterday.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getCorporationLeaderboard()
     {

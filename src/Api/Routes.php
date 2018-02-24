@@ -10,18 +10,21 @@ namespace AGrimes94\Esi\Api;
 class Routes extends AbstractApi
 {
     /**
-     * Endpoint: /route/{origin}/{destination}/
+     * Endpoint: /route/{origin}/{destination}/.
+     *
      * HTTP Method: GET
      *
      * Get the systems between origin and destination.
      *
-     * @param int $originId
-     * @param int $destinationId
-     * @param string $flag 'shortest', 'secure', 'insecure'
-     * @param array|null $avoid [30002771, 30002770, 30002769]
-     * @param array|null $connections [30002771, 30002770, 30002769]
-     * @return mixed
+     * @param int        $originId
+     * @param int        $destinationId
+     * @param string     $flag          'shortest', 'secure', 'insecure'
+     * @param array|null $avoid         [30002771, 30002770, 30002769]
+     * @param array|null $connections   [30002771, 30002770, 30002769]
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getRoute(int $originId, int $destinationId, string $flag = 'shortest', array $avoid = null, array $connections = null)
     {

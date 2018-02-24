@@ -10,15 +10,17 @@ namespace AGrimes94\Esi\Api;
 class Fittings extends AbstractApi
 {
     /**
-     * Endpoint: /characters/{character_id}/fittings/
+     * Endpoint: /characters/{character_id}/fittings/.
      *
      * HTTP Method: GET
      *
      * Return fittings of a character.
      *
      * @param int $characterId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getFittings(int $characterId)
     {
@@ -26,16 +28,18 @@ class Fittings extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/fittings/
+     * Endpoint: /characters/{character_id}/fittings/.
      *
      * HTTP Method: POST
      *
      * Save a new fitting for a character.
      *
-     * @param int $characterId
+     * @param int   $characterId
      * @param array $fitting
-     * @return array|string
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return array|string
      */
     public function createFitting(int $characterId, array $fitting = [])
     {
@@ -43,7 +47,7 @@ class Fittings extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/fittings/{fitting_id}/
+     * Endpoint: /characters/{character_id}/fittings/{fitting_id}/.
      *
      * HTTP Method: DELETE
      *
@@ -51,8 +55,10 @@ class Fittings extends AbstractApi
      *
      * @param int $characterId
      * @param int $fittingId
-     * @return array|string
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return array|string
      */
     public function deleteFitting(int $characterId, int $fittingId)
     {

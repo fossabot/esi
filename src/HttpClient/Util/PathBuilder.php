@@ -16,7 +16,7 @@ final class PathBuilder
      * returns: '/characters/1234/skills/'
      *
      * @param string $path
-     * @param array $pathData
+     * @param array  $pathData
      *
      * @return string
      */

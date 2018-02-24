@@ -10,15 +10,17 @@ namespace AGrimes94\Esi\Api;
 class Market extends AbstractApi
 {
     /**
-     * Endpoint: /characters/{character_id}/orders/
+     * Endpoint: /characters/{character_id}/orders/.
      *
      * HTTP Method: GET
      *
      * List market orders placed by a character.
      *
      * @param int $characterId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getCharacterOrders(int $characterId)
     {
@@ -26,7 +28,7 @@ class Market extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/orders/history/
+     * Endpoint: /characters/{character_id}/orders/history/.
      *
      * HTTP Method: GET
      *
@@ -34,8 +36,10 @@ class Market extends AbstractApi
      *
      * @param int $characterId
      * @param int $page
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getHistoricalCharacterOrders(int $characterId, int $page = 1)
     {
@@ -43,7 +47,7 @@ class Market extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/orders/
+     * Endpoint: /corporations/{corporation_id}/orders/.
      *
      * HTTP Method: GET
      *
@@ -51,8 +55,10 @@ class Market extends AbstractApi
      *
      * @param int $corporationId
      * @param int $page
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getCorporationOrders(int $corporationId, int $page = 1)
     {
@@ -60,7 +66,7 @@ class Market extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/orders/history/
+     * Endpoint: /corporations/{corporation_id}/orders/history/.
      *
      * HTTP Method: GET
      *
@@ -68,8 +74,10 @@ class Market extends AbstractApi
      *
      * @param int $corporationId
      * @param int $page
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getHistoricalCorporationOrders(int $corporationId, int $page = 1)
     {
@@ -77,7 +85,7 @@ class Market extends AbstractApi
     }
 
     /**
-     * Endpoint: /markets/{region_id}/history/
+     * Endpoint: /markets/{region_id}/history/.
      *
      * HTTP Method: GET
      *
@@ -85,8 +93,10 @@ class Market extends AbstractApi
      *
      * @param int $regionId
      * @param int $typeId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getHistoricalTypeInRegionStatistics(int $regionId, int $typeId)
     {
@@ -97,18 +107,20 @@ class Market extends AbstractApi
     }
 
     /**
-     * Endpoint: /markets/{region_id}/orders/
+     * Endpoint: /markets/{region_id}/orders/.
      *
      * HTTP Method: GET
      *
      * Return a list of orders in a region.
      *
-     * @param int $regionId
-     * @param string $orderType 'buy', 'sell', 'all'
+     * @param int      $regionId
+     * @param string   $orderType 'buy', 'sell', 'all'
      * @param int|null $typeId
-     * @param int $page
-     * @return mixed
+     * @param int      $page
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getOrdersInRegion(int $regionId, string $orderType = 'all', int $typeId = null, int $page = 1)
     {
@@ -124,7 +136,7 @@ class Market extends AbstractApi
     }
 
     /**
-     * Endpoint: /markets/{region_id}/types/
+     * Endpoint: /markets/{region_id}/types/.
      *
      * HTTP Method: GET
      *
@@ -132,8 +144,10 @@ class Market extends AbstractApi
      *
      * @param int $regionId
      * @param int $page
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getActiveTypesInRegion(int $regionId, int $page = 1)
     {
@@ -141,14 +155,15 @@ class Market extends AbstractApi
     }
 
     /**
-     * Endpoint: /markets/groups/
+     * Endpoint: /markets/groups/.
      *
      * HTTP Method: GET
      *
      * Get a list of item groups.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getItemGroups()
     {
@@ -156,16 +171,18 @@ class Market extends AbstractApi
     }
 
     /**
-     * Endpoint: /markets/groups/{market_group_id}/
+     * Endpoint: /markets/groups/{market_group_id}/.
      *
      * HTTP Method: GET
      *
      * Get information on an item group.
      *
-     * @param int $marketGroupId
+     * @param int    $marketGroupId
      * @param string $language
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getItemGroupInformation(int $marketGroupId, string $language = 'en-us')
     {
@@ -176,14 +193,15 @@ class Market extends AbstractApi
     }
 
     /**
-     * Endpoint: /markets/prices/
+     * Endpoint: /markets/prices/.
      *
      * HTTP Method: GET
      *
      * Return a list of prices.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getMarketPrices()
     {
@@ -191,7 +209,7 @@ class Market extends AbstractApi
     }
 
     /**
-     * Endpoint: /markets/structures/{structure_id}/
+     * Endpoint: /markets/structures/{structure_id}/.
      *
      * HTTP Method: GET
      *
@@ -199,8 +217,10 @@ class Market extends AbstractApi
      *
      * @param int $structureId
      * @param int $page
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getStructureOrders(int $structureId, int $page = 1)
     {

@@ -10,14 +10,15 @@ namespace AGrimes94\Esi\Api;
 class Incursions extends AbstractApi
 {
     /**
-     * Endpoint: /incursions/
+     * Endpoint: /incursions/.
      *
      * HTTP Method: GET
      *
      * Return a list of current incursions.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getIncursions()
     {

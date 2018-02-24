@@ -10,15 +10,17 @@ namespace AGrimes94\Esi\Api;
 class PlanetaryInteraction extends AbstractApi
 {
     /**
-     * Endpoint: /characters/{character_id}/planets/
+     * Endpoint: /characters/{character_id}/planets/.
      *
      * HTTP Method: GET
      *
      * Returns a list of all planetary colonies owned by a character.
      *
      * @param int $characterId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getCharacterColonies(int $characterId)
     {
@@ -26,7 +28,7 @@ class PlanetaryInteraction extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/planets/{planet_id}/
+     * Endpoint: /characters/{character_id}/planets/{planet_id}/.
      *
      * HTTP Method: GET
      *
@@ -36,8 +38,10 @@ class PlanetaryInteraction extends AbstractApi
      *
      * @param int $characterId
      * @param int $planetId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getCharacterColonyLayout(int $characterId, int $planetId)
     {
@@ -45,15 +49,17 @@ class PlanetaryInteraction extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/schematics/{schematic_id}/
+     * Endpoint: /universe/schematics/{schematic_id}/.
      *
      * HTTP Method: GET
      *
      * Get information on a planetary factory schematic.
      *
      * @param int $schematicId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getSchematicInformation(int $schematicId)
     {
@@ -61,7 +67,7 @@ class PlanetaryInteraction extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/customs_offices/
+     * Endpoint: /corporations/{corporation_id}/customs_offices/.
      *
      * HTTP Method: GET
      *
@@ -69,8 +75,10 @@ class PlanetaryInteraction extends AbstractApi
      *
      * @param int $corporationId
      * @param int $page
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getCorporationCustomsOffices(int $corporationId, int $page = 1)
     {

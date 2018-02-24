@@ -10,13 +10,15 @@ namespace AGrimes94\Esi\Api;
 class Status extends AbstractApi
 {
     /**
-     * Endpoint: /status/
+     * Endpoint: /status/.
+     *
      * HTTP Method: GET
      *
      * EVE Server status.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getStatus()
     {

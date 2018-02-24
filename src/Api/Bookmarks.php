@@ -10,7 +10,8 @@ namespace AGrimes94\Esi\Api;
 class Bookmarks extends AbstractApi
 {
     /**
-     * Endpoint: /characters/{character_id}/bookmarks/
+     * Endpoint: /characters/{character_id}/bookmarks/.
+     *
      * HTTP Method: GET
      *
      * A list of your character's personal bookmarks.
@@ -18,9 +19,9 @@ class Bookmarks extends AbstractApi
      * @param int $characterId
      * @param int $page
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function listCharacterBookmarks(int $characterId, int $page = 1)
     {
@@ -28,7 +29,8 @@ class Bookmarks extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/bookmarks/folders/
+     * Endpoint: /characters/{character_id}/bookmarks/folders/.
+     *
      * HTTP Method: GET
      *
      * A list of your character's personal bookmark folders.
@@ -36,9 +38,9 @@ class Bookmarks extends AbstractApi
      * @param int $characterId
      * @param int $page
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function listCharacterBookmarkFolders(int $characterId, int $page = 1)
     {
@@ -46,7 +48,8 @@ class Bookmarks extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/bookmarks/
+     * Endpoint: /corporations/{corporation_id}/bookmarks/.
+     *
      * HTTP Method: GET
      *
      * A list of your corporation's bookmarks.
@@ -54,9 +57,9 @@ class Bookmarks extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function listCorporationBookmarks(int $corporationId, int $page = 1)
     {
@@ -64,7 +67,8 @@ class Bookmarks extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/bookmarks/folders/
+     * Endpoint: /corporations/{corporation_id}/bookmarks/folders/.
+     *
      * HTTP Method: GET
      *
      * A list of your corporation's bookmark folders.
@@ -72,9 +76,9 @@ class Bookmarks extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function listCorporationBookmarkFolders(int $corporationId, int $page = 1)
     {

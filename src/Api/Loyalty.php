@@ -10,15 +10,17 @@ namespace AGrimes94\Esi\Api;
 class Loyalty extends AbstractApi
 {
     /**
-     * Endpoint: /characters/{character_id}/loyalty/points/
+     * Endpoint: /characters/{character_id}/loyalty/points/.
      *
      * HTTP Method: GET
      *
      * Return a list of loyalty points for all corporations the character has worked for.
      *
      * @param int $characterId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getLoyaltyPoints(int $characterId)
     {
@@ -26,15 +28,17 @@ class Loyalty extends AbstractApi
     }
 
     /**
-     * Endpoint: /loyalty/stores/{corporation_id}/offers/
+     * Endpoint: /loyalty/stores/{corporation_id}/offers/.
      *
      * HTTP Method: GET
      *
      * Return a list of offers from a specific corporation’s loyalty store.
      *
      * @param int $corporationId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getStoreOffers(int $corporationId)
     {
