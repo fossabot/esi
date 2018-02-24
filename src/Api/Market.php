@@ -178,18 +178,14 @@ class Market extends AbstractApi
      * Get information on an item group.
      *
      * @param int    $marketGroupId
-     * @param string $language
      *
      * @throws \Http\Client\Exception
      *
      * @return mixed
      */
-    public function getItemGroupInformation(int $marketGroupId, string $language = 'en-us')
+    public function getItemGroupInformation(int $marketGroupId)
     {
-        $params = [];
-        $params['language'] = $language; // TODO Maybe make language plugin if possible for other endpoints, which don't inherently specify language in the api docs
-
-        return $this->get('/markets/groups/' . $this->encodePath($marketGroupId) . '/', $params);
+        return $this->get('/markets/groups/' . $this->encodePath($marketGroupId) . '/');
     }
 
     /**
