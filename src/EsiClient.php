@@ -5,6 +5,7 @@ namespace AGrimes94\Esi;
 use AGrimes94\Esi\HttpClient\HttpClientFactory;
 use AGrimes94\Esi\HttpClient\Plugin\ApiVersionPlugin;
 use AGrimes94\Esi\HttpClient\Plugin\DataSourcePlugin;
+use AGrimes94\Esi\HttpClient\Plugin\LanguagePlugin;
 use Http\Client\Common\HttpMethodsClient;
 use Http\Client\Common\Plugin\AddHostPlugin;
 use Http\Client\Common\Plugin\AuthenticationPlugin;
@@ -35,6 +36,8 @@ class EsiClient
     public function __construct(HttpClientFactory $httpClientFactory = null)
     {
         $this->httpClientFactory = $httpClientFactory ?: new HttpClientFactory();
+
+        $this->httpClientFactory->addPlugin(new LanguagePlugin());
 
         $this->httpClientFactory->addPlugin(new DataSourcePlugin());
 
@@ -126,6 +129,23 @@ class EsiClient
     {
         $this->httpClientFactory->removePlugin(ApiVersionPlugin::class);
         $this->httpClientFactory->addPlugin(new ApiVersionPlugin($apiVersion));
+
+        return $this;
+    }
+
+    /**
+     * Alter request response language.
+     *
+     * Possible: 'en-us', 'de', 'fr', 'ja', 'ru', 'zh'
+     *
+     * @param string $language
+     *
+     * @return $this
+     */
+    public function language(string $language): self
+    {
+        $this->httpClientFactory->removePlugin(LanguagePlugin::class);
+        $this->httpClientFactory->addPlugin(new LanguagePlugin($language));
 
         return $this;
     }

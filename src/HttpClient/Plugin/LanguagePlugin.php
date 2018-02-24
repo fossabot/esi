@@ -6,29 +6,29 @@ use Http\Client\Common\Plugin;
 use Psr\Http\Message\RequestInterface;
 
 /**
- * Plugin to designate data source to query against.
+ * Plugin to designate language for return response.
  *
  * @license LGPL-3.0 (https://www.gnu.org/licenses/lgpl-3.0.en.html)
  */
-class DataSourcePlugin implements Plugin
+class LanguagePlugin implements Plugin
 {
     /**
-     * Data source to query against.
+     * Language to use in response.
      *
-     * Possible: tranquility, singularity
+     * Possible: 'en-us', 'de', 'fr', 'ja', 'ru', 'zh'
      *
      * @var string
      */
-    private $dataSource;
+    private $language;
 
     /**
-     * DataSourcePlugin constructor.
+     * LanguagePlugin constructor.
      *
-     * @param string $dataSource
+     * @param string $language
      */
-    public function __construct($dataSource = 'tranquility')
+    public function __construct($language = 'en-us')
     {
-        $this->dataSource = $dataSource;
+        $this->language = $language;
     }
 
     /**
@@ -39,7 +39,7 @@ class DataSourcePlugin implements Plugin
         $uri = $request->getUri();
 
         if (null !== $uri->getQuery()) {
-            $request = $request->withUri($uri->withQuery($uri->getQuery() . '&datasource=' . $this->dataSource));
+            $request = $request->withUri($uri->withQuery($uri->getQuery() . '&language=' . $this->language));
         }
 
         return $next($request);

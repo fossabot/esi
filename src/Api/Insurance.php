@@ -16,19 +16,12 @@ class Insurance extends AbstractApi
      *
      * Return available insurance levels for all ship types.
      *
-     * @param string $language
-     *
      * @throws \Http\Client\Exception
      *
      * @return mixed
      */
-    public function getInsuranceLevels(string $language = 'en-us')
+    public function getInsuranceLevels()
     {
-        $params = [];
-        if (!is_null($language)) {
-            $params['language'] = $language;
-        }
-
-        return $this->get('/insurance/prices/', $params);
+        return $this->get('/insurance/prices/');
     }
 }
