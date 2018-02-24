@@ -51,20 +51,14 @@ class Opportunities extends AbstractApi
      * Return information of an opportunities group.
      *
      * @param int    $groupId
-     * @param string $language
      *
      * @throws \Http\Client\Exception
      *
      * @return mixed
      */
-    public function getGroup(int $groupId, string $language = 'en-us')
+    public function getGroup(int $groupId)
     {
-        $params = [];
-        if (!is_null($language)) {
-            $params['language'] = $language;
-        }
-
-        return $this->get('/opportunities/groups/' . $this->encodePath($groupId) . '/', $params);
+        return $this->get('/opportunities/groups/' . $this->encodePath($groupId) . '/');
     }
 
     /**
