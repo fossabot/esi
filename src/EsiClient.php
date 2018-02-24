@@ -139,6 +139,7 @@ class EsiClient
      * Possible: 'en-us', 'de', 'fr', 'ja', 'ru', 'zh'
      *
      * @param string $language
+     *
      * @return $this
      */
     public function language(string $language): self

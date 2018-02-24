@@ -24,7 +24,7 @@ class Search extends AbstractApi
      *
      * @return mixed
      */
-    public function searchPublic(string $search = '', array $categories = [],  bool $strict = false)
+    public function searchPublic(string $search = '', array $categories = [], bool $strict = false)
     {
         $params = $this->buildSearchParams($search, $categories, $strict);
 
@@ -47,7 +47,7 @@ class Search extends AbstractApi
      *
      * @return mixed
      */
-    public function searchPrivate(int $characterId, string $search = '', array $categories = [],  bool $strict = false)
+    public function searchPrivate(int $characterId, string $search = '', array $categories = [], bool $strict = false)
     {
         $params = $this->buildSearchParams($search, $categories, $strict);
 

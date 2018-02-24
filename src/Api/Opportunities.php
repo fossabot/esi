@@ -50,7 +50,7 @@ class Opportunities extends AbstractApi
      *
      * Return information of an opportunities group.
      *
-     * @param int    $groupId
+     * @param int $groupId
      *
      * @throws \Http\Client\Exception
      *

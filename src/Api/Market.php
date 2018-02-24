@@ -177,7 +177,7 @@ class Market extends AbstractApi
      *
      * Get information on an item group.
      *
-     * @param int    $marketGroupId
+     * @param int $marketGroupId
      *
      * @throws \Http\Client\Exception
      *
