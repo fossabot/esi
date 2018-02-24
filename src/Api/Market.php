@@ -189,4 +189,21 @@ class Market extends AbstractApi
     {
         return $this->get('/markets/prices/');
     }
+
+    /**
+     * Endpoint: /markets/structures/{structure_id}/
+     *
+     * HTTP Method: GET
+     *
+     * Return all orders in a structure.
+     *
+     * @param int $structureId
+     * @param int $page
+     * @return mixed
+     * @throws \Http\Client\Exception
+     */
+    public function getStructureOrders(int $structureId, int $page = 1)
+    {
+        return $this->get('/markets/structures/' . $this->encodePath($structureId) . '/', $this->paginateQuery($page));
+    }
 }
