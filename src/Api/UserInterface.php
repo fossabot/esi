@@ -9,5 +9,113 @@ namespace AGrimes94\Esi\Api;
  */
 class UserInterface extends AbstractApi
 {
+    /**
+     * Endpoint: /ui/autopilot/waypoint/
+     *
+     * HTTP Method: POST
+     *
+     * Set a solar system as autopilot waypoint.
+     *
+     * @param int $destinationId
+     * @param bool|null $addToBeginning
+     * @param bool|null $clearOtherWaypoints
+     * @return array|string
+     * @throws \Http\Client\Exception
+     */
+    public function setAutopilotWaypoint(int $destinationId, bool $addToBeginning = null, bool $clearOtherWaypoints = null)
+    {
+        $params = [];
+        $params['destination_id'] = $destinationId;
 
+        if (!is_null($addToBeginning)) {
+            $params['add_to_beginning'] = $addToBeginning;
+        }
+
+        if (!is_null($clearOtherWaypoints)) {
+            $params['clear_other_waypoints'] = $clearOtherWaypoints;
+        }
+
+        $path = $this->preparePath('/ui/autopilot/waypoint/', $params);
+
+        return $this->post($path);
+    }
+
+    /**
+     * Endpoint: /ui/openwindow/contract/
+     *
+     * HTTP Method: POST
+     *
+     * Open the contract window inside the client.
+     *
+     * @param int $contractId
+     * @return array|string
+     * @throws \Http\Client\Exception
+     */
+    public function openContractWindow(int $contractId)
+    {
+        $params = [];
+        $params['contract_id'] = $contractId;
+
+        $path = $this->preparePath('/ui/openwindow/contract/', $params);
+
+        return $this->post($path);
+    }
+
+    /**
+     * Endpoint: /ui/openwindow/marketdetails/
+     *
+     * HTTP Method: POST
+     *
+     * Open the information window for a character, corporation or alliance inside the client.
+     *
+     * @param int $targetId
+     * @return array|string
+     * @throws \Http\Client\Exception
+     */
+    public function openInformationWindow(int $targetId)
+    {
+        $params = [];
+        $params['target_id'] = $targetId;
+
+        $path = $this->preparePath('/ui/openwindow/information/', $params);
+
+        return $this->post($path);
+    }
+
+    /**
+     * Endpoint: /ui/openwindow/marketdetails/
+     *
+     * HTTP Method: POST
+     *
+     * Open the market details window for a specific typeID inside the client.
+     *
+     * @param int $typeId
+     * @return array|string
+     * @throws \Http\Client\Exception
+     */
+    public function openMarketWindow(int $typeId)
+    {
+        $params = [];
+        $params['type_id'] = $typeId;
+
+        $path = $this->preparePath('/ui/openwindow/marketdetails/', $params);
+
+        return $this->post($path);
+    }
+
+    /**
+     * Endpoint: /ui/openwindow/newmail/
+     *
+     * HTTP Method: POST
+     *
+     * Open the New Mail window, according to settings from the request if applicable.
+     *
+     * @param array $newMail
+     * @return array|string
+     * @throws \Http\Client\Exception
+     */
+    public function openNewMailWindow(array $newMail = [])
+    {
+        return $this->post('/ui/openwindow/newmail/', $newMail);
+    }
 }
