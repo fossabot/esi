@@ -11,7 +11,8 @@ class Clones extends AbstractApi
 {
     /**
      * Endpoint: /characters/{character_id}/clones/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * A list of the character’s clones.
      *
@@ -28,7 +29,8 @@ class Clones extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/implants/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Return implants on the active clone of a character.
      *

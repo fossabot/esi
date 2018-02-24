@@ -28,7 +28,7 @@ class Sovereignty extends AbstractApi
     /**
      * Endpoint: /sovereignty/map/.
      *
-     * HTTP Method :GET
+     * HTTP Method: GET
      *
      * Shows sovereignty information for solar systems.
      *

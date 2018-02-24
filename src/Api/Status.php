@@ -11,7 +11,8 @@ class Status extends AbstractApi
 {
     /**
      * Endpoint: /status/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * EVE Server status.
      *

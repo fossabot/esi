@@ -11,7 +11,8 @@ class Search extends AbstractApi
 {
     /**
      * Endpoint: /search/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Search for entities that match a given sub-string.
      *
@@ -33,7 +34,8 @@ class Search extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/search/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Search for entities that match a given sub-string.
      *

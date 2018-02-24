@@ -11,7 +11,8 @@ class Routes extends AbstractApi
 {
     /**
      * Endpoint: /route/{origin}/{destination}/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Get the systems between origin and destination.
      *

@@ -11,7 +11,8 @@ class Assets extends AbstractApi
 {
     /**
      * Endpoint: /characters/{character_id}/assets/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Return a list of the characters assets.
      *
@@ -29,7 +30,8 @@ class Assets extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/assets/locations/
-     * HTTP Method: POST.
+     *
+     * HTTP Method: POST
      *
      * Return locations for a set of item ids, which you can get from character assets endpoint.
      * Coordinates for items in hangars or stations are set to (0,0,0).
@@ -48,7 +50,8 @@ class Assets extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/assets/names/
-     * HTTP Method: POST.
+     *
+     * HTTP Method: POST
      *
      * Return names for a set of item ids, which you can get from character assets endpoint.
      * Typically used for items that can customize names, like containers or ships.
@@ -67,7 +70,8 @@ class Assets extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/assets/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Return a list of the corporation assets.
      *
@@ -85,7 +89,8 @@ class Assets extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/assets/locations/
-     * HTTP Method: POST.
+     *
+     * HTTP Method: POST
      *
      * Return locations for a set of item ids, which you can get from corporation assets endpoint.
      * Coordinates for items in hangars or stations are set to (0,0,0).
@@ -104,7 +109,8 @@ class Assets extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/assets/names/
-     * HTTP Method: POST.
+     *
+     * HTTP Method: POST
      *
      * Return names for a set of item ids, which you can get from corporation assets endpoint.
      * Only valid for items that can customize names, like containers or ships.

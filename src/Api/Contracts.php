@@ -11,7 +11,8 @@ class Contracts extends AbstractApi
 {
     /**
      * Endpoint: /characters/{character_id}/contracts/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Returns contracts available to a character, only if the character is issuer,
      * acceptor or assignee. Only returns contracts no older than 30 days,
@@ -31,7 +32,8 @@ class Contracts extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/contracts/{contract_id}/items/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Lists items of a particular contract.
      *
@@ -49,7 +51,8 @@ class Contracts extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/contracts/{contract_id}/bids/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Lists bids on a particular auction contract.
      *
@@ -67,7 +70,8 @@ class Contracts extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/contracts/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Returns contracts available to a coporation, only if the corporation is issuer,
      * acceptor or assignee. Only returns contracts no older than 30 days,
@@ -87,7 +91,8 @@ class Contracts extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/contracts/{contract_id}/items/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Lists items of a particular contract.
      *
@@ -105,7 +110,8 @@ class Contracts extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/contracts/{contract_id}/bids/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Lists bids on a particular auction contract.
      *

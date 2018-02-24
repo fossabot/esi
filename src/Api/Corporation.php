@@ -11,7 +11,8 @@ class Corporation extends AbstractApi
 {
     /**
      * Endpoint: /corporations/{corporation_id}/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Public information about a corporation.
      *
@@ -28,7 +29,8 @@ class Corporation extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/alliancehistory/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Get a list of all the alliances a corporation has been a member of.
      *
@@ -45,7 +47,8 @@ class Corporation extends AbstractApi
 
     /**
      * Endpoint: /corporations/names/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Resolve a set of corporation IDs to corporation names.
      *
@@ -62,7 +65,8 @@ class Corporation extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/members/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Return the current member list of a corporation, the token's character need to be a member of the corporation.
      *
@@ -79,7 +83,8 @@ class Corporation extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/roles/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Return the roles of all members if the character has the personnel manager role or any grantable role.
      *
@@ -96,7 +101,8 @@ class Corporation extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/roles/history/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Return how roles have changed for a coporation's members, up to a month.
      *
@@ -114,7 +120,8 @@ class Corporation extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/icons/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Get the icon urls for a corporation.
      *
@@ -131,7 +138,8 @@ class Corporation extends AbstractApi
 
     /**
      * Endpoint: /corporations/npccorps/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Get a list of npc corporations.
      *
@@ -146,7 +154,8 @@ class Corporation extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/structures/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Get a list of corporation structures.
      *
@@ -164,7 +173,8 @@ class Corporation extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/membertracking/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Returns additional information about a corporation's members which helps tracking their activities.
      *
@@ -181,7 +191,8 @@ class Corporation extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/divisions/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Return corporation hangar and wallet division names, only show if a division is not using the default name.
      *
@@ -198,7 +209,8 @@ class Corporation extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/members/limit/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Return a corporation's member limit, not including CEO himself.
      *
@@ -215,7 +227,8 @@ class Corporation extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/titles/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Returns a corporation's titles.
      *
@@ -232,7 +245,8 @@ class Corporation extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/members/titles/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Returns a corporation's members' titles.
      *
@@ -249,7 +263,8 @@ class Corporation extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/blueprints/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Returns a list of blueprints the corporation owns.
      *
@@ -267,7 +282,8 @@ class Corporation extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/standings/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Return corporation standings from agents, NPC corporations, and factions.
      *
@@ -285,7 +301,8 @@ class Corporation extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/starbases/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Returns list of corporation starbases (POSes).
      *
@@ -303,7 +320,8 @@ class Corporation extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/starbases/{starbase_id}/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Returns various settings and fuels of a starbase (POS).
      *
@@ -321,7 +339,8 @@ class Corporation extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/containers/logs/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Returns logs recorded in the past seven days from all audit log secure containers
      * (ALSC) owned by a given corporation.
@@ -340,7 +359,8 @@ class Corporation extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/facilities/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Return a corporation's facilities.
      *
@@ -357,7 +377,8 @@ class Corporation extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/medals/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Returns a corporation's medals.
      *
@@ -375,7 +396,8 @@ class Corporation extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/medals/issued/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Returns medals issued by a corporation.
      *
@@ -393,7 +415,8 @@ class Corporation extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/outposts/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Get a list of corporation outpost IDs
      * Note: This endpoint will be removed once outposts are migrated to Citadels as talked about in this blog:
@@ -413,7 +436,8 @@ class Corporation extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/outposts/{outpost_id}/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Get details about a given outpost.
      * Note: This endpoint will be removed once outposts are migrated to Citadels as talked about in this blog:
@@ -433,7 +457,8 @@ class Corporation extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/shareholders/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Return the current shareholders of a corporation.
      *

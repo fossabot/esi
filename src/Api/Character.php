@@ -11,7 +11,8 @@ class Character extends AbstractApi
 {
     /**
      * Endpoint: /characters/{character_id}/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Public information about a character.
      *
@@ -28,11 +29,13 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/agents_research/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Return a list of agents research information for a character.
+     *
      * The formula for finding the current research points with an agent is:
-     * currentPoints = remainderPoints + pointsPerDay * days(currentTime - researchStartDate)
+     * currentPoints = remainderPoints + pointsPerDay * days(currentTime - researchStartDate).
      *
      * @param int $characterId
      *
@@ -47,7 +50,8 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/blueprints/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Return a list of blueprints the character owns.
      *
@@ -65,7 +69,8 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/chat_channels/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Return chat channels that a character is the owner or operator of.
      *
@@ -82,7 +87,8 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/corporationhistory/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Get a list of all the corporations a character has been a member of.
      *
@@ -99,7 +105,8 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/cspa/
-     * HTTP Method: POST.
+     *
+     * HTTP Method: POST
      *
      * Takes a source character ID in the url and a set of target
      * character ID's in the body, returns a CSPA charge cost.
@@ -118,7 +125,8 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/fatigue/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Return a character’s jump activation and fatigue information.
      *
@@ -135,7 +143,8 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/medals/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Return a list of medals the character has.
      *
@@ -152,7 +161,8 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/notifications/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Return character notifications.
      *
@@ -169,7 +179,8 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/notifications/contacts/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Return notifications about having been added to someone’s contact list.
      *
@@ -186,7 +197,8 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/portrait/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Get portrait urls for a character.
      *
@@ -203,7 +215,8 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/roles/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Returns a character’s corporation roles.
      *
@@ -220,7 +233,8 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/standings/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Return character standings from agents, NPC corporations, and factions.
      *
@@ -237,7 +251,8 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/stats/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Returns aggregate yearly stats for a character.
      *
@@ -254,7 +269,8 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/titles/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Returns a character’s titles.
      *
@@ -271,7 +287,8 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/affiliation/
-     * HTTP Method: POST.
+     *
+     * HTTP Method: POST
      *
      * Bulk lookup of character IDs to corporation, alliance and faction.
      *
@@ -288,7 +305,8 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/names/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Resolve a set of character IDs to character names.
      *

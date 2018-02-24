@@ -11,7 +11,8 @@ class Contacts extends AbstractApi
 {
     /**
      * Endpoint: /alliances/{alliance_id}/contacts/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Return contacts of an alliance.
      *
@@ -29,7 +30,8 @@ class Contacts extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/contacts/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Return contacts of a character.
      *
@@ -47,7 +49,8 @@ class Contacts extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/contacts/
-     * HTTP Method: POST.
+     *
+     * HTTP Method: POST
      *
      * Bulk add contacts with same settings.
      *
@@ -82,7 +85,8 @@ class Contacts extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/contacts/
-     * HTTP Method: PUT.
+     *
+     * HTTP Method: PUT
      *
      * Bulk edit contacts with same settings.
      *
@@ -117,7 +121,8 @@ class Contacts extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/contacts/
-     * HTTP Method: DELETE.
+     *
+     * HTTP Method: DELETE
      *
      * Bulk delete contacts.
      *
@@ -139,7 +144,8 @@ class Contacts extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/contacts/labels/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Return custom labels for contacts the character defined.
      *
@@ -156,7 +162,8 @@ class Contacts extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/contacts/
-     * HTTP Method: GET.
+     *
+     * HTTP Method: GET
      *
      * Return contacts of a corporation.
      *
