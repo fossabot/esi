@@ -9,5 +9,73 @@ namespace AGrimes94\Esi\Api;
  */
 class Fleets extends AbstractApi
 {
+    public function getCharacterFleetInformation()
+    {
 
+    }
+
+    public function getFleetInformation()
+    {
+
+    }
+
+    public function updateSettings()
+    {
+
+    }
+
+    public function getMembers()
+    {
+
+    }
+
+    public function createInvite()
+    {
+
+    }
+
+    public function kickMember()
+    {
+
+    }
+
+    public function moveMember()
+    {
+
+    }
+
+    public function createSquad()
+    {
+
+    }
+
+    public function renameSquad()
+    {
+
+    }
+
+    public function deleteSquad()
+    {
+
+    }
+
+    public function getWings()
+    {
+
+    }
+
+    public function createWing()
+    {
+
+    }
+
+    public function renameWing()
+    {
+
+    }
+
+    public function deleteWing()
+    {
+
+    }
 }
