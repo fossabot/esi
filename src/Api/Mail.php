@@ -9,5 +9,167 @@ namespace AGrimes94\Esi\Api;
  */
 class Mail extends AbstractApi
 {
+    /**
+     * Endpoint: /characters/{character_id}/mail/
+     *
+     * HTTP Method: GET
+     *
+     * Return the 50 most recent mail headers belonging to the character that match the query criteria.
+     * Queries can be filtered by label, and last_mail_id can be used to paginate backwards.
+     *
+     * @param int $characterId
+     * @param array|null $byLabels
+     * @param int|null $lastMailId
+     * @return mixed
+     * @throws \Http\Client\Exception
+     */
+    public function getMailHeaders(int $characterId, array $byLabels = null, int $lastMailId = null)
+    {
+        $params = [];
 
+        if (!is_null($byLabels)) {
+            $params['labels'] = $byLabels;
+        }
+
+        if (!is_null($lastMailId)) {
+            $params['last_mail_id'] = $lastMailId;
+        }
+
+        return $this->get('/characters/' . $this->encodePath($characterId) . '/mail/', $params);
+    }
+
+    /**
+     * Endpoint: /characters/{character_id}/mail/
+     *
+     * HTTP Method: POST
+     *
+     * Create and send a new mail.
+     *
+     * @param int $characterId
+     * @param array $mail
+     * @return array|string
+     * @throws \Http\Client\Exception
+     */
+    public function sendMail(int $characterId, array $mail = [])
+    {
+        return $this->post('/characters/' . $this->encodePath($characterId) . '/mail/', $mail);
+    }
+
+    /**
+     * Endpoint: /characters/{character_id}/mail/{mail_id}/
+     *
+     * HTTP Method: DELETE
+     *
+     * Delete a mail.
+     *
+     * @param int $characterId
+     * @param int $mailId
+     * @return array|string
+     * @throws \Http\Client\Exception
+     */
+    public function deleteMail(int $characterId, int $mailId)
+    {
+        return $this->delete('/characters/' . $this->encodePath($characterId) . '/mail/' . $this->encodePath($mailId) . '/');
+    }
+
+    /**
+     * Endpoint: /characters/{character_id}/mail/{mail_id}/
+     *
+     * HTTP Method: GET
+     *
+     * Return the contents of an EVE mail.
+     *
+     * @param int $characterId
+     * @param int $mailId
+     * @return mixed
+     * @throws \Http\Client\Exception
+     */
+    public function returnMail(int $characterId, int $mailId)
+    {
+        return $this->get('/characters/' . $this->encodePath($characterId) . '/mail/' . $this->encodePath($mailId) . '/');
+    }
+
+    /**
+     * Endpoint: /characters/{character_id}/mail/{mail_id}/
+     *
+     * HTTP Method: PUT
+     *
+     * Update metadata about a mail.
+     *
+     * @param int $characterId
+     * @param int $mailId
+     * @param array $contents
+     * @return array|string
+     * @throws \Http\Client\Exception
+     */
+    public function updateMailMetadata(int $characterId, int $mailId, array $contents = [])
+    {
+        return $this->put('/characters/' . $this->encodePath($characterId) . '/mail/' . $this->encodePath($mailId) . '/', $contents);
+    }
+
+    /**
+     * Endpoint: /characters/{character_id}/mail/labels/
+     *
+     * HTTP Method: GET
+     *
+     * Return a list of the users mail labels, unread counts for each label and a total unread count.
+     *
+     * @param int $characterId
+     * @return mixed
+     * @throws \Http\Client\Exception
+     */
+    public function getLabels(int $characterId)
+    {
+        return $this->get('/characters/' . $this->encodePath($characterId) . '/mail/labels/');
+    }
+
+    /**
+     * Endpoint: /characters/{character_id}/mail/labels/
+     *
+     * HTTP Method: POST
+     *
+     * Create a mail label.
+     *
+     * @param int $characterId
+     * @param array $label
+     * @return array|string
+     * @throws \Http\Client\Exception
+     */
+    public function createLabel(int $characterId, array $label = [])
+    {
+        return $this->post('/characters/' . $this->encodePath($characterId) . '/mail/labels/', $label);
+    }
+
+    /**
+     * Endpoint: /characters/{character_id}/mail/labels/{label_id}/
+     *
+     * HTTP Method: DELETE
+     *
+     * Delete a mail label.
+     *
+     * @param int $characterId
+     * @param int $labelId
+     * @return array|string
+     * @throws \Http\Client\Exception
+     */
+    public function deleteLabel(int $characterId, int $labelId)
+    {
+        return $this->delete('/characters/' . $this->encodePath($characterId) . '/mail/labels/' . $this->encodePath($labelId) . '/');
+    }
+
+    /**
+     * Endpoint: /characters/{character_id}/mail/lists/
+     *
+     * HTTP Method: GET
+     *
+     * Return all mailing lists that the character is subscribed to.
+     *
+     * @param int $characterId
+     * @return mixed
+     * @throws \Http\Client\Exception
+     */
+    public function getMailingListSubscriptions(int $characterId)
+    {
+        return $this->get('/characters/' . $this->encodePath($characterId) . '/mail/lists/');
+    }
 }
