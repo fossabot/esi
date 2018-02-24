@@ -10,7 +10,7 @@ namespace AGrimes94\Esi\Api;
 class Clones extends AbstractApi
 {
     /**
-     * Endpoint: /characters/{character_id}/clones/
+     * Endpoint: /characters/{character_id}/clones/.
      *
      * HTTP Method: GET
      *
@@ -28,7 +28,7 @@ class Clones extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/implants/
+     * Endpoint: /characters/{character_id}/implants/.
      *
      * HTTP Method: GET
      *

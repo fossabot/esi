@@ -10,7 +10,7 @@ namespace AGrimes94\Esi\Api;
 class Assets extends AbstractApi
 {
     /**
-     * Endpoint: /characters/{character_id}/assets/
+     * Endpoint: /characters/{character_id}/assets/.
      *
      * HTTP Method: GET
      *
@@ -29,7 +29,7 @@ class Assets extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/assets/locations/
+     * Endpoint: /characters/{character_id}/assets/locations/.
      *
      * HTTP Method: POST
      *
@@ -49,7 +49,7 @@ class Assets extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/assets/names/
+     * Endpoint: /characters/{character_id}/assets/names/.
      *
      * HTTP Method: POST
      *
@@ -69,7 +69,7 @@ class Assets extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/assets/
+     * Endpoint: /corporations/{corporation_id}/assets/.
      *
      * HTTP Method: GET
      *
@@ -88,7 +88,7 @@ class Assets extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/assets/locations/
+     * Endpoint: /corporations/{corporation_id}/assets/locations/.
      *
      * HTTP Method: POST
      *
@@ -108,7 +108,7 @@ class Assets extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/assets/names/
+     * Endpoint: /corporations/{corporation_id}/assets/names/.
      *
      * HTTP Method: POST
      *

@@ -10,7 +10,7 @@ namespace AGrimes94\Esi\Api;
 class Corporation extends AbstractApi
 {
     /**
-     * Endpoint: /corporations/{corporation_id}/
+     * Endpoint: /corporations/{corporation_id}/.
      *
      * HTTP Method: GET
      *
@@ -28,7 +28,7 @@ class Corporation extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/alliancehistory/
+     * Endpoint: /corporations/{corporation_id}/alliancehistory/.
      *
      * HTTP Method: GET
      *
@@ -46,7 +46,7 @@ class Corporation extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/names/
+     * Endpoint: /corporations/names/.
      *
      * HTTP Method: GET
      *
@@ -64,7 +64,7 @@ class Corporation extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/members/
+     * Endpoint: /corporations/{corporation_id}/members/.
      *
      * HTTP Method: GET
      *
@@ -82,7 +82,7 @@ class Corporation extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/roles/
+     * Endpoint: /corporations/{corporation_id}/roles/.
      *
      * HTTP Method: GET
      *
@@ -100,7 +100,7 @@ class Corporation extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/roles/history/
+     * Endpoint: /corporations/{corporation_id}/roles/history/.
      *
      * HTTP Method: GET
      *
@@ -119,7 +119,7 @@ class Corporation extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/icons/
+     * Endpoint: /corporations/{corporation_id}/icons/.
      *
      * HTTP Method: GET
      *
@@ -137,7 +137,7 @@ class Corporation extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/npccorps/
+     * Endpoint: /corporations/npccorps/.
      *
      * HTTP Method: GET
      *
@@ -153,7 +153,7 @@ class Corporation extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/structures/
+     * Endpoint: /corporations/{corporation_id}/structures/.
      *
      * HTTP Method: GET
      *
@@ -172,7 +172,7 @@ class Corporation extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/membertracking/
+     * Endpoint: /corporations/{corporation_id}/membertracking/.
      *
      * HTTP Method: GET
      *
@@ -190,7 +190,7 @@ class Corporation extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/divisions/
+     * Endpoint: /corporations/{corporation_id}/divisions/.
      *
      * HTTP Method: GET
      *
@@ -208,7 +208,7 @@ class Corporation extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/members/limit/
+     * Endpoint: /corporations/{corporation_id}/members/limit/.
      *
      * HTTP Method: GET
      *
@@ -226,7 +226,7 @@ class Corporation extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/titles/
+     * Endpoint: /corporations/{corporation_id}/titles/.
      *
      * HTTP Method: GET
      *
@@ -244,7 +244,7 @@ class Corporation extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/members/titles/
+     * Endpoint: /corporations/{corporation_id}/members/titles/.
      *
      * HTTP Method: GET
      *
@@ -262,7 +262,7 @@ class Corporation extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/blueprints/
+     * Endpoint: /corporations/{corporation_id}/blueprints/.
      *
      * HTTP Method: GET
      *
@@ -281,7 +281,7 @@ class Corporation extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/standings/
+     * Endpoint: /corporations/{corporation_id}/standings/.
      *
      * HTTP Method: GET
      *
@@ -300,7 +300,7 @@ class Corporation extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/starbases/
+     * Endpoint: /corporations/{corporation_id}/starbases/.
      *
      * HTTP Method: GET
      *
@@ -319,7 +319,7 @@ class Corporation extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/starbases/{starbase_id}/
+     * Endpoint: /corporations/{corporation_id}/starbases/{starbase_id}/.
      *
      * HTTP Method: GET
      *
@@ -338,7 +338,7 @@ class Corporation extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/containers/logs/
+     * Endpoint: /corporations/{corporation_id}/containers/logs/.
      *
      * HTTP Method: GET
      *
@@ -358,7 +358,7 @@ class Corporation extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/facilities/
+     * Endpoint: /corporations/{corporation_id}/facilities/.
      *
      * HTTP Method: GET
      *
@@ -376,7 +376,7 @@ class Corporation extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/medals/
+     * Endpoint: /corporations/{corporation_id}/medals/.
      *
      * HTTP Method: GET
      *
@@ -395,7 +395,7 @@ class Corporation extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/medals/issued/
+     * Endpoint: /corporations/{corporation_id}/medals/issued/.
      *
      * HTTP Method: GET
      *
@@ -414,7 +414,7 @@ class Corporation extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/outposts/
+     * Endpoint: /corporations/{corporation_id}/outposts/.
      *
      * HTTP Method: GET
      *
@@ -435,7 +435,7 @@ class Corporation extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/outposts/{outpost_id}/
+     * Endpoint: /corporations/{corporation_id}/outposts/{outpost_id}/.
      *
      * HTTP Method: GET
      *
@@ -456,7 +456,7 @@ class Corporation extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/shareholders/
+     * Endpoint: /corporations/{corporation_id}/shareholders/.
      *
      * HTTP Method: GET
      *

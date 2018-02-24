@@ -10,7 +10,7 @@ namespace AGrimes94\Esi\Api;
 class Search extends AbstractApi
 {
     /**
-     * Endpoint: /search/
+     * Endpoint: /search/.
      *
      * HTTP Method: GET
      *
@@ -33,7 +33,7 @@ class Search extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/search/
+     * Endpoint: /characters/{character_id}/search/.
      *
      * HTTP Method: GET
      *

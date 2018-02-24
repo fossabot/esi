@@ -10,7 +10,7 @@ namespace AGrimes94\Esi\Api;
 class Routes extends AbstractApi
 {
     /**
-     * Endpoint: /route/{origin}/{destination}/
+     * Endpoint: /route/{origin}/{destination}/.
      *
      * HTTP Method: GET
      *

@@ -10,7 +10,7 @@ namespace AGrimes94\Esi\Api;
 class Bookmarks extends AbstractApi
 {
     /**
-     * Endpoint: /characters/{character_id}/bookmarks/
+     * Endpoint: /characters/{character_id}/bookmarks/.
      *
      * HTTP Method: GET
      *
@@ -29,7 +29,7 @@ class Bookmarks extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/bookmarks/folders/
+     * Endpoint: /characters/{character_id}/bookmarks/folders/.
      *
      * HTTP Method: GET
      *
@@ -48,7 +48,7 @@ class Bookmarks extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/bookmarks/
+     * Endpoint: /corporations/{corporation_id}/bookmarks/.
      *
      * HTTP Method: GET
      *
@@ -67,7 +67,7 @@ class Bookmarks extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/bookmarks/folders/
+     * Endpoint: /corporations/{corporation_id}/bookmarks/folders/.
      *
      * HTTP Method: GET
      *

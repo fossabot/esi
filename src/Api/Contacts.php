@@ -10,7 +10,7 @@ namespace AGrimes94\Esi\Api;
 class Contacts extends AbstractApi
 {
     /**
-     * Endpoint: /alliances/{alliance_id}/contacts/
+     * Endpoint: /alliances/{alliance_id}/contacts/.
      *
      * HTTP Method: GET
      *
@@ -29,7 +29,7 @@ class Contacts extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/contacts/
+     * Endpoint: /characters/{character_id}/contacts/.
      *
      * HTTP Method: GET
      *
@@ -48,7 +48,7 @@ class Contacts extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/contacts/
+     * Endpoint: /characters/{character_id}/contacts/.
      *
      * HTTP Method: POST
      *
@@ -84,7 +84,7 @@ class Contacts extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/contacts/
+     * Endpoint: /characters/{character_id}/contacts/.
      *
      * HTTP Method: PUT
      *
@@ -120,7 +120,7 @@ class Contacts extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/contacts/
+     * Endpoint: /characters/{character_id}/contacts/.
      *
      * HTTP Method: DELETE
      *
@@ -143,7 +143,7 @@ class Contacts extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/contacts/labels/
+     * Endpoint: /characters/{character_id}/contacts/labels/.
      *
      * HTTP Method: GET
      *
@@ -161,7 +161,7 @@ class Contacts extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/contacts/
+     * Endpoint: /corporations/{corporation_id}/contacts/.
      *
      * HTTP Method: GET
      *

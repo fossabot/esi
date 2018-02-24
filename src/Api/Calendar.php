@@ -10,7 +10,7 @@ namespace AGrimes94\Esi\Api;
 class Calendar extends AbstractApi
 {
     /**
-     * Endpoint: /characters/{character_id}/calendar/
+     * Endpoint: /characters/{character_id}/calendar/.
      *
      * HTTP Method: GET
      *
@@ -38,7 +38,7 @@ class Calendar extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/calendar/{event_id}/
+     * Endpoint: /characters/{character_id}/calendar/{event_id}/.
      *
      * HTTP Method: GET
      *
@@ -57,7 +57,7 @@ class Calendar extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/calendar/{event_id}/
+     * Endpoint: /characters/{character_id}/calendar/{event_id}/.
      *
      * HTTP Method: PUT
      *
@@ -77,7 +77,7 @@ class Calendar extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/calendar/{event_id}/attendees/
+     * Endpoint: /characters/{character_id}/calendar/{event_id}/attendees/.
      *
      * HTTP Method: GET
      *

@@ -10,7 +10,7 @@ namespace AGrimes94\Esi\Api;
 class Contracts extends AbstractApi
 {
     /**
-     * Endpoint: /characters/{character_id}/contracts/
+     * Endpoint: /characters/{character_id}/contracts/.
      *
      * HTTP Method: GET
      *
@@ -31,7 +31,7 @@ class Contracts extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/contracts/{contract_id}/items/
+     * Endpoint: /characters/{character_id}/contracts/{contract_id}/items/.
      *
      * HTTP Method: GET
      *
@@ -50,7 +50,7 @@ class Contracts extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/contracts/{contract_id}/bids/
+     * Endpoint: /characters/{character_id}/contracts/{contract_id}/bids/.
      *
      * HTTP Method: GET
      *
@@ -69,7 +69,7 @@ class Contracts extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/contracts/
+     * Endpoint: /corporations/{corporation_id}/contracts/.
      *
      * HTTP Method: GET
      *
@@ -90,7 +90,7 @@ class Contracts extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/contracts/{contract_id}/items/
+     * Endpoint: /corporations/{corporation_id}/contracts/{contract_id}/items/.
      *
      * HTTP Method: GET
      *
@@ -109,7 +109,7 @@ class Contracts extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/contracts/{contract_id}/bids/
+     * Endpoint: /corporations/{corporation_id}/contracts/{contract_id}/bids/.
      *
      * HTTP Method: GET
      *

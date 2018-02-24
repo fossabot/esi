@@ -10,7 +10,7 @@ namespace AGrimes94\Esi\Api;
 class Status extends AbstractApi
 {
     /**
-     * Endpoint: /status/
+     * Endpoint: /status/.
      *
      * HTTP Method: GET
      *

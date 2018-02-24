@@ -10,7 +10,7 @@ namespace AGrimes94\Esi\Api;
 class Skills extends AbstractApi
 {
     /**
-     * Endpoint: /characters/{character_id}/attributes/
+     * Endpoint: /characters/{character_id}/attributes/.
      *
      * HTTP Method: GET
      *
@@ -28,7 +28,7 @@ class Skills extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/skillqueue/
+     * Endpoint: /characters/{character_id}/skillqueue/.
      *
      * HTTP Method: GET
      *
@@ -46,7 +46,7 @@ class Skills extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/skills/
+     * Endpoint: /characters/{character_id}/skills/.
      *
      * HTTP Method: GET
      *

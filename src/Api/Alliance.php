@@ -10,7 +10,7 @@ namespace AGrimes94\Esi\Api;
 class Alliance extends AbstractApi
 {
     /**
-     * Endpoint: /alliances/
+     * Endpoint: /alliances/.
      *
      * HTTP Method: GET
      *
@@ -26,7 +26,7 @@ class Alliance extends AbstractApi
     }
 
     /**
-     * Endpoint: /alliances/{alliance_id}/
+     * Endpoint: /alliances/{alliance_id}/.
      *
      * HTTP Method: GET
      *
@@ -44,7 +44,7 @@ class Alliance extends AbstractApi
     }
 
     /**
-     * Endpoint: /alliances/{alliance_id}/corporations/
+     * Endpoint: /alliances/{alliance_id}/corporations/.
      *
      * HTTP Method: GET
      *
@@ -62,7 +62,7 @@ class Alliance extends AbstractApi
     }
 
     /**
-     * Endpoint: /alliances/{alliance_id}/icons/
+     * Endpoint: /alliances/{alliance_id}/icons/.
      *
      * HTTP Method: GET
      *
@@ -80,7 +80,7 @@ class Alliance extends AbstractApi
     }
 
     /**
-     * Endpoint: /alliances/names/
+     * Endpoint: /alliances/names/.
      *
      * HTTP Method: GET
      *

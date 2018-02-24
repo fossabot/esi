@@ -10,7 +10,7 @@ namespace AGrimes94\Esi\Api;
 class Character extends AbstractApi
 {
     /**
-     * Endpoint: /characters/{character_id}/
+     * Endpoint: /characters/{character_id}/.
      *
      * HTTP Method: GET
      *
@@ -28,7 +28,7 @@ class Character extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/agents_research/
+     * Endpoint: /characters/{character_id}/agents_research/.
      *
      * HTTP Method: GET
      *
@@ -49,7 +49,7 @@ class Character extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/blueprints/
+     * Endpoint: /characters/{character_id}/blueprints/.
      *
      * HTTP Method: GET
      *
@@ -68,7 +68,7 @@ class Character extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/chat_channels/
+     * Endpoint: /characters/{character_id}/chat_channels/.
      *
      * HTTP Method: GET
      *
@@ -86,7 +86,7 @@ class Character extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/corporationhistory/
+     * Endpoint: /characters/{character_id}/corporationhistory/.
      *
      * HTTP Method: GET
      *
@@ -104,7 +104,7 @@ class Character extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/cspa/
+     * Endpoint: /characters/{character_id}/cspa/.
      *
      * HTTP Method: POST
      *
@@ -124,7 +124,7 @@ class Character extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/fatigue/
+     * Endpoint: /characters/{character_id}/fatigue/.
      *
      * HTTP Method: GET
      *
@@ -142,7 +142,7 @@ class Character extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/medals/
+     * Endpoint: /characters/{character_id}/medals/.
      *
      * HTTP Method: GET
      *
@@ -160,7 +160,7 @@ class Character extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/notifications/
+     * Endpoint: /characters/{character_id}/notifications/.
      *
      * HTTP Method: GET
      *
@@ -178,7 +178,7 @@ class Character extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/notifications/contacts/
+     * Endpoint: /characters/{character_id}/notifications/contacts/.
      *
      * HTTP Method: GET
      *
@@ -196,7 +196,7 @@ class Character extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/portrait/
+     * Endpoint: /characters/{character_id}/portrait/.
      *
      * HTTP Method: GET
      *
@@ -214,7 +214,7 @@ class Character extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/roles/
+     * Endpoint: /characters/{character_id}/roles/.
      *
      * HTTP Method: GET
      *
@@ -232,7 +232,7 @@ class Character extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/standings/
+     * Endpoint: /characters/{character_id}/standings/.
      *
      * HTTP Method: GET
      *
@@ -250,7 +250,7 @@ class Character extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/stats/
+     * Endpoint: /characters/{character_id}/stats/.
      *
      * HTTP Method: GET
      *
@@ -268,7 +268,7 @@ class Character extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/titles/
+     * Endpoint: /characters/{character_id}/titles/.
      *
      * HTTP Method: GET
      *
@@ -286,7 +286,7 @@ class Character extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/affiliation/
+     * Endpoint: /characters/affiliation/.
      *
      * HTTP Method: POST
      *
@@ -304,7 +304,7 @@ class Character extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/names/
+     * Endpoint: /characters/names/.
      *
      * HTTP Method: GET
      *
