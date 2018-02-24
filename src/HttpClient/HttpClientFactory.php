@@ -65,9 +65,9 @@ class HttpClientFactory
     /**
      * Either find or implement given client implementation and construct a client.
      *
-     * @param HttpClient|null $httpClient
+     * @param HttpClient|null     $httpClient
      * @param RequestFactory|null $requestFactory
-     * @param StreamFactory|null $streamFactory
+     * @param StreamFactory|null  $streamFactory
      */
     public function __construct(
         HttpClient $httpClient = null,

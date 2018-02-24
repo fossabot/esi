@@ -3,11 +3,11 @@
 namespace AGrimes94\Esi\Api;
 
 use AGrimes94\Esi\EsiClient;
-use AGrimes94\Esi\HttpClient\Util\ResponseMediator;
 use AGrimes94\Esi\HttpClient\Util\QueryStringBuilder;
+use AGrimes94\Esi\HttpClient\Util\ResponseMediator;
 use Http\Discovery\StreamFactoryDiscovery;
-use Http\Message\StreamFactory;
 use Http\Message\MultipartStream\MultipartStreamBuilder;
+use Http\Message\StreamFactory;
 use Psr\Http\Message\ResponseInterface;
 
 /**
@@ -30,7 +30,7 @@ abstract class AbstractApi
     /**
      * AbstractApi constructor.
      *
-     * @param EsiClient $esiClient
+     * @param EsiClient          $esiClient
      * @param StreamFactory|null $streamFactory
      */
     public function __construct(EsiClient $esiClient, StreamFactory $streamFactory = null)
@@ -43,12 +43,12 @@ abstract class AbstractApi
      * Performs a GET query and returns the response as a PSR-7 response object.
      *
      * @param string $path
-     * @param array $parameters
-     * @param array $requestHeaders
-     *
-     * @return ResponseInterface
+     * @param array  $parameters
+     * @param array  $requestHeaders
      *
      * @throws \Http\Client\Exception
+     *
+     * @return ResponseInterface
      */
     protected function getAsResponse($path, array $parameters = [], $requestHeaders = []): ResponseInterface
     {
@@ -61,12 +61,12 @@ abstract class AbstractApi
      * Perform GET request.
      *
      * @param string $path
-     * @param array $parameters
-     * @param array $requestHeaders
-     *
-     * @return mixed
+     * @param array  $parameters
+     * @param array  $requestHeaders
      *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     protected function get($path, array $parameters = [], array $requestHeaders = [])
     {
@@ -81,11 +81,11 @@ abstract class AbstractApi
      * @param array $requestHeaders
      * @param array $files
      *
-     * @return array|string
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return array|string
      */
-    protected function post($path, array $parameters = array(), $requestHeaders = array(), array $files = array())
+    protected function post($path, array $parameters = [], $requestHeaders = [], array $files = [])
     {
         $path = $this->preparePath($path);
 
@@ -93,7 +93,6 @@ abstract class AbstractApi
         if (empty($files) && !empty($parameters)) {
             $body = json_encode($parameters);
             $requestHeaders['Content-Type'] = 'application/json';
-
         } elseif (!empty($files)) {
             $builder = new MultipartStreamBuilder($this->streamFactory);
 
@@ -126,11 +125,11 @@ abstract class AbstractApi
      * @param array $parameters
      * @param array $requestHeaders
      *
-     * @return array|string
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return array|string
      */
-    protected function put($path, array $parameters = array(), $requestHeaders = array())
+    protected function put($path, array $parameters = [], $requestHeaders = [])
     {
         $path = $this->preparePath($path);
 
@@ -152,11 +151,11 @@ abstract class AbstractApi
      * @param array $parameters
      * @param array $requestHeaders
      *
-     * @return array|string
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return array|string
      */
-    protected function delete($path, array $parameters = array(), $requestHeaders = array())
+    protected function delete($path, array $parameters = [], $requestHeaders = [])
     {
         $path = $this->preparePath($path, $parameters);
 
@@ -223,7 +222,7 @@ abstract class AbstractApi
     protected function paginateQuery(int $page): array // TODO Possible to change to accept $params = [] and concatenate
     {
         $params = [
-            'page' => $page
+            'page' => $page,
         ];
 
         return $params;

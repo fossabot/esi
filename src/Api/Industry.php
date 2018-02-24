@@ -10,14 +10,15 @@ namespace AGrimes94\Esi\Api;
 class Industry extends AbstractApi
 {
     /**
-     * Endpoint: /industry/facilities
+     * Endpoint: /industry/facilities.
      *
      * HTTP Method: GET
      *
      * Return a list of industry facilities.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getIndustryFacilities()
     {
@@ -25,14 +26,15 @@ class Industry extends AbstractApi
     }
 
     /**
-     * Endpoint: /industry/systems/
+     * Endpoint: /industry/systems/.
      *
      * HTTP Method: GET
      *
      * Return cost indices for solar systems.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getSolarSystemCostIndices()
     {
@@ -40,15 +42,17 @@ class Industry extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/industry/jobs/
+     * Endpoint: /characters/{character_id}/industry/jobs/.
      *
      * HTTP Method: GET
      *
      * List industry jobs placed by a character.
      *
      * @param int $characterId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getCharacterJobs(int $characterId)
     {
@@ -56,7 +60,7 @@ class Industry extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/mining/
+     * Endpoint: /characters/{character_id}/mining/.
      *
      * HTTP Method: GET
      *
@@ -64,8 +68,10 @@ class Industry extends AbstractApi
      *
      * @param int $characterId
      * @param int $page
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getCharacterMiningLedger(int $characterId, int $page = 1)
     {
@@ -73,7 +79,7 @@ class Industry extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporation/{corporation_id}/mining/observers/
+     * Endpoint: /corporation/{corporation_id}/mining/observers/.
      *
      * HTTP Method: GET
      *
@@ -81,8 +87,10 @@ class Industry extends AbstractApi
      *
      * @param int $corporationId
      * @param int $page
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getCorporationMiningObservers(int $corporationId, int $page = 1)
     {
@@ -90,7 +98,7 @@ class Industry extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporation/{corporation_id}/mining/observers/{observer_id}/
+     * Endpoint: /corporation/{corporation_id}/mining/observers/{observer_id}/.
      *
      * HTTP Method: GET
      *
@@ -99,8 +107,10 @@ class Industry extends AbstractApi
      * @param int $corporationId
      * @param int $observerId
      * @param int $page
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getObservedCorporationMining(int $corporationId, int $observerId, int $page = 1)
     {
@@ -108,7 +118,7 @@ class Industry extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/industry/jobs/
+     * Endpoint: /corporations/{corporation_id}/industry/jobs/.
      *
      * HTTP Method: GET
      *
@@ -116,8 +126,10 @@ class Industry extends AbstractApi
      *
      * @param int $corporationId
      * @param int $page
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getCorporationJobs(int $corporationId, int $page = 1)
     {
@@ -125,15 +137,17 @@ class Industry extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporation/{corporation_id}/mining/extractions/
+     * Endpoint: /corporation/{corporation_id}/mining/extractions/.
      *
      * HTTP Method: GET
      *
      * Extraction timers for all moon chunks being extracted by refineries belonging to a corporation.
      *
      * @param int $corporationId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getMoonExtractionTimers(int $corporationId)
     {

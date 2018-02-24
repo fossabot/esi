@@ -11,12 +11,13 @@ class Status extends AbstractApi
 {
     /**
      * Endpoint: /status/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * EVE Server status.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getStatus()
     {

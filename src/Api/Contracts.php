@@ -11,7 +11,7 @@ class Contracts extends AbstractApi
 {
     /**
      * Endpoint: /characters/{character_id}/contracts/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Returns contracts available to a character, only if the character is issuer,
      * acceptor or assignee. Only returns contracts no older than 30 days,
@@ -19,8 +19,10 @@ class Contracts extends AbstractApi
      *
      * @param int $characterId
      * @param int $page
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getCharacterContracts(int $characterId, int $page = 1)
     {
@@ -29,14 +31,16 @@ class Contracts extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/contracts/{contract_id}/items/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Lists items of a particular contract.
      *
      * @param int $characterId
      * @param int $contractId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getCharacterContractItems(int $characterId, int $contractId)
     {
@@ -45,14 +49,16 @@ class Contracts extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/contracts/{contract_id}/bids/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Lists bids on a particular auction contract.
      *
      * @param int $characterId
      * @param int $contractId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getCharacterContractBids(int $characterId, int $contractId)
     {
@@ -61,7 +67,7 @@ class Contracts extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/contracts/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Returns contracts available to a coporation, only if the corporation is issuer,
      * acceptor or assignee. Only returns contracts no older than 30 days,
@@ -69,8 +75,10 @@ class Contracts extends AbstractApi
      *
      * @param int $corporationId
      * @param int $page
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getCorporationContracts(int $corporationId, int $page)
     {
@@ -79,14 +87,16 @@ class Contracts extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/contracts/{contract_id}/items/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Lists items of a particular contract.
      *
      * @param int $corporationId
      * @param int $contractId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getCorporationContractItems(int $corporationId, int $contractId)
     {
@@ -95,15 +105,17 @@ class Contracts extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/contracts/{contract_id}/bids/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Lists bids on a particular auction contract.
      *
      * @param int $corporationId
      * @param int $contractId
      * @param int $page
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getCorporationContractBids(int $corporationId, int $contractId, $page = 1)
     {

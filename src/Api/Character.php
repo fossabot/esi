@@ -11,15 +11,15 @@ class Character extends AbstractApi
 {
     /**
      * Endpoint: /characters/{character_id}/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Public information about a character.
      *
      * @param int $characterId
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getPublicInformation(int $characterId)
     {
@@ -28,7 +28,7 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/agents_research/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Return a list of agents research information for a character.
      * The formula for finding the current research points with an agent is:
@@ -36,9 +36,9 @@ class Character extends AbstractApi
      *
      * @param int $characterId
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getAgentsResearch(int $characterId)
     {
@@ -47,17 +47,16 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/blueprints/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Return a list of blueprints the character owns.
      *
      * @param int $characterId
-     *
      * @param int $page
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getBlueprints(int $characterId, int $page = 1)
     {
@@ -66,15 +65,15 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/chat_channels/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Return chat channels that a character is the owner or operator of.
      *
      * @param int $characterId
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getChatChannels(int $characterId)
     {
@@ -83,15 +82,15 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/corporationhistory/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Get a list of all the corporations a character has been a member of.
      *
      * @param int $characterId
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getCorpHistory(int $characterId)
     {
@@ -100,18 +99,17 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/cspa/
-     * HTTP Method: POST
+     * HTTP Method: POST.
      *
      * Takes a source character ID in the url and a set of target
      * character ID's in the body, returns a CSPA charge cost.
      *
-     * @param int $characterId
-     *
+     * @param int   $characterId
      * @param array $targetCharacters [1245, 9875]
      *
-     * @return array|string
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return array|string
      */
     public function calcCSPA(int $characterId, array $targetCharacters = [])
     {
@@ -120,15 +118,15 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/fatigue/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Return a character’s jump activation and fatigue information.
      *
      * @param int $characterId
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getJumpFatigue(int $characterId)
     {
@@ -137,15 +135,15 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/medals/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Return a list of medals the character has.
      *
      * @param int $characterId
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getMedals(int $characterId)
     {
@@ -154,15 +152,15 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/notifications/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Return character notifications.
      *
      * @param int $characterId
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getNotifications(int $characterId)
     {
@@ -171,15 +169,15 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/notifications/contacts/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Return notifications about having been added to someone’s contact list.
      *
      * @param int $characterId
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getContactNotifications(int $characterId)
     {
@@ -188,15 +186,15 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/portrait/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Get portrait urls for a character.
      *
      * @param int $characterId
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getPortraits(int $characterId)
     {
@@ -205,15 +203,15 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/roles/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Returns a character’s corporation roles.
      *
      * @param int $characterId
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getRoles(int $characterId)
     {
@@ -222,15 +220,15 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/standings/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Return character standings from agents, NPC corporations, and factions.
      *
      * @param int $characterId
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getStandings(int $characterId)
     {
@@ -239,15 +237,15 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/stats/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Returns aggregate yearly stats for a character.
      *
      * @param int $characterId
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getAggregateYearlyStats(int $characterId)
     {
@@ -256,15 +254,15 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/titles/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Returns a character’s titles.
      *
      * @param int $characterId
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getTitles(int $characterId)
     {
@@ -273,15 +271,15 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/affiliation/
-     * HTTP Method: POST
+     * HTTP Method: POST.
      *
      * Bulk lookup of character IDs to corporation, alliance and faction.
      *
      * @param array $characterIds [1245, 9875]
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getAffiliations(array $characterIds = [])
     {
@@ -290,19 +288,19 @@ class Character extends AbstractApi
 
     /**
      * Endpoint: /characters/names/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Resolve a set of character IDs to character names.
      *
      * @param array $characterIds [1245, 9875]
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getNames(array $characterIds = [])
     {
-        $characterIds = implode(",", $characterIds);
+        $characterIds = implode(',', $characterIds);
 
         $params = [
             'character_ids' => $characterIds,

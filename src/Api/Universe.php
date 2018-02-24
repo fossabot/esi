@@ -10,14 +10,15 @@ namespace AGrimes94\Esi\Api;
 class Universe extends AbstractApi
 {
     /**
-     * Endpoint: /universe/ancestries/
+     * Endpoint: /universe/ancestries/.
      *
      * HTTP Method: GET
      *
      * Get all character ancestries.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getAncestries()
     {
@@ -25,14 +26,15 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/bloodlines/
+     * Endpoint: /universe/bloodlines/.
      *
      * HTTP Method: GET
      *
      * Get a list of bloodlines.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getBloodlines()
     {
@@ -40,14 +42,15 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/categories/
+     * Endpoint: /universe/categories/.
      *
      * HTTP Method: GET
      *
      * Get a list of item categories.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getCategories()
     {
@@ -55,15 +58,17 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/categories/{category_id}/
+     * Endpoint: /universe/categories/{category_id}/.
      *
      * HTTP Method: GET
      *
      * Get information of an item category.
      *
      * @param int $categoryId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getCategoryInformation(int $categoryId)
     {
@@ -71,14 +76,15 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/constellations/
+     * Endpoint: /universe/constellations/.
      *
      * HTTP Method: GET
      *
      * Get a list of constellations.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getConstellations()
     {
@@ -86,15 +92,17 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/constellations/{constellation_id}/
+     * Endpoint: /universe/constellations/{constellation_id}/.
      *
      * HTTP Method: GET
      *
      * Get information on a constellation.
      *
      * @param int $constellationId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getConstellationInformation(int $constellationId)
     {
@@ -102,14 +110,15 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/factions/
+     * Endpoint: /universe/factions/.
      *
      * HTTP Method: GET
      *
      * Get a list of factions.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getFactions()
     {
@@ -117,14 +126,15 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/graphics/
+     * Endpoint: /universe/graphics/.
      *
      * HTTP Method: GET
      *
      * Get a list of graphics.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getGraphics()
     {
@@ -132,15 +142,17 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/graphics/{graphic_id}/
+     * Endpoint: /universe/graphics/{graphic_id}/.
      *
      * HTTP Method: GET
      *
      * Get information on a graphic.
      *
      * @param int $graphicId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getGraphicInformation(int $graphicId)
     {
@@ -148,15 +160,17 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/groups/
+     * Endpoint: /universe/groups/.
      *
      * HTTP Method: GET
      *
      * Get a list of item groups.
      *
      * @param int $page
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getGroups(int $page = 1)
     {
@@ -164,15 +178,17 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/groups/{group_id}/
+     * Endpoint: /universe/groups/{group_id}/.
      *
      * HTTP Method: GET
      *
      * Get information on an item group.
      *
      * @param int $groupId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getGroupInformation(int $groupId)
     {
@@ -180,7 +196,7 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/ids/
+     * Endpoint: /universe/ids/.
      *
      * HTTP Method: POST
      *
@@ -193,8 +209,10 @@ class Universe extends AbstractApi
      * All names searched for are cached for 12 hours.
      *
      * @param array $names
-     * @return array|string
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return array|string
      */
     public function resolveNamesToIds(array $names = [])
     {
@@ -202,15 +220,17 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/moons/{moon_id}/
+     * Endpoint: /universe/moons/{moon_id}/.
      *
      * HTTP Method: GET
      *
      * Get information on a moon.
      *
      * @param int $moonId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getMoonInformation(int $moonId)
     {
@@ -218,7 +238,7 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/names/
+     * Endpoint: /universe/names/.
      *
      * HTTP Method: POST
      *
@@ -229,8 +249,10 @@ class Universe extends AbstractApi
      * Characters, Corporations, Alliances, Stations, Solar Systems, Constellations, Regions, Types.
      *
      * @param array $ids
-     * @return array|string
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return array|string
      */
     public function resolveIdsToNames(array $ids = [])
     {
@@ -238,15 +260,17 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/planets/{planet_id}/
+     * Endpoint: /universe/planets/{planet_id}/.
      *
      * HTTP Method: GET
      *
      * Get information on a planet.
      *
      * @param int $planetId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getPlanetInformation(int $planetId)
     {
@@ -254,14 +278,15 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/races/
+     * Endpoint: /universe/races/.
      *
      * HTTP Method: GET
      *
      * Get a list of character races.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getRaces()
     {
@@ -269,14 +294,15 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/regions/
+     * Endpoint: /universe/regions/.
      *
      * HTTP Method: GET
      *
      * Get a list of regions.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getRegions()
     {
@@ -284,15 +310,17 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/regions/{region_id}/
+     * Endpoint: /universe/regions/{region_id}/.
      *
      * HTTP Method: GET
      *
      * Get information on a region.
      *
      * @param int $regionId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getRegionInformation(int $regionId)
     {
@@ -300,15 +328,17 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/stargates/{stargate_id}/
+     * Endpoint: /universe/stargates/{stargate_id}/.
      *
      * HTTP Method: GET
      *
      * Get information on a stargate.
      *
      * @param int $stargateId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getStargateInformation(int $stargateId)
     {
@@ -316,15 +346,17 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/stars/{star_id}/
+     * Endpoint: /universe/stars/{star_id}/.
      *
      * HTTP Method: GET
      *
      * Get information on a star.
      *
      * @param int $starId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getStarInformation(int $starId)
     {
@@ -332,15 +364,17 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/stations/{station_id}/
+     * Endpoint: /universe/stations/{station_id}/.
      *
      * HTTP Method: GET
      *
      * Get information on a station.
      *
      * @param int $stationId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getStationInformation(int $stationId)
     {
@@ -348,14 +382,15 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/structures/
+     * Endpoint: /universe/structures/.
      *
      * HTTP Method: GET
      *
      * List all public structures.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getStructures()
     {
@@ -363,7 +398,7 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/structures/{structure_id}/
+     * Endpoint: /universe/structures/{structure_id}/.
      *
      * HTTP Method: GET
      *
@@ -372,8 +407,10 @@ class Universe extends AbstractApi
      * Otherwise, returns “Forbidden” for all inputs.
      *
      * @param int $structureId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getStructureInformation(int $structureId)
     {
@@ -381,7 +418,7 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/system_jumps/
+     * Endpoint: /universe/system_jumps/.
      *
      * HTTP Method: GET
      *
@@ -391,8 +428,9 @@ class Universe extends AbstractApi
      *
      * Only systems with jumps will be listed.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getSystemJumps()
     {
@@ -400,7 +438,7 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/system_kills/
+     * Endpoint: /universe/system_kills/.
      *
      * HTTP Method: GET
      *
@@ -410,8 +448,9 @@ class Universe extends AbstractApi
      *
      * Only systems with kills will be listed.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getSystemKills()
     {
@@ -419,14 +458,15 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/systems/
+     * Endpoint: /universe/systems/.
      *
      * HTTP Method: GET
      *
      * Get a list of solar systems.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getSystems()
     {
@@ -434,15 +474,17 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/systems/{system_id}/
+     * Endpoint: /universe/systems/{system_id}/.
      *
      * HTTP Method: GET
      *
      * Get information on a solar system.
      *
      * @param int $systemId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getSystemInformation(int $systemId)
     {
@@ -450,15 +492,17 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/types/
+     * Endpoint: /universe/types/.
      *
      * HTTP Method: GET
      *
      * Get a list of type ids.
      *
      * @param int $page
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getTypes(int $page = 1)
     {
@@ -466,15 +510,17 @@ class Universe extends AbstractApi
     }
 
     /**
-     * Endpoint: /universe/types/{type_id}/
+     * Endpoint: /universe/types/{type_id}/.
      *
      * HTTP Method: GET
      *
      * Get information on a type.
      *
      * @param int $typeId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getTypeInformation(int $typeId)
     {

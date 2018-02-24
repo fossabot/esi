@@ -10,15 +10,17 @@ namespace AGrimes94\Esi\Api;
 class Wars extends AbstractApi
 {
     /**
-     * Endpoint: /wars/
+     * Endpoint: /wars/.
      *
      * HTTP Method: GET
      *
      * Return a list of wars.
      *
      * @param int|null $maxWarId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getWars(int $maxWarId = null)
     {
@@ -26,19 +28,22 @@ class Wars extends AbstractApi
         if (!is_null($maxWarId)) {
             $params['max_war_id'] = $maxWarId;
         }
+
         return $this->get('/wars/', $params);
     }
 
     /**
-     * Endpoint: /wars/{war_id}/
+     * Endpoint: /wars/{war_id}/.
      *
      * HTTP Method: GET
      *
      * Return details about a war.
      *
      * @param int $warId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getWarInformation(int $warId)
     {
@@ -46,7 +51,7 @@ class Wars extends AbstractApi
     }
 
     /**
-     * Endpoint: /wars/{war_id}/killmails/
+     * Endpoint: /wars/{war_id}/killmails/.
      *
      * HTTP Method: GET
      *
@@ -54,8 +59,10 @@ class Wars extends AbstractApi
      *
      * @param int $warId
      * @param int $page
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getWarKillmails(int $warId, int $page = 1)
     {

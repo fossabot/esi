@@ -11,13 +11,13 @@ class Alliance extends AbstractApi
 {
     /**
      * Endpoint: /alliances/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * List all active player alliances.
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function listAlliances()
     {
@@ -26,15 +26,15 @@ class Alliance extends AbstractApi
 
     /**
      * Endpoint: /alliances/{alliance_id}/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Public information about an alliance
      *
      * @param int $allianceId
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getAllianceInformation(int $allianceId)
     {
@@ -43,15 +43,15 @@ class Alliance extends AbstractApi
 
     /**
      * Endpoint: /alliances/{alliance_id}/corporations/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * List all current member corporations of an alliance.
      *
      * @param int $allianceId
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function listAllianceCorporations(int $allianceId)
     {
@@ -60,15 +60,15 @@ class Alliance extends AbstractApi
 
     /**
      * Endpoint: /alliances/{alliance_id}/icons/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Get the icon urls for a alliance.
      *
      * @param int $allianceId
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getAllianceIcons(int $allianceId)
     {
@@ -77,19 +77,19 @@ class Alliance extends AbstractApi
 
     /**
      * Endpoint: /alliances/names/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Resolve a set of alliance IDs to alliance names.
      *
      * @param array $allianceIds
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getAllianceNames(array $allianceIds = [])
     {
-        $allianceIds = implode(",", $allianceIds);
+        $allianceIds = implode(',', $allianceIds);
 
         $params = [
             'alliance_ids' => $allianceIds,

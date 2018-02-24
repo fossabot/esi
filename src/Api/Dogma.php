@@ -10,14 +10,15 @@ namespace AGrimes94\Esi\Api;
 class Dogma extends AbstractApi
 {
     /**
-     * Endpoint: /dogma/attributes/
+     * Endpoint: /dogma/attributes/.
      *
      * HTTP Method: GET
      *
      * Get a list of dogma attribute ids.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getAttributes()
     {
@@ -25,15 +26,17 @@ class Dogma extends AbstractApi
     }
 
     /**
-     * Endpoint: /dogma/attributes/{attribute_id}/
+     * Endpoint: /dogma/attributes/{attribute_id}/.
      *
      * HTTP Method: GET
      *
      * Get information on a dogma attribute.
      *
      * @param int $attributeId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getAttributeInformation(int $attributeId)
     {
@@ -41,14 +44,15 @@ class Dogma extends AbstractApi
     }
 
     /**
-     * Endpoint: /dogma/effects/
+     * Endpoint: /dogma/effects/.
      *
      * HTTP Method: GET
      *
      * Get a list of dogma effect ids.
      *
-     * @return mixed
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getEffects()
     {
@@ -56,15 +60,17 @@ class Dogma extends AbstractApi
     }
 
     /**
-     * Endpoint: /dogma/effects/{effect_id}/
+     * Endpoint: /dogma/effects/{effect_id}/.
      *
      * HTTP Method: GET
      *
      * Get information on a dogma effect.
      *
      * @param int $effectId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getEffectInformation(int $effectId)
     {

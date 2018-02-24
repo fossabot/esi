@@ -33,7 +33,6 @@ final class ResponseMediator
             $content = json_decode($body, true);
 
             if (JSON_ERROR_NONE === json_last_error()) {
-
                 if ($response->hasHeader('X-Pages')) {
                     array_unshift($content, [
                             'pages' => $response->getHeader('X-Pages')[0], // TODO Do not return if null, throw exception

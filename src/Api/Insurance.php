@@ -10,15 +10,17 @@ namespace AGrimes94\Esi\Api;
 class Insurance extends AbstractApi
 {
     /**
-     * Endpoint: /insurance/prices/
+     * Endpoint: /insurance/prices/.
      *
      * HTTP Method: GET
      *
      * Return available insurance levels for all ship types.
      *
      * @param string $language
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getInsuranceLevels(string $language = 'en-us')
     {
@@ -26,6 +28,7 @@ class Insurance extends AbstractApi
         if (!is_null($language)) {
             $params['language'] = $language;
         }
+
         return $this->get('/insurance/prices/', $params);
     }
 }

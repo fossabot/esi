@@ -10,18 +10,20 @@ namespace AGrimes94\Esi\Api;
 class Mail extends AbstractApi
 {
     /**
-     * Endpoint: /characters/{character_id}/mail/
+     * Endpoint: /characters/{character_id}/mail/.
      *
      * HTTP Method: GET
      *
      * Return the 50 most recent mail headers belonging to the character that match the query criteria.
      * Queries can be filtered by label, and last_mail_id can be used to paginate backwards.
      *
-     * @param int $characterId
+     * @param int        $characterId
      * @param array|null $byLabels
-     * @param int|null $lastMailId
-     * @return mixed
+     * @param int|null   $lastMailId
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getMailHeaders(int $characterId, array $byLabels = null, int $lastMailId = null)
     {
@@ -39,16 +41,18 @@ class Mail extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/mail/
+     * Endpoint: /characters/{character_id}/mail/.
      *
      * HTTP Method: POST
      *
      * Create and send a new mail.
      *
-     * @param int $characterId
+     * @param int   $characterId
      * @param array $mail
-     * @return array|string
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return array|string
      */
     public function sendMail(int $characterId, array $mail = [])
     {
@@ -56,7 +60,7 @@ class Mail extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/mail/{mail_id}/
+     * Endpoint: /characters/{character_id}/mail/{mail_id}/.
      *
      * HTTP Method: DELETE
      *
@@ -64,8 +68,10 @@ class Mail extends AbstractApi
      *
      * @param int $characterId
      * @param int $mailId
-     * @return array|string
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return array|string
      */
     public function deleteMail(int $characterId, int $mailId)
     {
@@ -73,7 +79,7 @@ class Mail extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/mail/{mail_id}/
+     * Endpoint: /characters/{character_id}/mail/{mail_id}/.
      *
      * HTTP Method: GET
      *
@@ -81,8 +87,10 @@ class Mail extends AbstractApi
      *
      * @param int $characterId
      * @param int $mailId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function returnMail(int $characterId, int $mailId)
     {
@@ -90,17 +98,19 @@ class Mail extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/mail/{mail_id}/
+     * Endpoint: /characters/{character_id}/mail/{mail_id}/.
      *
      * HTTP Method: PUT
      *
      * Update metadata about a mail.
      *
-     * @param int $characterId
-     * @param int $mailId
+     * @param int   $characterId
+     * @param int   $mailId
      * @param array $contents
-     * @return array|string
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return array|string
      */
     public function updateMailMetadata(int $characterId, int $mailId, array $contents = [])
     {
@@ -108,15 +118,17 @@ class Mail extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/mail/labels/
+     * Endpoint: /characters/{character_id}/mail/labels/.
      *
      * HTTP Method: GET
      *
      * Return a list of the users mail labels, unread counts for each label and a total unread count.
      *
      * @param int $characterId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getLabels(int $characterId)
     {
@@ -124,16 +136,18 @@ class Mail extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/mail/labels/
+     * Endpoint: /characters/{character_id}/mail/labels/.
      *
      * HTTP Method: POST
      *
      * Create a mail label.
      *
-     * @param int $characterId
+     * @param int   $characterId
      * @param array $label
-     * @return array|string
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return array|string
      */
     public function createLabel(int $characterId, array $label = [])
     {
@@ -141,7 +155,7 @@ class Mail extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/mail/labels/{label_id}/
+     * Endpoint: /characters/{character_id}/mail/labels/{label_id}/.
      *
      * HTTP Method: DELETE
      *
@@ -149,8 +163,10 @@ class Mail extends AbstractApi
      *
      * @param int $characterId
      * @param int $labelId
-     * @return array|string
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return array|string
      */
     public function deleteLabel(int $characterId, int $labelId)
     {
@@ -158,15 +174,17 @@ class Mail extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/mail/lists/
+     * Endpoint: /characters/{character_id}/mail/lists/.
      *
      * HTTP Method: GET
      *
      * Return all mailing lists that the character is subscribed to.
      *
      * @param int $characterId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getMailingListSubscriptions(int $characterId)
     {

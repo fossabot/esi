@@ -10,16 +10,18 @@ namespace AGrimes94\Esi\Api;
 class Killmails extends AbstractApi
 {
     /**
-     * Endpoint: /killmails/{killmail_id}/{killmail_hash}/
+     * Endpoint: /killmails/{killmail_id}/{killmail_hash}/.
      *
      * HTTP Method: GET
      *
      * Return a single killmail from its ID and hash.
      *
-     * @param int $killmailId
+     * @param int    $killmailId
      * @param string $killmailHash
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getKillmail(int $killmailId, string $killmailHash)
     {
@@ -27,15 +29,17 @@ class Killmails extends AbstractApi
     }
 
     /**
-     * Endpoint: /characters/{character_id}/killmails/recent/
+     * Endpoint: /characters/{character_id}/killmails/recent/.
      *
      * HTTP Method: GET
      *
      * Return a list of character's recent kills and losses.
      *
      * @param int $characterId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getCharacterRecentKillmails(int $characterId)
     {
@@ -43,15 +47,17 @@ class Killmails extends AbstractApi
     }
 
     /**
-     * Endpoint: /corporations/{corporation_id}/killmails/recent/
+     * Endpoint: /corporations/{corporation_id}/killmails/recent/.
      *
      * HTTP Method: GET
      *
      * Get a list of corporation's recent kills and losses.
      *
      * @param int $corporationId
-     * @return mixed
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getCorporationRecentKillmails(int $corporationId)
     {

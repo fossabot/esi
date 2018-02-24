@@ -41,7 +41,7 @@ class EsiClient
         $this->httpClientFactory->addPlugin(new ApiVersionPlugin());
 
         $this->httpClientFactory->addPlugin(new HeaderDefaultsPlugin([
-            'User-Agent' => 'agrimes94-esi (https://github.com/aGrimes94/esi)',]));
+            'User-Agent' => 'agrimes94-esi (https://github.com/aGrimes94/esi)', ]));
 
         $this->httpClientFactory->addPlugin(new AddHostPlugin(
                 UriFactoryDiscovery::find()

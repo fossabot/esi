@@ -11,16 +11,16 @@ class Contacts extends AbstractApi
 {
     /**
      * Endpoint: /alliances/{alliance_id}/contacts/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Return contacts of an alliance.
      *
      * @param int $allianceId
      * @param int $page
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getAllianceContacts(int $allianceId, int $page = 1)
     {
@@ -29,16 +29,16 @@ class Contacts extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/contacts/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Return contacts of a character.
      *
      * @param int $characterId
      * @param int $page
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getContacts(int $characterId, int $page)
     {
@@ -47,25 +47,25 @@ class Contacts extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/contacts/
-     * HTTP Method: POST
+     * HTTP Method: POST.
      *
      * Bulk add contacts with same settings.
      *
-     * @param int $characterId
-     * @param array $contactIds
-     * @param int $standing -10, -5, 0, 5, 10
-     * @param int|null $labelId
+     * @param int       $characterId
+     * @param array     $contactIds
+     * @param int       $standing    -10, -5, 0, 5, 10
+     * @param int|null  $labelId
      * @param bool|null $isWatched
      *
-     * @return array|string
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return array|string
      */
     public function addContacts(int $characterId, array $contactIds = [], int $standing = 0, int $labelId = null, bool $isWatched = null)
     {
         $path = '/characters/' . $this->encodePath($characterId) . '/contacts/';
 
-        $params = ['standing' => $standing,];
+        $params = ['standing' => $standing];
 
         if (!is_null($labelId)) {
             $params['label_id'] = $labelId;
@@ -82,25 +82,25 @@ class Contacts extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/contacts/
-     * HTTP Method: PUT
+     * HTTP Method: PUT.
      *
      * Bulk edit contacts with same settings.
      *
-     * @param int $characterId
-     * @param array $contactIds
-     * @param int $standing
-     * @param int|null $labelId
+     * @param int       $characterId
+     * @param array     $contactIds
+     * @param int       $standing
+     * @param int|null  $labelId
      * @param bool|null $isWatched
      *
-     * @return array|string
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return array|string
      */
     public function editContacts(int $characterId, array $contactIds = [], int $standing = 0, int $labelId = null, bool $isWatched = null)
     {
         $path = '/characters/' . $this->encodePath($characterId) . '/contacts/';
 
-        $params = ['standing' => $standing,];
+        $params = ['standing' => $standing];
 
         if (!is_null($labelId)) {
             $params['label_id'] = $labelId;
@@ -117,20 +117,20 @@ class Contacts extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/contacts/
-     * HTTP Method: DELETE
+     * HTTP Method: DELETE.
      *
      * Bulk delete contacts.
      *
-     * @param int $characterId
+     * @param int   $characterId
      * @param array $contactIds
      *
-     * @return array|string
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return array|string
      */
     public function deleteContacts(int $characterId, array $contactIds = [])
     {
-        $contactIds = implode(",", $contactIds);
+        $contactIds = implode(',', $contactIds);
 
         $params['contact_ids'] = $contactIds;
 
@@ -139,15 +139,15 @@ class Contacts extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/contacts/labels/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Return custom labels for contacts the character defined.
      *
      * @param int $characterId
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getLabels(int $characterId)
     {
@@ -156,15 +156,15 @@ class Contacts extends AbstractApi
 
     /**
      * Endpoint: /corporations/{corporation_id}/contacts/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Return contacts of a corporation.
      *
      * @param int $corporationId
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getCorporationContacts(int $corporationId)
     {

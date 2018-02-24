@@ -11,15 +11,15 @@ class Clones extends AbstractApi
 {
     /**
      * Endpoint: /characters/{character_id}/clones/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * A list of the character’s clones.
      *
      * @param int $characterId
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getClones(int $characterId)
     {
@@ -28,15 +28,15 @@ class Clones extends AbstractApi
 
     /**
      * Endpoint: /characters/{character_id}/implants/
-     * HTTP Method: GET
+     * HTTP Method: GET.
      *
      * Return implants on the active clone of a character.
      *
      * @param int $characterId
      *
-     * @return mixed
-     *
      * @throws \Http\Client\Exception
+     *
+     * @return mixed
      */
     public function getActiveImplants(int $characterId)
     {

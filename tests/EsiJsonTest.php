@@ -285,11 +285,11 @@ class EsiJsonTest extends TestCase
         $curl = curl_init();
 
         curl_setopt_array($curl,
-            array(
-                CURLOPT_URL => 'https://esi.tech.ccp.is/latest/swagger.json?datasource=tranquility',
+            [
+                CURLOPT_URL            => 'https://esi.tech.ccp.is/latest/swagger.json?datasource=tranquility',
                 CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_USERAGENT => 'agrimes94-esi (https://github.com/aGrimes94/esi)',
-            )
+                CURLOPT_USERAGENT      => 'agrimes94-esi (https://github.com/aGrimes94/esi)',
+            ]
         );
 
         $this->json = json_decode(curl_exec($curl), true);
