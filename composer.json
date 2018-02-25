@@ -3,9 +3,11 @@
     "description": "PHP Http Client for ESI (EVE Swagger Interface)",
     "type": "library",
     "keywords": [
-        "http client",
-        "eve online",
-        "esi"
+        "eve-online",
+        "http-client",
+        "httplug",
+        "esi",
+        "esi-client"
     ],
     "license": "LGPL-3.0-only",
     "authors": [
