@@ -2,13 +2,13 @@
 
 namespace AGrimes94\Esi\Tests\HttpClient;
 
-use PHPUnit\Framework\TestCase;
 use AGrimes94\Esi\HttpClient\HttpClientFactory;
-use Http\Client\Common\Plugin;
 use Http\Client\Common\HttpMethodsClient;
+use Http\Client\Common\Plugin;
 use Http\Client\HttpClient;
 use Http\Message\RequestFactory;
 use Http\Message\StreamFactory;
+use PHPUnit\Framework\TestCase;
 
 class HttpClientFactoryTest extends TestCase
 {

@@ -2,10 +2,10 @@
 
 namespace AGrimes94\Esi\Tests;
 
-use Http\Client\Common\HttpMethodsClient;
-use PHPUnit\Framework\TestCase;
 use AGrimes94\Esi\EsiClient;
+use Http\Client\Common\HttpMethodsClient;
 use Http\Mock\Client;
+use PHPUnit\Framework\TestCase;
 
 class EsiClientTest extends TestCase
 {

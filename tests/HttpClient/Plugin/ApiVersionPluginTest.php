@@ -2,14 +2,14 @@
 
 namespace AGrimes94\Esi\Tests\HttpClient\Plugin;
 
-use PHPUnit\Framework\TestCase;
 use AGrimes94\Esi\HttpClient\Plugin\ApiVersionPlugin;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
 use Http\Client\Promise\HttpFulfilledPromise;
+use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\RequestInterface;
 
-class ApiVersionTest extends TestCase
+class ApiVersionPluginTest extends TestCase
 {
     public function testCallNextCallback()
     {
