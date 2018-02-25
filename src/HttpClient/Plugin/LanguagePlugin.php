@@ -40,7 +40,6 @@ class LanguagePlugin implements Plugin
         $uri = $request->getUri();
 
         if (null !== $uri->getQuery()) {
-
             $params = [
                 'language' => $this->language,
             ];

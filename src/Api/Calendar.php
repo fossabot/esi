@@ -23,9 +23,14 @@ class Calendar extends AbstractApi
      * @param int      $characterId
      * @param int|null $fromEvent
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function listEventSummaries(int $characterId, int $fromEvent = null)
     {
@@ -47,9 +52,14 @@ class Calendar extends AbstractApi
      * @param int $characterId
      * @param int $eventId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getEvent(int $characterId, int $eventId)
     {
@@ -65,11 +75,16 @@ class Calendar extends AbstractApi
      *
      * @param int   $characterId
      * @param int   $eventId
-     * @param array $response    ['response' => 'accepted', 'declined', 'tentative'].
+     * @param array $response
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return array|string
+     * @return \stdClass
      */
     public function respondToEvent(int $characterId, int $eventId, array $response = ['response' => 'accepted'])
     {
@@ -86,9 +101,14 @@ class Calendar extends AbstractApi
      * @param int $characterId
      * @param int $eventId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getEventAttendees(int $characterId, int $eventId)
     {
