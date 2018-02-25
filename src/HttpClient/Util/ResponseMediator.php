@@ -57,22 +57,27 @@ final class ResponseMediator
 
             case 403:
                 $exception = json_decode($responseObj->getBody()->__toString(), true);
+
                 throw new ForbiddenResourceException($exception['error']);
 
             case 404:
                 $exception = json_decode($responseObj->getBody()->__toString(), true);
+
                 throw new ResourceNotFoundException($exception['error']);
 
             case 409:
                 $exception = json_decode($responseObj->getBody()->__toString(), true);
+
                 throw new TooManyRequestsException($exception['error']);
 
             case 500:
                 $exception = json_decode($responseObj->getBody()->__toString(), true);
+
                 throw new ServerErrorException($exception['error']);
 
             default:
                 $exception = json_decode($responseObj->getBody()->__toString(), true);
+
                 throw new \Exception($exception['error']);
         }
     }
