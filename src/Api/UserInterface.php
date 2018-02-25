@@ -16,13 +16,16 @@ class UserInterface extends AbstractApi
      *
      * Set a solar system as autopilot waypoint.
      *
-     * @param int       $destinationId
+     * @param int $destinationId
      * @param bool|null $addToBeginning
      * @param bool|null $clearOtherWaypoints
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return array|string
      */
     public function setAutopilotWaypoint(int $destinationId, bool $addToBeginning = null, bool $clearOtherWaypoints = null)
     {
@@ -50,10 +53,13 @@ class UserInterface extends AbstractApi
      * Open the contract window inside the client.
      *
      * @param int $contractId
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return array|string
      */
     public function openContractWindow(int $contractId)
     {
@@ -73,10 +79,13 @@ class UserInterface extends AbstractApi
      * Open the information window for a character, corporation or alliance inside the client.
      *
      * @param int $targetId
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return array|string
      */
     public function openInformationWindow(int $targetId)
     {
@@ -96,10 +105,13 @@ class UserInterface extends AbstractApi
      * Open the market details window for a specific typeID inside the client.
      *
      * @param int $typeId
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return array|string
      */
     public function openMarketWindow(int $typeId)
     {
@@ -119,10 +131,13 @@ class UserInterface extends AbstractApi
      * Open the New Mail window, according to settings from the request if applicable.
      *
      * @param array $newMail
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return array|string
      */
     public function openNewMailWindow(array $newMail = [])
     {

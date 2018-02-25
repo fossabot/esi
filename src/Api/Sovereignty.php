@@ -16,9 +16,13 @@ class Sovereignty extends AbstractApi
      *
      * Shows sovereignty data for campaigns.
      *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     public function getSovereigntyCampaigns()
     {
@@ -32,9 +36,13 @@ class Sovereignty extends AbstractApi
      *
      * Shows sovereignty information for solar systems.
      *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     public function getSovereigntySystems()
     {
@@ -48,9 +56,13 @@ class Sovereignty extends AbstractApi
      *
      * Shows sovereignty data for structures.
      *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     public function getSovereigntyStructures()
     {

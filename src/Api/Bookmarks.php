@@ -7,6 +7,10 @@ namespace AGrimes94\Esi\Api;
  *
  * @license LGPL-3.0 (https://www.gnu.org/licenses/lgpl-3.0.en.html)
  */
+/**
+ * Class Bookmarks
+ * @package AGrimes94\Esi\Api
+ */
 class Bookmarks extends AbstractApi
 {
     /**
@@ -18,10 +22,13 @@ class Bookmarks extends AbstractApi
      *
      * @param int $characterId
      * @param int $page
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     public function listCharacterBookmarks(int $characterId, int $page = 1)
     {
@@ -37,10 +44,13 @@ class Bookmarks extends AbstractApi
      *
      * @param int $characterId
      * @param int $page
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     public function listCharacterBookmarkFolders(int $characterId, int $page = 1)
     {
@@ -56,10 +66,13 @@ class Bookmarks extends AbstractApi
      *
      * @param int $corporationId
      * @param int $page
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     public function listCorporationBookmarks(int $corporationId, int $page = 1)
     {
@@ -75,10 +88,13 @@ class Bookmarks extends AbstractApi
      *
      * @param int $corporationId
      * @param int $page
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     public function listCorporationBookmarkFolders(int $corporationId, int $page = 1)
     {

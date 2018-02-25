@@ -20,10 +20,13 @@ class Contracts extends AbstractApi
      *
      * @param int $characterId
      * @param int $page
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     public function getCharacterContracts(int $characterId, int $page = 1)
     {
@@ -39,10 +42,13 @@ class Contracts extends AbstractApi
      *
      * @param int $characterId
      * @param int $contractId
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     public function getCharacterContractItems(int $characterId, int $contractId)
     {
@@ -58,10 +64,13 @@ class Contracts extends AbstractApi
      *
      * @param int $characterId
      * @param int $contractId
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     public function getCharacterContractBids(int $characterId, int $contractId)
     {
@@ -79,10 +88,13 @@ class Contracts extends AbstractApi
      *
      * @param int $corporationId
      * @param int $page
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     public function getCorporationContracts(int $corporationId, int $page)
     {
@@ -98,10 +110,13 @@ class Contracts extends AbstractApi
      *
      * @param int $corporationId
      * @param int $contractId
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     public function getCorporationContractItems(int $corporationId, int $contractId)
     {
@@ -118,10 +133,13 @@ class Contracts extends AbstractApi
      * @param int $corporationId
      * @param int $contractId
      * @param int $page
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     public function getCorporationContractBids(int $corporationId, int $contractId, $page = 1)
     {

@@ -17,10 +17,13 @@ class Clones extends AbstractApi
      * A list of the character’s clones.
      *
      * @param int $characterId
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     public function getClones(int $characterId)
     {
@@ -35,10 +38,13 @@ class Clones extends AbstractApi
      * Return implants on the active clone of a character.
      *
      * @param int $characterId
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     public function getActiveImplants(int $characterId)
     {

@@ -60,13 +60,16 @@ abstract class AbstractApi
     /**
      * Perform GET request.
      *
-     * @param string $path
-     * @param array  $parameters
-     * @param array  $requestHeaders
-     *
+     * @param $path
+     * @param array $parameters
+     * @param array $requestHeaders
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     protected function get($path, array $parameters = [], array $requestHeaders = [])
     {
@@ -80,10 +83,13 @@ abstract class AbstractApi
      * @param array $parameters
      * @param array $requestHeaders
      * @param array $files
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return array|string
      */
     protected function post($path, array $parameters = [], $requestHeaders = [], array $files = [])
     {
@@ -124,10 +130,13 @@ abstract class AbstractApi
      * @param $path
      * @param array $parameters
      * @param array $requestHeaders
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return array|string
      */
     protected function put($path, array $parameters = [], $requestHeaders = [])
     {
@@ -150,10 +159,13 @@ abstract class AbstractApi
      * @param $path
      * @param array $parameters
      * @param array $requestHeaders
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return array|string
      */
     protected function delete($path, array $parameters = [], $requestHeaders = [])
     {

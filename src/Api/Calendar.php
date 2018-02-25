@@ -20,12 +20,15 @@ class Calendar extends AbstractApi
      * If a from_event ID is specified, it will return the next 50 chronological
      * event summaries from after that event.
      *
-     * @param int      $characterId
+     * @param int $characterId
      * @param int|null $fromEvent
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     public function listEventSummaries(int $characterId, int $fromEvent = null)
     {
@@ -46,10 +49,13 @@ class Calendar extends AbstractApi
      *
      * @param int $characterId
      * @param int $eventId
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     public function getEvent(int $characterId, int $eventId)
     {
@@ -63,13 +69,16 @@ class Calendar extends AbstractApi
      *
      * Set your response status to an event.
      *
-     * @param int   $characterId
-     * @param int   $eventId
-     * @param array $response    ['response' => 'accepted', 'declined', 'tentative'].
-     *
+     * @param int $characterId
+     * @param int $eventId
+     * @param array $response
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return array|string
      */
     public function respondToEvent(int $characterId, int $eventId, array $response = ['response' => 'accepted'])
     {
@@ -85,10 +94,13 @@ class Calendar extends AbstractApi
      *
      * @param int $characterId
      * @param int $eventId
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     public function getEventAttendees(int $characterId, int $eventId)
     {

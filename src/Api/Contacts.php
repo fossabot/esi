@@ -18,10 +18,13 @@ class Contacts extends AbstractApi
      *
      * @param int $allianceId
      * @param int $page
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     public function getAllianceContacts(int $allianceId, int $page = 1)
     {
@@ -37,10 +40,13 @@ class Contacts extends AbstractApi
      *
      * @param int $characterId
      * @param int $page
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     public function getContacts(int $characterId, int $page)
     {
@@ -54,15 +60,18 @@ class Contacts extends AbstractApi
      *
      * Bulk add contacts with same settings.
      *
-     * @param int       $characterId
-     * @param array     $contactIds
-     * @param int       $standing    -10, -5, 0, 5, 10
-     * @param int|null  $labelId
+     * @param int $characterId
+     * @param array $contactIds
+     * @param int $standing -10, -5, 0, 5, 10
+     * @param int|null $labelId
      * @param bool|null $isWatched
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return array|string
      */
     public function addContacts(int $characterId, array $contactIds = [], int $standing = 0, int $labelId = null, bool $isWatched = null)
     {
@@ -90,15 +99,18 @@ class Contacts extends AbstractApi
      *
      * Bulk edit contacts with same settings.
      *
-     * @param int       $characterId
-     * @param array     $contactIds
-     * @param int       $standing
-     * @param int|null  $labelId
+     * @param int $characterId
+     * @param array $contactIds
+     * @param int $standing
+     * @param int|null $labelId
      * @param bool|null $isWatched
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return array|string
      */
     public function editContacts(int $characterId, array $contactIds = [], int $standing = 0, int $labelId = null, bool $isWatched = null)
     {
@@ -126,12 +138,15 @@ class Contacts extends AbstractApi
      *
      * Bulk delete contacts.
      *
-     * @param int   $characterId
+     * @param int $characterId
      * @param array $contactIds
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return array|string
      */
     public function deleteContacts(int $characterId, array $contactIds = [])
     {
@@ -150,10 +165,13 @@ class Contacts extends AbstractApi
      * Return custom labels for contacts the character defined.
      *
      * @param int $characterId
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     public function getLabels(int $characterId)
     {
@@ -168,10 +186,13 @@ class Contacts extends AbstractApi
      * Return contacts of a corporation.
      *
      * @param int $corporationId
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     public function getCorporationContacts(int $corporationId)
     {

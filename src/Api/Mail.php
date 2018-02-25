@@ -17,13 +17,16 @@ class Mail extends AbstractApi
      * Return the 50 most recent mail headers belonging to the character that match the query criteria.
      * Queries can be filtered by label, and last_mail_id can be used to paginate backwards.
      *
-     * @param int        $characterId
+     * @param int $characterId
      * @param array|null $byLabels
-     * @param int|null   $lastMailId
-     *
+     * @param int|null $lastMailId
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     public function getMailHeaders(int $characterId, array $byLabels = null, int $lastMailId = null)
     {
@@ -47,12 +50,15 @@ class Mail extends AbstractApi
      *
      * Create and send a new mail.
      *
-     * @param int   $characterId
+     * @param int $characterId
      * @param array $mail
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return array|string
      */
     public function sendMail(int $characterId, array $mail = [])
     {
@@ -68,10 +74,13 @@ class Mail extends AbstractApi
      *
      * @param int $characterId
      * @param int $mailId
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return array|string
      */
     public function deleteMail(int $characterId, int $mailId)
     {
@@ -87,10 +96,13 @@ class Mail extends AbstractApi
      *
      * @param int $characterId
      * @param int $mailId
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     public function returnMail(int $characterId, int $mailId)
     {
@@ -104,13 +116,17 @@ class Mail extends AbstractApi
      *
      * Update metadata about a mail.
      *
-     * @param int   $characterId
-     * @param int   $mailId
+     *
+     * @param int $characterId
+     * @param int $mailId
      * @param array $contents
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return array|string
      */
     public function updateMailMetadata(int $characterId, int $mailId, array $contents = [])
     {
@@ -125,10 +141,13 @@ class Mail extends AbstractApi
      * Return a list of the users mail labels, unread counts for each label and a total unread count.
      *
      * @param int $characterId
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     public function getLabels(int $characterId)
     {
@@ -142,12 +161,15 @@ class Mail extends AbstractApi
      *
      * Create a mail label.
      *
-     * @param int   $characterId
+     * @param int $characterId
      * @param array $label
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return array|string
      */
     public function createLabel(int $characterId, array $label = [])
     {
@@ -163,10 +185,13 @@ class Mail extends AbstractApi
      *
      * @param int $characterId
      * @param int $labelId
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return array|string
      */
     public function deleteLabel(int $characterId, int $labelId)
     {
@@ -181,10 +206,13 @@ class Mail extends AbstractApi
      * Return all mailing lists that the character is subscribed to.
      *
      * @param int $characterId
-     *
+     * @return \stdClass
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
-     *
-     * @return mixed
      */
     public function getMailingListSubscriptions(int $characterId)
     {
