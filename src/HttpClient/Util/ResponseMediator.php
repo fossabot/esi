@@ -2,6 +2,10 @@
 
 namespace AGrimes94\Esi\HttpClient\Util;
 
+use AGrimes94\Esi\Exception\ForbiddenResourceException;
+use AGrimes94\Esi\Exception\ResourceNotFoundException;
+use AGrimes94\Esi\Exception\ServerErrorException;
+use AGrimes94\Esi\Exception\TooManyRequestsException;
 use Psr\Http\Message\ResponseInterface;
 
 /**
@@ -11,6 +15,17 @@ use Psr\Http\Message\ResponseInterface;
  */
 final class ResponseMediator
 {
+    /**
+     * Parse response object into stdClass for user property retrieval.
+     *
+     * @param ResponseInterface $responseObj
+     * @return \stdClass
+     * @throws ForbiddenResourceException
+     * @throws ResourceNotFoundException
+     * @throws ServerErrorException
+     * @throws TooManyRequestsException
+     * @throws \Exception
+     */
     public static function getContent(ResponseInterface $responseObj)
     {
         $httpResponseCode = $responseObj->getStatusCode();
@@ -40,20 +55,29 @@ final class ResponseMediator
                 return $response;
 
             case 403:
-                // TODO Add forbidden resource exception
+                $exception = json_decode($responseObj->getBody()->__toString(), true);
+
+                throw new ForbiddenResourceException($exception['error']);
 
             case 404:
-                // TODO Add resource not found exception
+                $exception = json_decode($responseObj->getBody()->__toString(), true);
+
+                throw new ResourceNotFoundException($exception['error']);
 
             case 409:
-                // TODO Add too many requests exception
+                $exception = json_decode($responseObj->getBody()->__toString(), true);
+
+                throw new TooManyRequestsException($exception['error']);
 
             case 500:
-                // TODO Add server error exception
+                $exception = json_decode($responseObj->getBody()->__toString(), true);
+
+                throw new ServerErrorException($exception['error']);
 
             default:
-                // TODO Add default response exception
+                $exception = json_decode($responseObj->getBody()->__toString(), true);
 
+                throw new \Exception($exception['error']);
         }
     }
 }
