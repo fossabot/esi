@@ -16,13 +16,14 @@ class Universe extends AbstractApi
      *
      * Get all character ancestries.
      *
-     * @return \stdClass
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getAncestries()
     {
@@ -36,13 +37,14 @@ class Universe extends AbstractApi
      *
      * Get a list of bloodlines.
      *
-     * @return \stdClass
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getBloodlines()
     {
@@ -56,13 +58,14 @@ class Universe extends AbstractApi
      *
      * Get a list of item categories.
      *
-     * @return \stdClass
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getCategories()
     {
@@ -77,13 +80,15 @@ class Universe extends AbstractApi
      * Get information of an item category.
      *
      * @param int $categoryId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getCategoryInformation(int $categoryId)
     {
@@ -97,13 +102,14 @@ class Universe extends AbstractApi
      *
      * Get a list of constellations.
      *
-     * @return \stdClass
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getConstellations()
     {
@@ -118,13 +124,15 @@ class Universe extends AbstractApi
      * Get information on a constellation.
      *
      * @param int $constellationId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getConstellationInformation(int $constellationId)
     {
@@ -138,13 +146,14 @@ class Universe extends AbstractApi
      *
      * Get a list of factions.
      *
-     * @return \stdClass
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getFactions()
     {
@@ -158,13 +167,14 @@ class Universe extends AbstractApi
      *
      * Get a list of graphics.
      *
-     * @return \stdClass
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getGraphics()
     {
@@ -179,13 +189,15 @@ class Universe extends AbstractApi
      * Get information on a graphic.
      *
      * @param int $graphicId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getGraphicInformation(int $graphicId)
     {
@@ -200,13 +212,15 @@ class Universe extends AbstractApi
      * Get a list of item groups.
      *
      * @param int $page
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getGroups(int $page = 1)
     {
@@ -221,13 +235,15 @@ class Universe extends AbstractApi
      * Get information on an item group.
      *
      * @param int $groupId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getGroupInformation(int $groupId)
     {
@@ -248,13 +264,15 @@ class Universe extends AbstractApi
      * All names searched for are cached for 12 hours.
      *
      * @param array $names
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function resolveNamesToIds(array $names = [])
     {
@@ -269,13 +287,15 @@ class Universe extends AbstractApi
      * Get information on a moon.
      *
      * @param int $moonId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getMoonInformation(int $moonId)
     {
@@ -294,13 +314,15 @@ class Universe extends AbstractApi
      * Characters, Corporations, Alliances, Stations, Solar Systems, Constellations, Regions, Types.
      *
      * @param array $ids
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function resolveIdsToNames(array $ids = [])
     {
@@ -315,13 +337,15 @@ class Universe extends AbstractApi
      * Get information on a planet.
      *
      * @param int $planetId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getPlanetInformation(int $planetId)
     {
@@ -335,13 +359,14 @@ class Universe extends AbstractApi
      *
      * Get a list of character races.
      *
-     * @return \stdClass
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getRaces()
     {
@@ -355,13 +380,14 @@ class Universe extends AbstractApi
      *
      * Get a list of regions.
      *
-     * @return \stdClass
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getRegions()
     {
@@ -376,13 +402,15 @@ class Universe extends AbstractApi
      * Get information on a region.
      *
      * @param int $regionId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getRegionInformation(int $regionId)
     {
@@ -397,13 +425,15 @@ class Universe extends AbstractApi
      * Get information on a stargate.
      *
      * @param int $stargateId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getStargateInformation(int $stargateId)
     {
@@ -418,13 +448,15 @@ class Universe extends AbstractApi
      * Get information on a star.
      *
      * @param int $starId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getStarInformation(int $starId)
     {
@@ -439,13 +471,15 @@ class Universe extends AbstractApi
      * Get information on a station.
      *
      * @param int $stationId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getStationInformation(int $stationId)
     {
@@ -459,13 +493,14 @@ class Universe extends AbstractApi
      *
      * List all public structures.
      *
-     * @return \stdClass
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getStructures()
     {
@@ -482,13 +517,15 @@ class Universe extends AbstractApi
      * Otherwise, returns “Forbidden” for all inputs.
      *
      * @param int $structureId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getStructureInformation(int $structureId)
     {
@@ -506,13 +543,14 @@ class Universe extends AbstractApi
      *
      * Only systems with jumps will be listed.
      *
-     * @return \stdClass
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getSystemJumps()
     {
@@ -530,13 +568,14 @@ class Universe extends AbstractApi
      *
      * Only systems with kills will be listed.
      *
-     * @return \stdClass
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getSystemKills()
     {
@@ -550,13 +589,14 @@ class Universe extends AbstractApi
      *
      * Get a list of solar systems.
      *
-     * @return \stdClass
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getSystems()
     {
@@ -571,13 +611,15 @@ class Universe extends AbstractApi
      * Get information on a solar system.
      *
      * @param int $systemId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getSystemInformation(int $systemId)
     {
@@ -592,13 +634,15 @@ class Universe extends AbstractApi
      * Get a list of type ids.
      *
      * @param int $page
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getTypes(int $page = 1)
     {
@@ -613,13 +657,15 @@ class Universe extends AbstractApi
      * Get information on a type.
      *
      * @param int $typeId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getTypeInformation(int $typeId)
     {

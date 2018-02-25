@@ -17,13 +17,15 @@ class Market extends AbstractApi
      * List market orders placed by a character.
      *
      * @param int $characterId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getCharacterOrders(int $characterId)
     {
@@ -39,13 +41,15 @@ class Market extends AbstractApi
      *
      * @param int $characterId
      * @param int $page
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getHistoricalCharacterOrders(int $characterId, int $page = 1)
     {
@@ -61,13 +65,15 @@ class Market extends AbstractApi
      *
      * @param int $corporationId
      * @param int $page
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getCorporationOrders(int $corporationId, int $page = 1)
     {
@@ -83,13 +89,15 @@ class Market extends AbstractApi
      *
      * @param int $corporationId
      * @param int $page
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getHistoricalCorporationOrders(int $corporationId, int $page = 1)
     {
@@ -105,13 +113,15 @@ class Market extends AbstractApi
      *
      * @param int $regionId
      * @param int $typeId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getHistoricalTypeInRegionStatistics(int $regionId, int $typeId)
     {
@@ -128,17 +138,19 @@ class Market extends AbstractApi
      *
      * Return a list of orders in a region.
      *
-     * @param int $regionId
-     * @param string $orderType
+     * @param int      $regionId
+     * @param string   $orderType
      * @param int|null $typeId
-     * @param int $page
-     * @return \stdClass
+     * @param int      $page
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getOrdersInRegion(int $regionId, string $orderType = 'all', int $typeId = null, int $page = 1)
     {
@@ -162,13 +174,15 @@ class Market extends AbstractApi
      *
      * @param int $regionId
      * @param int $page
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getActiveTypesInRegion(int $regionId, int $page = 1)
     {
@@ -182,13 +196,14 @@ class Market extends AbstractApi
      *
      * Get a list of item groups.
      *
-     * @return \stdClass
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getItemGroups()
     {
@@ -203,13 +218,15 @@ class Market extends AbstractApi
      * Get information on an item group.
      *
      * @param int $marketGroupId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getItemGroupInformation(int $marketGroupId)
     {
@@ -223,13 +240,14 @@ class Market extends AbstractApi
      *
      * Return a list of prices.
      *
-     * @return \stdClass
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getMarketPrices()
     {
@@ -245,13 +263,15 @@ class Market extends AbstractApi
      *
      * @param int $structureId
      * @param int $page
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getStructureOrders(int $structureId, int $page = 1)
     {

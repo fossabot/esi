@@ -18,14 +18,16 @@ class Search extends AbstractApi
      *
      * @param string $search
      * @param array  $categories ['agent', 'alliance', 'character', 'constellation, 'corporation', 'faction', 'inventory_type', 'region', 'solar_system', 'station']
-     * @param bool $strict
-     * @return \stdClass
+     * @param bool   $strict
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function searchPublic(string $search = '', array $categories = [], bool $strict = false)
     {
@@ -41,17 +43,19 @@ class Search extends AbstractApi
      *
      * Search for entities that match a given sub-string.
      *
-     * @param int $characterId
+     * @param int    $characterId
      * @param string $search
      * @param array  $categories  ['agent', 'alliance', 'character', 'constellation, 'corporation', 'faction', 'inventory_type', 'region', 'solar_system', 'station']
-     * @param bool $strict
-     * @return \stdClass
+     * @param bool   $strict
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function searchPrivate(int $characterId, string $search = '', array $categories = [], bool $strict = false)
     {

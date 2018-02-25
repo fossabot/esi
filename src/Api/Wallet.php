@@ -17,13 +17,15 @@ class Wallet extends AbstractApi
      * Returns a character’s wallet balance.
      *
      * @param int $characterId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getCharacterBalance(int $characterId)
     {
@@ -37,15 +39,17 @@ class Wallet extends AbstractApi
      *
      * Retrieve character wallet journal.
      *
-     * @param int $characterId
+     * @param int      $characterId
      * @param int|null $fromId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getCharacterJournal(int $characterId, int $fromId = null)
     {
@@ -64,15 +68,17 @@ class Wallet extends AbstractApi
      *
      * Get wallet transactions of a character.
      *
-     * @param int $characterId
+     * @param int      $characterId
      * @param int|null $fromId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getCharacterTransactions(int $characterId, int $fromId = null)
     {
@@ -92,13 +98,15 @@ class Wallet extends AbstractApi
      * Get a corporation’s wallets.
      *
      * @param int $corporationId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getCorporationBalance(int $corporationId)
     {
@@ -112,16 +120,18 @@ class Wallet extends AbstractApi
      *
      * Retrieve corporation wallet journal.
      *
-     * @param int $corporationId
-     * @param int $divisionId
+     * @param int      $corporationId
+     * @param int      $divisionId
      * @param int|null $fromId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getCorporationJournal(int $corporationId, int $divisionId, int $fromId = null)
     {
@@ -140,16 +150,18 @@ class Wallet extends AbstractApi
      *
      * Get wallet transactions of a corporation.
      *
-     * @param int $corporationId
-     * @param int $divisionId
+     * @param int      $corporationId
+     * @param int      $divisionId
      * @param int|null $fromId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getCorporationTransactions(int $corporationId, int $divisionId, int $fromId = null)
     {

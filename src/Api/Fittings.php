@@ -17,13 +17,15 @@ class Fittings extends AbstractApi
      * Return fittings of a character.
      *
      * @param int $characterId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getFittings(int $characterId)
     {
@@ -37,15 +39,17 @@ class Fittings extends AbstractApi
      *
      * Save a new fitting for a character.
      *
-     * @param int $characterId
+     * @param int   $characterId
      * @param array $fitting
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function createFitting(int $characterId, array $fitting = [])
     {
@@ -61,13 +65,15 @@ class Fittings extends AbstractApi
      *
      * @param int $characterId
      * @param int $fittingId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function deleteFitting(int $characterId, int $fittingId)
     {

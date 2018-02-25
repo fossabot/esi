@@ -9,7 +9,6 @@ namespace AGrimes94\Esi\Api;
  */
 class Alliance extends AbstractApi
 {
-
     /**
      * Endpoint: /alliances/.
      *
@@ -17,13 +16,14 @@ class Alliance extends AbstractApi
      *
      * List all active player alliances.
      *
-     * @return \stdClass
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function listAlliances()
     {
@@ -38,13 +38,15 @@ class Alliance extends AbstractApi
      * Public information about an alliance.
      *
      * @param int $allianceId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getAllianceInformation(int $allianceId)
     {
@@ -59,19 +61,20 @@ class Alliance extends AbstractApi
      * List all current member corporations of an alliance.
      *
      * @param int $allianceId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function listAllianceCorporations(int $allianceId)
     {
         return $this->get('/alliances/' . $this->encodePath($allianceId) . '/corporations/');
     }
-
 
     /**
      * Endpoint: /alliances/{alliance_id}/icons/.
@@ -81,13 +84,15 @@ class Alliance extends AbstractApi
      * Get the icon urls for a alliance.
      *
      * @param int $allianceId
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getAllianceIcons(int $allianceId)
     {
@@ -102,13 +107,15 @@ class Alliance extends AbstractApi
      * Resolve a set of alliance IDs to alliance names.
      *
      * @param array $allianceIds
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getAllianceNames(array $allianceIds = [])
     {

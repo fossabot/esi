@@ -18,13 +18,15 @@ class Assets extends AbstractApi
      *
      * @param int $characterId
      * @param int $page
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getCharacterAssets(int $characterId, int $page = 1)
     {
@@ -39,15 +41,17 @@ class Assets extends AbstractApi
      * Return locations for a set of item ids, which you can get from character assets endpoint.
      * Coordinates for items in hangars or stations are set to (0,0,0).
      *
-     * @param int $characterId
+     * @param int   $characterId
      * @param array $itemIds
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getCharacterAssetLocations(int $characterId, array $itemIds = [])
     {
@@ -62,15 +66,17 @@ class Assets extends AbstractApi
      * Return names for a set of item ids, which you can get from character assets endpoint.
      * Typically used for items that can customize names, like containers or ships.
      *
-     * @param int $characterId
+     * @param int   $characterId
      * @param array $itemIds
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getCharacterAssetNames(int $characterId, array $itemIds = [])
     {
@@ -86,13 +92,15 @@ class Assets extends AbstractApi
      *
      * @param int $corporationId
      * @param int $page
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getCorporationAssets(int $corporationId, int $page = 1)
     {
@@ -107,15 +115,17 @@ class Assets extends AbstractApi
      * Return locations for a set of item ids, which you can get from corporation assets endpoint.
      * Coordinates for items in hangars or stations are set to (0,0,0).
      *
-     * @param int $corporationId
+     * @param int   $corporationId
      * @param array $itemIds
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getCorporationAssetLocations(int $corporationId, array $itemIds = [])
     {
@@ -130,15 +140,17 @@ class Assets extends AbstractApi
      * Return names for a set of item ids, which you can get from corporation assets endpoint.
      * Only valid for items that can customize names, like containers or ships.
      *
-     * @param int $corporationId
+     * @param int   $corporationId
      * @param array $itemIds
-     * @return \stdClass
+     *
      * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
      * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
      * @throws \AGrimes94\Esi\Exception\ServerErrorException
      * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
      * @throws \Exception
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function getCorporationAssetNames(int $corporationId, array $itemIds = [])
     {
