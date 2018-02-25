@@ -19,12 +19,14 @@ final class ResponseMediator
      * Parse response object into stdClass for user property retrieval.
      *
      * @param ResponseInterface $responseObj
-     * @return \stdClass
+     *
      * @throws ForbiddenResourceException
      * @throws ResourceNotFoundException
      * @throws ServerErrorException
      * @throws TooManyRequestsException
      * @throws \Exception
+     *
+     * @return \stdClass
      */
     public static function getContent(ResponseInterface $responseObj)
     {
@@ -58,22 +60,18 @@ final class ResponseMediator
                 $exception = json_decode($responseObj->getBody()->__toString(), true);
 
                 throw new ForbiddenResourceException($exception['error']);
-
             case 404:
                 $exception = json_decode($responseObj->getBody()->__toString(), true);
 
                 throw new ResourceNotFoundException($exception['error']);
-
             case 409:
                 $exception = json_decode($responseObj->getBody()->__toString(), true);
 
                 throw new TooManyRequestsException($exception['error']);
-
             case 500:
                 $exception = json_decode($responseObj->getBody()->__toString(), true);
 
                 throw new ServerErrorException($exception['error']);
-
             default:
                 $exception = json_decode($responseObj->getBody()->__toString(), true);
 
