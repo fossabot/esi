@@ -19,9 +19,14 @@ class Contacts extends AbstractApi
      * @param int $allianceId
      * @param int $page
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getAllianceContacts(int $allianceId, int $page = 1)
     {
@@ -38,9 +43,14 @@ class Contacts extends AbstractApi
      * @param int $characterId
      * @param int $page
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getContacts(int $characterId, int $page)
     {
@@ -60,9 +70,14 @@ class Contacts extends AbstractApi
      * @param int|null  $labelId
      * @param bool|null $isWatched
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return array|string
+     * @return \stdClass
      */
     public function addContacts(int $characterId, array $contactIds = [], int $standing = 0, int $labelId = null, bool $isWatched = null)
     {
@@ -96,9 +111,14 @@ class Contacts extends AbstractApi
      * @param int|null  $labelId
      * @param bool|null $isWatched
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return array|string
+     * @return \stdClass
      */
     public function editContacts(int $characterId, array $contactIds = [], int $standing = 0, int $labelId = null, bool $isWatched = null)
     {
@@ -129,9 +149,14 @@ class Contacts extends AbstractApi
      * @param int   $characterId
      * @param array $contactIds
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return array|string
+     * @return \stdClass
      */
     public function deleteContacts(int $characterId, array $contactIds = [])
     {
@@ -151,9 +176,14 @@ class Contacts extends AbstractApi
      *
      * @param int $characterId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getLabels(int $characterId)
     {
@@ -169,9 +199,14 @@ class Contacts extends AbstractApi
      *
      * @param int $corporationId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getCorporationContacts(int $corporationId)
     {

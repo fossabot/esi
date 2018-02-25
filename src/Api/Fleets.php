@@ -18,9 +18,14 @@ class Fleets extends AbstractApi
      *
      * @param int $characterId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getCharacterFleetInformation(int $characterId)
     {
@@ -36,9 +41,14 @@ class Fleets extends AbstractApi
      *
      * @param int $fleetId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getFleetInformation(int $fleetId)
     {
@@ -55,9 +65,14 @@ class Fleets extends AbstractApi
      * @param int   $fleetId
      * @param array $settings
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return array|string
+     * @return \stdClass
      */
     public function updateSettings(int $fleetId, array $settings = [])
     {
@@ -73,9 +88,14 @@ class Fleets extends AbstractApi
      *
      * @param int $fleetId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getMembers(int $fleetId)
     {
@@ -95,9 +115,14 @@ class Fleets extends AbstractApi
      * @param int   $fleetId
      * @param array $invite
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return array|string
+     * @return \stdClass
      */
     public function createInvite(int $fleetId, array $invite = [])
     {
@@ -114,9 +139,14 @@ class Fleets extends AbstractApi
      * @param int $fleetId
      * @param int $memberId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return array|string
+     * @return \stdClass
      */
     public function kickMember(int $fleetId, int $memberId)
     {
@@ -134,9 +164,14 @@ class Fleets extends AbstractApi
      * @param int   $memberId
      * @param array $movement
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return array|string
+     * @return \stdClass
      */
     public function moveMember(int $fleetId, int $memberId, array $movement = [])
     {
@@ -153,9 +188,14 @@ class Fleets extends AbstractApi
      * @param int $fleetId
      * @param int $wingId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function createSquad(int $fleetId, int $wingId)
     {
@@ -173,9 +213,14 @@ class Fleets extends AbstractApi
      * @param int   $squadId
      * @param array $naming
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return array|string
+     * @return \stdClass
      */
     public function renameSquad(int $fleetId, int $squadId, array $naming = [])
     {
@@ -192,9 +237,14 @@ class Fleets extends AbstractApi
      * @param int $fleetId
      * @param int $squadId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return array|string
+     * @return \stdClass
      */
     public function deleteSquad(int $fleetId, int $squadId)
     {
@@ -210,9 +260,14 @@ class Fleets extends AbstractApi
      *
      * @param int $fleetId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getWings(int $fleetId)
     {
@@ -228,9 +283,14 @@ class Fleets extends AbstractApi
      *
      * @param int $fleetId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return array|string
+     * @return \stdClass
      */
     public function createWing(int $fleetId)
     {
@@ -248,9 +308,14 @@ class Fleets extends AbstractApi
      * @param int   $wingId
      * @param array $naming
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return array|string
+     * @return \stdClass
      */
     public function renameWing(int $fleetId, int $wingId, array $naming = [])
     {
@@ -269,9 +334,14 @@ class Fleets extends AbstractApi
      * @param int $fleetId
      * @param int $wingId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return array|string
+     * @return \stdClass
      */
     public function deleteWing(int $fleetId, int $wingId)
     {

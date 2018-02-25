@@ -277,6 +277,7 @@ class EsiJsonTest extends TestCase
 
     /**
      * This method is called before each test.
+     *
      * Retrieve the latest version of swagger.json, the reference implementation of ESI and
      * decode the json string into a comparable array structure.
      */
@@ -301,7 +302,7 @@ class EsiJsonTest extends TestCase
      * This method tests that the retrieved latest version of the json swagger reference for esi
      * has the same version as the one currently being developed for. I.e. ESI hasn't been incremented/changed.
      */
-    public function testEsiVersion()
+    public function testEsiVersionMatches()
     {
         $this->assertEquals(self::ESI_VERSION, $this->json['info']['version']);
     }
@@ -310,7 +311,7 @@ class EsiJsonTest extends TestCase
      * This method tests that the retrieved latest version of the json swagger reference for esi
      * has the same paths as the one currently being developed for. I.e. ESI hasn't been incremented/changed.
      */
-    public function testEsiPathsEquality()
+    public function testEsiPathsForEquality()
     {
         $paths = [];
         foreach ($this->json['paths'] as $key => $value) {
@@ -324,7 +325,7 @@ class EsiJsonTest extends TestCase
      * This method tests that the retrieved latest version of the json swagger reference for esi
      * has the same scopes as the one currently being developed for. I.e. ESI hasn't been incremented/changed.
      */
-    public function testEsiScopesEquality()
+    public function testEsiScopesForEquality()
     {
         $scopes = [];
         foreach ($this->json['securityDefinitions']['evesso']['scopes'] as $key => $value) {

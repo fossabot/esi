@@ -34,8 +34,8 @@ class ApiVersionPlugin implements Plugin
     {
         $uri = $request->getUri();
 
-        if (substr($uri->getPath(), 0, 8) !== '/latest/') {
-            $request = $request->withUri($uri->withPath($this->apiVersion . $uri->getPath()));
+        if (substr($uri->getPath(), 0, 7) !== '/latest') {
+            $request = $request->withUri($uri->withPath('/' . $this->apiVersion . $uri->getPath()));
         }
 
         return $next($request);

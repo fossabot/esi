@@ -18,9 +18,14 @@ class Corporation extends AbstractApi
      *
      * @param int $corporationId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getInformation(int $corporationId)
     {
@@ -36,9 +41,14 @@ class Corporation extends AbstractApi
      *
      * @param int $corporationId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getAllianceHistory(int $corporationId)
     {
@@ -52,11 +62,16 @@ class Corporation extends AbstractApi
      *
      * Resolve a set of corporation IDs to corporation names.
      *
-     * @param array $corporationIds [1000171, 1003455]
+     * @param array $corporationIds
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getNames(array $corporationIds = [])
     {
@@ -72,9 +87,14 @@ class Corporation extends AbstractApi
      *
      * @param int $corporationId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getMembers(int $corporationId)
     {
@@ -90,9 +110,14 @@ class Corporation extends AbstractApi
      *
      * @param int $corporationId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getRoles(int $corporationId)
     {
@@ -109,9 +134,14 @@ class Corporation extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getRoleHistory(int $corporationId, int $page = 1)
     {
@@ -127,9 +157,14 @@ class Corporation extends AbstractApi
      *
      * @param int $corporationId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getIcons(int $corporationId)
     {
@@ -143,9 +178,14 @@ class Corporation extends AbstractApi
      *
      * Get a list of npc corporations.
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getNpcCorporations()
     {
@@ -162,9 +202,14 @@ class Corporation extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getStructures(int $corporationId, int $page = 1)
     {
@@ -180,9 +225,14 @@ class Corporation extends AbstractApi
      *
      * @param int $corporationId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getMemberTracking(int $corporationId)
     {
@@ -198,9 +248,14 @@ class Corporation extends AbstractApi
      *
      * @param int $corporationId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getDivisions(int $corporationId)
     {
@@ -216,9 +271,14 @@ class Corporation extends AbstractApi
      *
      * @param int $corporationId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getMemberLimit(int $corporationId)
     {
@@ -234,9 +294,14 @@ class Corporation extends AbstractApi
      *
      * @param int $corporationId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getTitles(int $corporationId)
     {
@@ -252,9 +317,14 @@ class Corporation extends AbstractApi
      *
      * @param int $corporationId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getMemberTitles(int $corporationId)
     {
@@ -271,9 +341,14 @@ class Corporation extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getBlueprints(int $corporationId, int $page = 1)
     {
@@ -290,9 +365,14 @@ class Corporation extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getStandings(int $corporationId, int $page = 1)
     {
@@ -309,9 +389,14 @@ class Corporation extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getStarbases(int $corporationId, int $page = 1)
     {
@@ -328,9 +413,14 @@ class Corporation extends AbstractApi
      * @param int $corporationId
      * @param int $starbaseId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getStarbaseInformation(int $corporationId, int $starbaseId)
     {
@@ -348,9 +438,14 @@ class Corporation extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getContainerLogs(int $corporationId, int $page = 1)
     {
@@ -366,9 +461,14 @@ class Corporation extends AbstractApi
      *
      * @param int $corporationId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getFacilities(int $corporationId)
     {
@@ -385,9 +485,14 @@ class Corporation extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getMedals(int $corporationId, int $page = 1)
     {
@@ -404,9 +509,14 @@ class Corporation extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getMedalsIssued(int $corporationId, int $page = 1)
     {
@@ -425,9 +535,14 @@ class Corporation extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getOutposts(int $corporationId, int $page = 1)
     {
@@ -446,9 +561,14 @@ class Corporation extends AbstractApi
      * @param int $corporationId
      * @param int $outpostId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getOutpostInformation(int $corporationId, int $outpostId)
     {
@@ -465,9 +585,14 @@ class Corporation extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getShareholders(int $corporationId, int $page = 1)
     {

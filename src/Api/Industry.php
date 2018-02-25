@@ -16,9 +16,14 @@ class Industry extends AbstractApi
      *
      * Return a list of industry facilities.
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getIndustryFacilities()
     {
@@ -32,9 +37,14 @@ class Industry extends AbstractApi
      *
      * Return cost indices for solar systems.
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getSolarSystemCostIndices()
     {
@@ -50,9 +60,14 @@ class Industry extends AbstractApi
      *
      * @param int $characterId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getCharacterJobs(int $characterId)
     {
@@ -69,9 +84,14 @@ class Industry extends AbstractApi
      * @param int $characterId
      * @param int $page
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getCharacterMiningLedger(int $characterId, int $page = 1)
     {
@@ -88,9 +108,14 @@ class Industry extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getCorporationMiningObservers(int $corporationId, int $page = 1)
     {
@@ -108,9 +133,14 @@ class Industry extends AbstractApi
      * @param int $observerId
      * @param int $page
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getObservedCorporationMining(int $corporationId, int $observerId, int $page = 1)
     {
@@ -127,9 +157,14 @@ class Industry extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getCorporationJobs(int $corporationId, int $page = 1)
     {
@@ -145,9 +180,14 @@ class Industry extends AbstractApi
      *
      * @param int $corporationId
      *
+     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
+     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
+     * @throws \AGrimes94\Esi\Exception\ServerErrorException
+     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
+     * @throws \Exception
      * @throws \Http\Client\Exception
      *
-     * @return mixed
+     * @return \stdClass
      */
     public function getMoonExtractionTimers(int $corporationId)
     {
