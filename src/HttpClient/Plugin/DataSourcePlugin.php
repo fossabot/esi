@@ -2,6 +2,7 @@
 
 namespace AGrimes94\Esi\HttpClient\Plugin;
 
+use AGrimes94\Esi\HttpClient\Util\QueryStringBuilder;
 use Http\Client\Common\Plugin;
 use Psr\Http\Message\RequestInterface;
 
@@ -39,7 +40,16 @@ class DataSourcePlugin implements Plugin
         $uri = $request->getUri();
 
         if (null !== $uri->getQuery()) {
-            $request = $request->withUri($uri->withQuery($uri->getQuery() . '&datasource=' . $this->dataSource));
+
+            $params = [
+                'datasource' => $this->dataSource,
+            ];
+
+            parse_str($uri->getQuery(), $query);
+
+            $params = array_merge($query, $params);
+
+            $request = $request->withUri($uri->withQuery(QueryStringBuilder::build($params)));
         }
 
         return $next($request);
