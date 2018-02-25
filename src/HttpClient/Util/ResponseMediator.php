@@ -19,6 +19,7 @@ final class ResponseMediator
             case 200:
 
                 $response = new \stdClass();
+                $response->reasonPhrase = $responseObj->getReasonPhrase();
                 $response->statusCode = $httpResponseCode;
                 $response->headers = $responseObj->getHeaders();
 
@@ -38,13 +39,20 @@ final class ResponseMediator
 
                 return $response;
 
-            case 400:
-
-            case 401:
+            case 403:
+                // TODO Add forbidden resource exception
 
             case 404:
+                // TODO Add resource not found exception
+
+            case 409:
+                // TODO Add too many requests exception
+
+            case 500:
+                // TODO Add server error exception
 
             default:
+                // TODO Add default response exception
 
         }
     }
