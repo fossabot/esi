@@ -32,13 +32,33 @@ class DataSourcePluginTest extends TestCase
         }));
     }
 
-    public function testChangingApiVersionInQuery()
+    public function testChangingDatasourceInQuery()
     {
         $request = new Request('GET', '/test');
 
         $expected = new Request('GET', '/test?datasource=test');
 
         $plugin = new DataSourcePlugin('test');
+
+        $callback = $this->getMockBuilder(\stdClass::class)
+            ->setMethods(['next'])
+            ->getMock();
+
+        $callback->expects($this->once())
+            ->method('next')
+            ->with($expected);
+
+        $plugin->handleRequest($request, [$callback, 'next'], function () {
+        });
+    }
+
+    public function testNoRequirementToSetDatasource()
+    {
+        $request = new Request('GET', '/test');
+
+        $expected = new Request('GET', '/test?datasource=tranquility');
+
+        $plugin = new DataSourcePlugin();
 
         $callback = $this->getMockBuilder(\stdClass::class)
             ->setMethods(['next'])

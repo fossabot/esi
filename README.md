@@ -45,7 +45,7 @@ Full documentation for each endpoint is in the works, if you have any questions 
 
 ### Testing
 
-Testing is handled by PHPUnit 7. You can run the tests by running the below command in your terminal.
+Testing is handled by PHPUnit 7. You can run the tests by executing the below command in your terminal.
 
 ```bash
 $ ./vendor/bin/phpunit

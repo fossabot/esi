@@ -51,4 +51,24 @@ class LanguagePluginTest extends TestCase
         $plugin->handleRequest($request, [$callback, 'next'], function () {
         });
     }
+
+    public function testNoRequirementToSetLanguage()
+    {
+        $request = new Request('GET', '/test');
+
+        $expected = new Request('GET', '/test?language=en-us');
+
+        $plugin = new LanguagePlugin();
+
+        $callback = $this->getMockBuilder(\stdClass::class)
+            ->setMethods(['next'])
+            ->getMock();
+
+        $callback->expects($this->once())
+            ->method('next')
+            ->with($expected);
+
+        $plugin->handleRequest($request, [$callback, 'next'], function () {
+        });
+    }
 }
