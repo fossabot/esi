@@ -36,9 +36,11 @@ The steps and prerequisites to suggesting a feature or enhancement are detailed 
 
 ***Please make note of all changes made, and update the changelog as appropriate***
 
-Documentation is currently minimal, a read the docs is in the works and will be based on rst over md documents.
+Please see the [read the docs](http://esi.rtfd.io/) for up-to-date documentation. It's important to familiarise yourself with read the docs and sphinx before updating documentation.
 
-For the time being api documentation can be generated automatically via [Sami](https://github.com/FriendsOfPHP/Sami). A `sami_config.php` has been provided.
+Everything you need to compile and get started with sphinx is included in the project. If you have any questions please email me at [contact@anthonygrimes.co.uk](mailto:contact@anthonygrimes.co.uk).
+
+Full API documentation can be generated automatically via [Sami](https://github.com/FriendsOfPHP/Sami). A `sami_config.php.dist` has been provided.
 
 ## Code review process
 
