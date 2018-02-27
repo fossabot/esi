@@ -17,28 +17,21 @@ esi is a PHP Http Client for ESI (EVE Swagger Interface).
 Esi is developed with [httplug](http://httplug.io/). This is a client abstraction which allows you, the user or application
 developer to decide what client to use that will meet your specification as long as it's in keeping with httplug's guidelines.
 
-Please see [usage of httplug](http://docs.php-http.org/en/latest/httplug/usage.html)for more info.
+Please see [usage of httplug](http://docs.php-http.org/en/latest/httplug/usage.html) for more info.
 
 ### Installation
 
 ### composer via (packagist)
 
 ``` shell
-
-    $ composer require agrimes94/esi 
-
+$ composer require agrimes94/esi 
 ```
 
 ### Usage
 
 The esi library exposes a simple and expressive api for you to interact with.
 
-Please see the [guidelines for contributing](CONTRIBUTING.md) on how to generate complete API documentation.
-
-*QUICK GUIDE*
-
 ``` php
-
     $esiClient = \AGrimes94\Esi\EsiClient::create()->authenticate('ACCESS_TOKEN');
 
     $response = $client->industry()->getCorporationJobs($corpId);
@@ -78,19 +71,18 @@ Please see the [guidelines for contributing](CONTRIBUTING.md) on how to generate
      *            2 => array:18 [▶]
      *
      */
-     
 ```
 
-Further documentation can be found at [read the docs](http://esi.rtfd.io/), if you have any questions please email me at [contact@anthonygrimes.co.uk](mailto:contact@anthonygrimes.co.uk).
+Further usage documentation can be found at [read the docs](http://esi.rtfd.io/), if you have any questions please email me at [contact@anthonygrimes.co.uk](mailto:contact@anthonygrimes.co.uk).
+
+Please see the [guidelines for contributing](CONTRIBUTING.md) on how to generate complete API documentation.
 
 ### Testing
 
 Testing is handled by PHPUnit 7. You can run the tests by executing the below command in your terminal.
 
 ``` shell
-
-    $ ./vendor/bin/phpunit
-    
+$ ./vendor/bin/phpunit
 ```
 
 ## Contributing
