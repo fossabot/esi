@@ -1,24 +1,16 @@
 Introduction to the esi client
 ==============================
 
-Before diving into using esi it's good to understand if this client is for you.
-Esi is developed with `httplug <http://httplug.io/>`_. This is a client abstraction which allows you, the user or application
-developer to decide what client to use that will meet your specification as long as it's in keeping with httplug's guidelines.
-
-Please see `usage of httplug <http://docs.php-http.org/en/latest/httplug/usage.html>`_ for more info.
-
 Prerequisites
 -------------
 
-If you've decided to use esi it's important to know what you will need before developing.
-
-Esi requires your application to be at least PHP 7.1 compatible, and have a desired application installed before installing esi,
+Esi requires your application to be at least PHP 7.1 compatible, and have a desired http client or `adapter <http://docs.php-http.org/en/latest/clients.html>`_ installed before installing esi,
 otherwise you will experience installation errors as mentioned in the docs at `composer-fails on httplug <http://docs.php-http.org/en/latest/httplug/users.html#composer-fails>`_.
+
+Please see `usage of httplug <http://docs.php-http.org/en/latest/httplug/usage.html>`_ for more info.
 
 Installation
 ------------
-
-Installation is handled by composer, you install esi directly from the popular packagist:
 
 .. code-block:: shell
 
@@ -31,7 +23,7 @@ Quick Start
 
     $esiClient = \AGrimes94\Esi\EsiClient::create()->authenticate('ACCESS_TOKEN');
 
-    $response = $client->industry()->getCorporationJobs($corpId);
+    $response = $client->industry()->getCorporationJobs($corpId, $page);
 
     /*
      * You can then access the individual components of the response as an associative array via:
@@ -78,7 +70,9 @@ follows:
 
     $client->character()->getPublicInformation($characterId);
 
-Very simple!
+Very simple, and as shown above pagination is as simple as reading the returned X-Pages header and passing the page as an integer value the paginated endpoint method.
+For more info on pagination please see `esi-concurrent-programming-and-pagination <https://developers.eveonline.com/blog/article/esi-concurrent-programming-and-pagination>`_
+where CCP Zoetrope discusses how CCP would implement and handle pagination.
 
 Each endpoint is heavily documented and will continue to only improve. In addition esi has automated testing to check if any endpoints become
 incompatible with the /latest/ series of endpoints offered.
