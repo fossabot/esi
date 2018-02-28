@@ -239,7 +239,7 @@ abstract class AbstractApi
      *
      * @return array
      */
-    protected function paginateQuery(int $page): array // TODO Possible to change to accept $params = [] and concatenate
+    protected function paginateQuery(int $page): array
     {
         $params = [
             'page' => $page,

@@ -93,7 +93,7 @@ class Contacts extends AbstractApi
             $params['watched'] = $isWatched;
         }
 
-        $path = $this->preparePath($path, $params); // TODO Perhaps alter how POST/PUT are handling params to avoid DRY
+        $path = $this->preparePath($path, $params);
 
         return $this->post($path, $contactIds);
     }
@@ -134,7 +134,7 @@ class Contacts extends AbstractApi
             $params['watched'] = $isWatched;
         }
 
-        $path = $this->preparePath($path, $params); // TODO Perhaps alter how POST/PUT are handling params to avoid DRY
+        $path = $this->preparePath($path, $params);
 
         return $this->put($path, $contactIds);
     }
