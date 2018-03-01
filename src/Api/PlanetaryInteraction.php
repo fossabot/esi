@@ -18,7 +18,6 @@ class PlanetaryInteraction extends AbstractApi
      *
      * @param int $characterId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -40,7 +39,6 @@ class PlanetaryInteraction extends AbstractApi
      * @param int $characterId
      * @param int $planetId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -58,7 +56,6 @@ class PlanetaryInteraction extends AbstractApi
      * Get information on a planetary factory schematic.
      *
      * @param int $schematicId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -78,7 +75,6 @@ class PlanetaryInteraction extends AbstractApi
      *
      * @param int $corporationId
      * @param int $page
-     *
      *
      * @throws \Http\Client\Exception
      *

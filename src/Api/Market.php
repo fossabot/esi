@@ -18,7 +18,6 @@ class Market extends AbstractApi
      *
      * @param int $characterId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -37,7 +36,6 @@ class Market extends AbstractApi
      *
      * @param int $characterId
      * @param int $page
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -58,7 +56,6 @@ class Market extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -78,7 +75,6 @@ class Market extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -97,7 +93,6 @@ class Market extends AbstractApi
      *
      * @param int $regionId
      * @param int $typeId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -122,7 +117,6 @@ class Market extends AbstractApi
      * @param string   $orderType
      * @param int|null $typeId
      * @param int      $page
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -150,7 +144,6 @@ class Market extends AbstractApi
      *
      * @param int $regionId
      * @param int $page
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -187,7 +180,6 @@ class Market extends AbstractApi
      *
      * @param int $marketGroupId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -223,7 +215,6 @@ class Market extends AbstractApi
      *
      * @param int $structureId
      * @param int $page
-     *
      *
      * @throws \Http\Client\Exception
      *

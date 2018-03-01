@@ -45,8 +45,10 @@ abstract class AbstractApi
      * @param $path
      * @param array $parameters
      * @param array $requestHeaders
-     * @return ResponseInterface
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return ResponseInterface
      */
     protected function getAsResponse($path, array $parameters = [], $requestHeaders = []): ResponseInterface
     {
@@ -61,8 +63,10 @@ abstract class AbstractApi
      * @param $path
      * @param array $parameters
      * @param array $requestHeaders
-     * @return \stdClass
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     protected function get($path, array $parameters = [], array $requestHeaders = [])
     {
@@ -76,8 +80,10 @@ abstract class AbstractApi
      * @param array $parameters
      * @param array $requestHeaders
      * @param array $files
-     * @return \stdClass
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     protected function post($path, array $parameters = [], $requestHeaders = [], array $files = [])
     {
@@ -118,8 +124,10 @@ abstract class AbstractApi
      * @param $path
      * @param array $parameters
      * @param array $requestHeaders
-     * @return \stdClass
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     protected function put($path, array $parameters = [], $requestHeaders = [])
     {
@@ -142,8 +150,10 @@ abstract class AbstractApi
      * @param $path
      * @param array $parameters
      * @param array $requestHeaders
-     * @return \stdClass
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     protected function delete($path, array $parameters = [], $requestHeaders = [])
     {

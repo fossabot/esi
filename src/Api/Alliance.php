@@ -15,9 +15,10 @@ class Alliance extends AbstractApi
      * HTTP Method: GET
      *
      * List all active player alliances.
-     * 
-     * @return \stdClass
+     *
      * @throws \Http\Client\Exception
+     *
+     * @return \stdClass
      */
     public function listAlliances()
     {

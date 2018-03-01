@@ -19,7 +19,6 @@ class Contacts extends AbstractApi
      * @param int $allianceId
      * @param int $page
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -38,7 +37,6 @@ class Contacts extends AbstractApi
      *
      * @param int $characterId
      * @param int $page
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -61,7 +59,6 @@ class Contacts extends AbstractApi
      * @param int       $standing    -10, -5, 0, 5, 10
      * @param int|null  $labelId
      * @param bool|null $isWatched
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -99,7 +96,6 @@ class Contacts extends AbstractApi
      * @param int|null  $labelId
      * @param bool|null $isWatched
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -133,7 +129,6 @@ class Contacts extends AbstractApi
      * @param int   $characterId
      * @param array $contactIds
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -156,7 +151,6 @@ class Contacts extends AbstractApi
      *
      * @param int $characterId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -174,7 +168,6 @@ class Contacts extends AbstractApi
      * Return contacts of a corporation.
      *
      * @param int $corporationId
-     *
      *
      * @throws \Http\Client\Exception
      *

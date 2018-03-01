@@ -21,7 +21,6 @@ class Mail extends AbstractApi
      * @param array|null $byLabels
      * @param int|null   $lastMailId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -51,7 +50,6 @@ class Mail extends AbstractApi
      * @param int   $characterId
      * @param array $mail
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -71,7 +69,6 @@ class Mail extends AbstractApi
      * @param int $characterId
      * @param int $mailId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -90,7 +87,6 @@ class Mail extends AbstractApi
      *
      * @param int $characterId
      * @param int $mailId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -113,7 +109,6 @@ class Mail extends AbstractApi
      * @param int   $mailId
      * @param array $contents
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -131,7 +126,6 @@ class Mail extends AbstractApi
      * Return a list of the users mail labels, unread counts for each label and a total unread count.
      *
      * @param int $characterId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -152,7 +146,6 @@ class Mail extends AbstractApi
      * @param int   $characterId
      * @param array $label
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -172,7 +165,6 @@ class Mail extends AbstractApi
      * @param int $characterId
      * @param int $labelId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -190,7 +182,6 @@ class Mail extends AbstractApi
      * Return all mailing lists that the character is subscribed to.
      *
      * @param int $characterId
-     *
      *
      * @throws \Http\Client\Exception
      *

@@ -18,7 +18,6 @@ class Fleets extends AbstractApi
      *
      * @param int $characterId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -36,7 +35,6 @@ class Fleets extends AbstractApi
      * Return details about a fleet.
      *
      * @param int $fleetId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -57,7 +55,6 @@ class Fleets extends AbstractApi
      * @param int   $fleetId
      * @param array $settings
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -75,7 +72,6 @@ class Fleets extends AbstractApi
      * Return information about fleet members.
      *
      * @param int $fleetId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -99,7 +95,6 @@ class Fleets extends AbstractApi
      * @param int   $fleetId
      * @param array $invite
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -118,7 +113,6 @@ class Fleets extends AbstractApi
      *
      * @param int $fleetId
      * @param int $memberId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -140,7 +134,6 @@ class Fleets extends AbstractApi
      * @param int   $memberId
      * @param array $movement
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -159,7 +152,6 @@ class Fleets extends AbstractApi
      *
      * @param int $fleetId
      * @param int $wingId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -181,7 +173,6 @@ class Fleets extends AbstractApi
      * @param int   $squadId
      * @param array $naming
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -201,7 +192,6 @@ class Fleets extends AbstractApi
      * @param int $fleetId
      * @param int $squadId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -220,7 +210,6 @@ class Fleets extends AbstractApi
      *
      * @param int $fleetId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -238,7 +227,6 @@ class Fleets extends AbstractApi
      * Create a new wing in a fleet.
      *
      * @param int $fleetId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -260,7 +248,6 @@ class Fleets extends AbstractApi
      * @param int   $wingId
      * @param array $naming
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -281,7 +268,6 @@ class Fleets extends AbstractApi
      *
      * @param int $fleetId
      * @param int $wingId
-     *
      *
      * @throws \Http\Client\Exception
      *

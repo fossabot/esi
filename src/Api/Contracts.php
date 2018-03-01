@@ -21,7 +21,6 @@ class Contracts extends AbstractApi
      * @param int $characterId
      * @param int $page
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -41,7 +40,6 @@ class Contracts extends AbstractApi
      * @param int $characterId
      * @param int $contractId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -60,7 +58,6 @@ class Contracts extends AbstractApi
      *
      * @param int $characterId
      * @param int $contractId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -83,7 +80,6 @@ class Contracts extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -102,7 +98,6 @@ class Contracts extends AbstractApi
      *
      * @param int $corporationId
      * @param int $contractId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -123,7 +118,6 @@ class Contracts extends AbstractApi
      * @param int $corporationId
      * @param int $contractId
      * @param int $page
-     *
      *
      * @throws \Http\Client\Exception
      *

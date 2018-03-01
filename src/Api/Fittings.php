@@ -18,7 +18,6 @@ class Fittings extends AbstractApi
      *
      * @param int $characterId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -38,7 +37,6 @@ class Fittings extends AbstractApi
      * @param int   $characterId
      * @param array $fitting
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -57,7 +55,6 @@ class Fittings extends AbstractApi
      *
      * @param int $characterId
      * @param int $fittingId
-     *
      *
      * @throws \Http\Client\Exception
      *

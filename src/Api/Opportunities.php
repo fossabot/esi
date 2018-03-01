@@ -53,7 +53,6 @@ class Opportunities extends AbstractApi
      *
      * @param int $groupId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -88,7 +87,6 @@ class Opportunities extends AbstractApi
      * Return information of an opportunities task.
      *
      * @param int $taskId
-     *
      *
      * @throws \Http\Client\Exception
      *

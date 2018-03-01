@@ -20,7 +20,6 @@ class Search extends AbstractApi
      * @param array  $categories ['agent', 'alliance', 'character', 'constellation, 'corporation', 'faction', 'inventory_type', 'region', 'solar_system', 'station']
      * @param bool   $strict
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -43,7 +42,6 @@ class Search extends AbstractApi
      * @param string $search
      * @param array  $categories  ['agent', 'alliance', 'character', 'constellation, 'corporation', 'faction', 'inventory_type', 'region', 'solar_system', 'station']
      * @param bool   $strict
-     *
      *
      * @throws \Http\Client\Exception
      *

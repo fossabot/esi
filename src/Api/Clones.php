@@ -18,7 +18,6 @@ class Clones extends AbstractApi
      *
      * @param int $characterId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -36,7 +35,6 @@ class Clones extends AbstractApi
      * Return implants on the active clone of a character.
      *
      * @param int $characterId
-     *
      *
      * @throws \Http\Client\Exception
      *

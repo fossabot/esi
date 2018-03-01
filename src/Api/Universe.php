@@ -69,7 +69,6 @@ class Universe extends AbstractApi
      *
      * @param int $categoryId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -104,7 +103,6 @@ class Universe extends AbstractApi
      * Get information on a constellation.
      *
      * @param int $constellationId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -158,7 +156,6 @@ class Universe extends AbstractApi
      *
      * @param int $graphicId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -177,7 +174,6 @@ class Universe extends AbstractApi
      *
      * @param int $page
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -195,7 +191,6 @@ class Universe extends AbstractApi
      * Get information on an item group.
      *
      * @param int $groupId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -221,7 +216,6 @@ class Universe extends AbstractApi
      *
      * @param array $names
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -239,7 +233,6 @@ class Universe extends AbstractApi
      * Get information on a moon.
      *
      * @param int $moonId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -263,7 +256,6 @@ class Universe extends AbstractApi
      *
      * @param array $ids
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -281,7 +273,6 @@ class Universe extends AbstractApi
      * Get information on a planet.
      *
      * @param int $planetId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -335,7 +326,6 @@ class Universe extends AbstractApi
      *
      * @param int $regionId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -353,7 +343,6 @@ class Universe extends AbstractApi
      * Get information on a stargate.
      *
      * @param int $stargateId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -373,7 +362,6 @@ class Universe extends AbstractApi
      *
      * @param int $starId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -391,7 +379,6 @@ class Universe extends AbstractApi
      * Get information on a station.
      *
      * @param int $stationId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -429,7 +416,6 @@ class Universe extends AbstractApi
      * Otherwise, returns “Forbidden” for all inputs.
      *
      * @param int $structureId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -508,7 +494,6 @@ class Universe extends AbstractApi
      *
      * @param int $systemId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -527,7 +512,6 @@ class Universe extends AbstractApi
      *
      * @param int $page
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -545,7 +529,6 @@ class Universe extends AbstractApi
      * Get information on a type.
      *
      * @param int $typeId
-     *
      *
      * @throws \Http\Client\Exception
      *

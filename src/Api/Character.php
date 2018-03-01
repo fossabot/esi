@@ -18,7 +18,6 @@ class Character extends AbstractApi
      *
      * @param int $characterId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -40,7 +39,6 @@ class Character extends AbstractApi
      *
      * @param int $characterId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -60,7 +58,6 @@ class Character extends AbstractApi
      * @param int $characterId
      * @param int $page
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -79,7 +76,6 @@ class Character extends AbstractApi
      *
      * @param int $characterId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -97,7 +93,6 @@ class Character extends AbstractApi
      * Get a list of all the corporations a character has been a member of.
      *
      * @param int $characterId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -119,7 +114,6 @@ class Character extends AbstractApi
      * @param int   $characterId
      * @param array $targetCharacters
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -137,7 +131,6 @@ class Character extends AbstractApi
      * Return a character’s jump activation and fatigue information.
      *
      * @param int $characterId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -157,7 +150,6 @@ class Character extends AbstractApi
      *
      * @param int $characterId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -175,7 +167,6 @@ class Character extends AbstractApi
      * Return character notifications.
      *
      * @param int $characterId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -195,7 +186,6 @@ class Character extends AbstractApi
      *
      * @param int $characterId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -213,7 +203,6 @@ class Character extends AbstractApi
      * Get portrait urls for a character.
      *
      * @param int $characterId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -233,7 +222,6 @@ class Character extends AbstractApi
      *
      * @param int $characterId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -251,7 +239,6 @@ class Character extends AbstractApi
      * Return character standings from agents, NPC corporations, and factions.
      *
      * @param int $characterId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -271,7 +258,6 @@ class Character extends AbstractApi
      *
      * @param int $characterId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -289,7 +275,6 @@ class Character extends AbstractApi
      * Returns a character’s titles.
      *
      * @param int $characterId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -309,7 +294,6 @@ class Character extends AbstractApi
      *
      * @param array $characterIds
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -327,7 +311,6 @@ class Character extends AbstractApi
      * Resolve a set of character IDs to character names.
      *
      * @param array $characterIds
-     *
      *
      * @throws \Http\Client\Exception
      *

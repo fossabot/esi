@@ -18,7 +18,6 @@ class Wallet extends AbstractApi
      *
      * @param int $characterId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -37,7 +36,6 @@ class Wallet extends AbstractApi
      *
      * @param int      $characterId
      * @param int|null $fromId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -63,7 +61,6 @@ class Wallet extends AbstractApi
      * @param int      $characterId
      * @param int|null $fromId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -87,7 +84,6 @@ class Wallet extends AbstractApi
      *
      * @param int $corporationId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -107,7 +103,6 @@ class Wallet extends AbstractApi
      * @param int      $corporationId
      * @param int      $divisionId
      * @param int|null $fromId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -133,7 +128,6 @@ class Wallet extends AbstractApi
      * @param int      $corporationId
      * @param int      $divisionId
      * @param int|null $fromId
-     *
      *
      * @throws \Http\Client\Exception
      *

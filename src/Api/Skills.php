@@ -18,7 +18,6 @@ class Skills extends AbstractApi
      *
      * @param int $characterId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -37,7 +36,6 @@ class Skills extends AbstractApi
      *
      * @param int $characterId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -55,7 +53,6 @@ class Skills extends AbstractApi
      * List all trained skills for the given character
      *
      * @param int $characterId
-     *
      *
      * @throws \Http\Client\Exception
      *

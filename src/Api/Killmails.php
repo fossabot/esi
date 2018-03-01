@@ -19,7 +19,6 @@ class Killmails extends AbstractApi
      * @param int    $killmailId
      * @param string $killmailHash
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -38,7 +37,6 @@ class Killmails extends AbstractApi
      *
      * @param int $characterId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -56,7 +54,6 @@ class Killmails extends AbstractApi
      * Get a list of corporation's recent kills and losses.
      *
      * @param int $corporationId
-     *
      *
      * @throws \Http\Client\Exception
      *

@@ -22,7 +22,6 @@ class Routes extends AbstractApi
      * @param array|null $avoid         [30002771, 30002770, 30002769]
      * @param array|null $connections   [30002771, 30002770, 30002769]
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass

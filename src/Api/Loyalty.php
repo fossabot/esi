@@ -19,7 +19,6 @@ class Loyalty extends AbstractApi
      *
      * @param int $characterId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -37,7 +36,6 @@ class Loyalty extends AbstractApi
      * Return a list of offers from a specific corporation’s loyalty store.
      *
      * @param int $corporationId
-     *
      *
      * @throws \Http\Client\Exception
      *

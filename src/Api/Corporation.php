@@ -18,7 +18,6 @@ class Corporation extends AbstractApi
      *
      * @param int $corporationId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -36,7 +35,6 @@ class Corporation extends AbstractApi
      * Get a list of all the alliances a corporation has been a member of.
      *
      * @param int $corporationId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -56,7 +54,6 @@ class Corporation extends AbstractApi
      *
      * @param array $corporationIds
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -75,7 +72,6 @@ class Corporation extends AbstractApi
      *
      * @param int $corporationId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -93,7 +89,6 @@ class Corporation extends AbstractApi
      * Return the roles of all members if the character has the personnel manager role or any grantable role.
      *
      * @param int $corporationId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -114,7 +109,6 @@ class Corporation extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -132,7 +126,6 @@ class Corporation extends AbstractApi
      * Get the icon urls for a corporation.
      *
      * @param int $corporationId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -170,7 +163,6 @@ class Corporation extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -188,7 +180,6 @@ class Corporation extends AbstractApi
      * Returns additional information about a corporation's members which helps tracking their activities.
      *
      * @param int $corporationId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -208,7 +199,6 @@ class Corporation extends AbstractApi
      *
      * @param int $corporationId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -226,7 +216,6 @@ class Corporation extends AbstractApi
      * Return a corporation's member limit, not including CEO himself.
      *
      * @param int $corporationId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -246,7 +235,6 @@ class Corporation extends AbstractApi
      *
      * @param int $corporationId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -264,7 +252,6 @@ class Corporation extends AbstractApi
      * Returns a corporation's members' titles.
      *
      * @param int $corporationId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -285,7 +272,6 @@ class Corporation extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -304,7 +290,6 @@ class Corporation extends AbstractApi
      *
      * @param int $corporationId
      * @param int $page
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -325,7 +310,6 @@ class Corporation extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -344,7 +328,6 @@ class Corporation extends AbstractApi
      *
      * @param int $corporationId
      * @param int $starbaseId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -366,7 +349,6 @@ class Corporation extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -384,7 +366,6 @@ class Corporation extends AbstractApi
      * Return a corporation's facilities.
      *
      * @param int $corporationId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -405,7 +386,6 @@ class Corporation extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -424,7 +404,6 @@ class Corporation extends AbstractApi
      *
      * @param int $corporationId
      * @param int $page
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -447,7 +426,6 @@ class Corporation extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -469,7 +447,6 @@ class Corporation extends AbstractApi
      * @param int $corporationId
      * @param int $outpostId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -488,7 +465,6 @@ class Corporation extends AbstractApi
      *
      * @param int $corporationId
      * @param int $page
-     *
      *
      * @throws \Http\Client\Exception
      *

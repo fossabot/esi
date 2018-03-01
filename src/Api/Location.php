@@ -19,7 +19,6 @@ class Location extends AbstractApi
      *
      * @param int $characterId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -38,7 +37,6 @@ class Location extends AbstractApi
      *
      * @param int $characterId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -56,7 +54,6 @@ class Location extends AbstractApi
      * Checks if the character is currently online.
      *
      * @param int $characterId
-     *
      *
      * @throws \Http\Client\Exception
      *

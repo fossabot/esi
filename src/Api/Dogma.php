@@ -36,7 +36,6 @@ class Dogma extends AbstractApi
      *
      * @param int $attributeId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -71,7 +70,6 @@ class Dogma extends AbstractApi
      * Get information on a dogma effect.
      *
      * @param int $effectId
-     *
      *
      * @throws \Http\Client\Exception
      *

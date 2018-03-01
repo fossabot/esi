@@ -18,7 +18,6 @@ class Wars extends AbstractApi
      *
      * @param int|null $maxWarId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -42,7 +41,6 @@ class Wars extends AbstractApi
      *
      * @param int $warId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -61,7 +59,6 @@ class Wars extends AbstractApi
      *
      * @param int $warId
      * @param int $page
-     *
      *
      * @throws \Http\Client\Exception
      *

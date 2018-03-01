@@ -20,7 +20,6 @@ class UserInterface extends AbstractApi
      * @param bool|null $addToBeginning
      * @param bool|null $clearOtherWaypoints
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -52,7 +51,6 @@ class UserInterface extends AbstractApi
      *
      * @param int $contractId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -75,7 +73,6 @@ class UserInterface extends AbstractApi
      * Open the information window for a character, corporation or alliance inside the client.
      *
      * @param int $targetId
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -100,7 +97,6 @@ class UserInterface extends AbstractApi
      *
      * @param int $typeId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -123,7 +119,6 @@ class UserInterface extends AbstractApi
      * Open the New Mail window, according to settings from the request if applicable.
      *
      * @param array $newMail
-     *
      *
      * @throws \Http\Client\Exception
      *

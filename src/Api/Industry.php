@@ -52,7 +52,6 @@ class Industry extends AbstractApi
      *
      * @param int $characterId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -72,7 +71,6 @@ class Industry extends AbstractApi
      * @param int $characterId
      * @param int $page
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -91,7 +89,6 @@ class Industry extends AbstractApi
      *
      * @param int $corporationId
      * @param int $page
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -113,7 +110,6 @@ class Industry extends AbstractApi
      * @param int $observerId
      * @param int $page
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -133,7 +129,6 @@ class Industry extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -151,7 +146,6 @@ class Industry extends AbstractApi
      * Extraction timers for all moon chunks being extracted by refineries belonging to a corporation.
      *
      * @param int $corporationId
-     *
      *
      * @throws \Http\Client\Exception
      *

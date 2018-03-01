@@ -67,7 +67,6 @@ class Calendar extends AbstractApi
      * @param int   $eventId
      * @param array $response
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass

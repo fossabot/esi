@@ -69,7 +69,6 @@ class FactionWarfare extends AbstractApi
      *
      * @param int $characterId
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -87,7 +86,6 @@ class FactionWarfare extends AbstractApi
      * Statistics about a corporation involved in faction warfare.
      *
      * @param int $corporationId
-     *
      *
      * @throws \Http\Client\Exception
      *
