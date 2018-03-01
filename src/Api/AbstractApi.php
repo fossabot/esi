@@ -42,13 +42,11 @@ abstract class AbstractApi
     /**
      * Performs a GET query and returns the response as a PSR-7 response object.
      *
-     * @param string $path
-     * @param array  $parameters
-     * @param array  $requestHeaders
-     *
-     * @throws \Http\Client\Exception
-     *
+     * @param $path
+     * @param array $parameters
+     * @param array $requestHeaders
      * @return ResponseInterface
+     * @throws \Http\Client\Exception
      */
     protected function getAsResponse($path, array $parameters = [], $requestHeaders = []): ResponseInterface
     {
@@ -63,15 +61,8 @@ abstract class AbstractApi
      * @param $path
      * @param array $parameters
      * @param array $requestHeaders
-     *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
-     * @throws \Http\Client\Exception
-     *
      * @return \stdClass
+     * @throws \Http\Client\Exception
      */
     protected function get($path, array $parameters = [], array $requestHeaders = [])
     {
@@ -85,15 +76,8 @@ abstract class AbstractApi
      * @param array $parameters
      * @param array $requestHeaders
      * @param array $files
-     *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
-     * @throws \Http\Client\Exception
-     *
      * @return \stdClass
+     * @throws \Http\Client\Exception
      */
     protected function post($path, array $parameters = [], $requestHeaders = [], array $files = [])
     {
@@ -134,15 +118,8 @@ abstract class AbstractApi
      * @param $path
      * @param array $parameters
      * @param array $requestHeaders
-     *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
-     * @throws \Http\Client\Exception
-     *
      * @return \stdClass
+     * @throws \Http\Client\Exception
      */
     protected function put($path, array $parameters = [], $requestHeaders = [])
     {
@@ -165,15 +142,8 @@ abstract class AbstractApi
      * @param $path
      * @param array $parameters
      * @param array $requestHeaders
-     *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
-     * @throws \Http\Client\Exception
-     *
      * @return \stdClass
+     * @throws \Http\Client\Exception
      */
     protected function delete($path, array $parameters = [], $requestHeaders = [])
     {
