@@ -19,11 +19,7 @@ class Contacts extends AbstractApi
      * @param int $allianceId
      * @param int $page
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -43,11 +39,7 @@ class Contacts extends AbstractApi
      * @param int $characterId
      * @param int $page
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -70,11 +62,7 @@ class Contacts extends AbstractApi
      * @param int|null  $labelId
      * @param bool|null $isWatched
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -111,11 +99,7 @@ class Contacts extends AbstractApi
      * @param int|null  $labelId
      * @param bool|null $isWatched
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -149,11 +133,7 @@ class Contacts extends AbstractApi
      * @param int   $characterId
      * @param array $contactIds
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -176,11 +156,7 @@ class Contacts extends AbstractApi
      *
      * @param int $characterId
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -199,11 +175,7 @@ class Contacts extends AbstractApi
      *
      * @param int $corporationId
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass

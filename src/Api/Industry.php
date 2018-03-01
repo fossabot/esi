@@ -16,11 +16,7 @@ class Industry extends AbstractApi
      *
      * Return a list of industry facilities.
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -37,11 +33,7 @@ class Industry extends AbstractApi
      *
      * Return cost indices for solar systems.
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -60,11 +52,7 @@ class Industry extends AbstractApi
      *
      * @param int $characterId
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -84,11 +72,7 @@ class Industry extends AbstractApi
      * @param int $characterId
      * @param int $page
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -108,11 +92,7 @@ class Industry extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -133,11 +113,7 @@ class Industry extends AbstractApi
      * @param int $observerId
      * @param int $page
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -157,11 +133,7 @@ class Industry extends AbstractApi
      * @param int $corporationId
      * @param int $page
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -180,11 +152,7 @@ class Industry extends AbstractApi
      *
      * @param int $corporationId
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass

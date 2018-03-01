@@ -18,11 +18,6 @@ class Opportunities extends AbstractApi
      *
      * @param int $characterId
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -39,11 +34,7 @@ class Opportunities extends AbstractApi
      *
      * Return a list of opportunities groups.
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -62,11 +53,7 @@ class Opportunities extends AbstractApi
      *
      * @param int $groupId
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -83,11 +70,7 @@ class Opportunities extends AbstractApi
      *
      * Return a list of opportunities tasks.
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -106,11 +89,7 @@ class Opportunities extends AbstractApi
      *
      * @param int $taskId
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass

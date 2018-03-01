@@ -18,11 +18,7 @@ class Fleets extends AbstractApi
      *
      * @param int $characterId
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -41,11 +37,7 @@ class Fleets extends AbstractApi
      *
      * @param int $fleetId
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -65,11 +57,7 @@ class Fleets extends AbstractApi
      * @param int   $fleetId
      * @param array $settings
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -88,11 +76,7 @@ class Fleets extends AbstractApi
      *
      * @param int $fleetId
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -115,11 +99,7 @@ class Fleets extends AbstractApi
      * @param int   $fleetId
      * @param array $invite
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -139,11 +119,7 @@ class Fleets extends AbstractApi
      * @param int $fleetId
      * @param int $memberId
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -164,11 +140,7 @@ class Fleets extends AbstractApi
      * @param int   $memberId
      * @param array $movement
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -188,11 +160,7 @@ class Fleets extends AbstractApi
      * @param int $fleetId
      * @param int $wingId
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -213,11 +181,7 @@ class Fleets extends AbstractApi
      * @param int   $squadId
      * @param array $naming
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -237,11 +201,7 @@ class Fleets extends AbstractApi
      * @param int $fleetId
      * @param int $squadId
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -260,11 +220,7 @@ class Fleets extends AbstractApi
      *
      * @param int $fleetId
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -283,11 +239,7 @@ class Fleets extends AbstractApi
      *
      * @param int $fleetId
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -308,11 +260,7 @@ class Fleets extends AbstractApi
      * @param int   $wingId
      * @param array $naming
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -334,11 +282,7 @@ class Fleets extends AbstractApi
      * @param int $fleetId
      * @param int $wingId
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass

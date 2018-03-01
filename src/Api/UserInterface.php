@@ -20,11 +20,7 @@ class UserInterface extends AbstractApi
      * @param bool|null $addToBeginning
      * @param bool|null $clearOtherWaypoints
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -56,11 +52,7 @@ class UserInterface extends AbstractApi
      *
      * @param int $contractId
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -84,11 +76,7 @@ class UserInterface extends AbstractApi
      *
      * @param int $targetId
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -112,11 +100,7 @@ class UserInterface extends AbstractApi
      *
      * @param int $typeId
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -140,11 +124,7 @@ class UserInterface extends AbstractApi
      *
      * @param array $newMail
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
+     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
