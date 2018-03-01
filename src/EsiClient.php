@@ -9,6 +9,7 @@ use AGrimes94\Esi\HttpClient\Plugin\LanguagePlugin;
 use Http\Client\Common\HttpMethodsClient;
 use Http\Client\Common\Plugin\AddHostPlugin;
 use Http\Client\Common\Plugin\AuthenticationPlugin;
+use Http\Client\Common\Plugin\ErrorPlugin;
 use Http\Client\Common\Plugin\HeaderDefaultsPlugin;
 use Http\Client\HttpClient;
 use Http\Discovery\UriFactoryDiscovery;
@@ -50,6 +51,8 @@ class EsiClient
                 UriFactoryDiscovery::find()
                     ->createUri('https://esi.tech.ccp.is'))
         );
+
+        $this->httpClientFactory->addPlugin(new ErrorPlugin());
     }
 
     /**
