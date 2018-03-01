@@ -16,11 +16,6 @@ class Alliance extends AbstractApi
      *
      * List all active player alliances.
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -39,11 +34,6 @@ class Alliance extends AbstractApi
      *
      * @param int $allianceId
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -62,11 +52,6 @@ class Alliance extends AbstractApi
      *
      * @param int $allianceId
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -85,11 +70,6 @@ class Alliance extends AbstractApi
      *
      * @param int $allianceId
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -108,11 +88,6 @@ class Alliance extends AbstractApi
      *
      * @param array $allianceIds
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
      * @throws \Http\Client\Exception
      *
      * @return \stdClass

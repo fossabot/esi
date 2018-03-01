@@ -42,9 +42,9 @@ abstract class AbstractApi
     /**
      * Performs a GET query and returns the response as a PSR-7 response object.
      *
-     * @param string $path
-     * @param array  $parameters
-     * @param array  $requestHeaders
+     * @param $path
+     * @param array $parameters
+     * @param array $requestHeaders
      *
      * @throws \Http\Client\Exception
      *
@@ -64,11 +64,6 @@ abstract class AbstractApi
      * @param array $parameters
      * @param array $requestHeaders
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -86,11 +81,6 @@ abstract class AbstractApi
      * @param array $requestHeaders
      * @param array $files
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -135,11 +125,6 @@ abstract class AbstractApi
      * @param array $parameters
      * @param array $requestHeaders
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -166,11 +151,6 @@ abstract class AbstractApi
      * @param array $parameters
      * @param array $requestHeaders
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -239,7 +219,7 @@ abstract class AbstractApi
      *
      * @return array
      */
-    protected function paginateQuery(int $page): array // TODO Possible to change to accept $params = [] and concatenate
+    protected function paginateQuery(int $page): array
     {
         $params = [
             'page' => $page,

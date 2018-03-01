@@ -19,11 +19,6 @@ class Contacts extends AbstractApi
      * @param int $allianceId
      * @param int $page
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -43,11 +38,6 @@ class Contacts extends AbstractApi
      * @param int $characterId
      * @param int $page
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -70,11 +60,6 @@ class Contacts extends AbstractApi
      * @param int|null  $labelId
      * @param bool|null $isWatched
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -93,7 +78,7 @@ class Contacts extends AbstractApi
             $params['watched'] = $isWatched;
         }
 
-        $path = $this->preparePath($path, $params); // TODO Perhaps alter how POST/PUT are handling params to avoid DRY
+        $path = $this->preparePath($path, $params);
 
         return $this->post($path, $contactIds);
     }
@@ -111,11 +96,6 @@ class Contacts extends AbstractApi
      * @param int|null  $labelId
      * @param bool|null $isWatched
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -134,7 +114,7 @@ class Contacts extends AbstractApi
             $params['watched'] = $isWatched;
         }
 
-        $path = $this->preparePath($path, $params); // TODO Perhaps alter how POST/PUT are handling params to avoid DRY
+        $path = $this->preparePath($path, $params);
 
         return $this->put($path, $contactIds);
     }
@@ -149,11 +129,6 @@ class Contacts extends AbstractApi
      * @param int   $characterId
      * @param array $contactIds
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -176,11 +151,6 @@ class Contacts extends AbstractApi
      *
      * @param int $characterId
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -199,11 +169,6 @@ class Contacts extends AbstractApi
      *
      * @param int $corporationId
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
      * @throws \Http\Client\Exception
      *
      * @return \stdClass

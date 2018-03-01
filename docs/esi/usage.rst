@@ -54,6 +54,13 @@ You can access these options on the EsiClient object via the below methods:
 
     $esiClient = \AGrimes94\Esi\EsiClient::create()->language('fr');
 
+These methods can be called sequentially during or after the creation of the esiclient object in any order.
+
+.. code-block:: php
+
+    $esiClient = \AGrimes94\Esi\EsiClient::create()->dataSource('singularity')->apiVersion('dev')
+        ->language('fr');
+
 Making requests
 ---------------
 

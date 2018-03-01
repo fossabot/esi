@@ -22,11 +22,6 @@ class Routes extends AbstractApi
      * @param array|null $avoid         [30002771, 30002770, 30002769]
      * @param array|null $connections   [30002771, 30002770, 30002769]
      *
-     * @throws \AGrimes94\Esi\Exception\ForbiddenResourceException
-     * @throws \AGrimes94\Esi\Exception\ResourceNotFoundException
-     * @throws \AGrimes94\Esi\Exception\ServerErrorException
-     * @throws \AGrimes94\Esi\Exception\TooManyRequestsException
-     * @throws \Exception
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
