@@ -14,8 +14,9 @@ esi is a PHP Http Client for ESI (EVE Swagger Interface).
 
 ### Prerequisites
 
-Esi is developed with [httplug](http://httplug.io/). This is a client abstraction which allows you, the user or application
-developer to decide what client to use that will meet your specification as long as it's in keeping with httplug's guidelines.
+Esi is developed with [httplug](http://httplug.io/). HTTPlug allows you to write reusable libraries and applications that need
+an HTTP client without binding to a specific implementation. When all packages used in an application only specify HTTPlug
+the application developers can choose the client that best fits their project and use the same client with all packages.
 
 Please see [usage of httplug](http://docs.php-http.org/en/latest/httplug/usage.html) for more info.
 

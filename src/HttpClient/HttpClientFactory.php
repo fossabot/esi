@@ -16,6 +16,10 @@ use Http\Message\StreamFactory;
 /**
  * HttpClientFactory constructs HttpClient/PluginClient with specified options.
  *
+ * Contains code from (https://github.com/m4tthumphrey/php-gitlab-api) &
+ * (https://github.com/KnpLabs/php-github-api).
+ * Originally licensed under MIT (https://opensource.org/licenses/MIT).
+ *
  * @license LGPL-3.0 (https://www.gnu.org/licenses/lgpl-3.0.en.html)
  */
 class HttpClientFactory
