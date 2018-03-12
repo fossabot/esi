@@ -19,7 +19,7 @@ Get Character Assets
 
 .. code-block:: php
 
-    $esiClient->character()->getCharacterAssets(int $characterId, int $page = 1);
+    $esiClient->assets()->getCharacterAssets(int $characterId, int $page = 1);
 
 Get Character Asset Locations
 -----------------------------
@@ -33,7 +33,7 @@ Get Character Asset Locations
 
 .. code-block:: php
 
-    $esiClient->character()->getCharacterAssetLocations(int $characterId, array $itemIds = []);
+    $esiClient->assets()->getCharacterAssetLocations(int $characterId, array $itemIds = []);
 
 Get Character Asset Names
 -------------------------
@@ -47,7 +47,7 @@ Get Character Asset Names
 
 .. code-block:: php
 
-    $esiClient->character()->getCharacterAssetNames(int $characterId, array $itemIds = []);
+    $esiClient->assets()->getCharacterAssetNames(int $characterId, array $itemIds = []);
 
 Get Corporation Assets
 ----------------------
@@ -61,7 +61,7 @@ Get Corporation Assets
 
 .. code-block:: php
 
-    $esiClient->character()->getCorporationAssets(int $corporationId, int $page = 1);
+    $esiClient->assets()->getCorporationAssets(int $corporationId, int $page = 1);
 
 Get Corporation Asset Locations
 -------------------------------
@@ -75,7 +75,7 @@ Get Corporation Asset Locations
 
 .. code-block:: php
 
-    $esiClient->character()->getCorporationAssetLocations(int $corporationId, array $itemIds = []);
+    $esiClient->assets()->getCorporationAssetLocations(int $corporationId, array $itemIds = []);
 
 Get Corporation Asset Names
 ---------------------------
@@ -89,4 +89,4 @@ Get Corporation Asset Names
 
 .. code-block:: php
 
-    $esiClient->character()->getCorporationAssetNames(int $corporationId, array $itemIds = []);
+    $esiClient->assets()->getCorporationAssetNames(int $corporationId, array $itemIds = []);
