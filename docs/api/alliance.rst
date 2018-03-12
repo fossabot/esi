@@ -10,7 +10,7 @@ All of the following examples use the following client:
 List Alliances
 --------------
 
-:HTTP Type: GET
+:HTTP Method: GET
 :Endpoint: /alliances/
 :Summary: List all active player alliances.
 :Types: None
@@ -23,7 +23,7 @@ List Alliances
 Get Alliance Information
 ------------------------
 
-:HTTP Type: GET
+:HTTP Method: GET
 :Endpoint: /alliances/{alliance_id}/
 :Summary: Public information about an alliance.
 :Types: - int $allianceId
@@ -36,7 +36,7 @@ Get Alliance Information
 List Alliance Corporations
 --------------------------
 
-:HTTP Type: GET
+:HTTP Method: GET
 :Endpoint: /alliances/{alliance_id}/corporations/
 :Summary: List all current member corporations of an alliance.
 :Types: - int $allianceId
@@ -49,7 +49,7 @@ List Alliance Corporations
 Get Alliance Icons
 ------------------
 
-:HTTP Type: GET
+:HTTP Method: GET
 :Endpoint:  /alliances/{alliance_id}/icons/
 :Summary: Get the icon urls for a alliance.
 :Types: - int $allianceId
@@ -62,11 +62,11 @@ Get Alliance Icons
 Get Alliance Names
 ------------------
 
-:HTTP Type: GET
+:HTTP Method: GET
 :Endpoint:  /alliances/names/
 :Summary: Resolve a set of alliance IDs to alliance names.
 :Types: - array $allianceIds
-:Default: None
+:Default: $allianceIds = []
 
 .. code-block:: php
 
