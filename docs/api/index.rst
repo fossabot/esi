@@ -1,11 +1,6 @@
 API
 ===
 
-.. note::
-
-    Please note that this is merely API examples and should not be considered full API documentation please see
-    ``Using sami to generate API documentation`` in :doc:`/about/contributing/`.
-
 .. toctree::
     :maxdepth: 1
 
