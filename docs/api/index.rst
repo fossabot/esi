@@ -1,6 +1,11 @@
 API
 ===
 
+.. note::
+
+    Please note that the API docs are not an alternative to the sami generated documentation, please see
+    :doc:`/about/contributing` for more information on generating the sami api docs.
+
 .. toctree::
     :maxdepth: 1
 
