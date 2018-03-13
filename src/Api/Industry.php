@@ -10,12 +10,11 @@ namespace AGrimes94\Esi\Api;
 class Industry extends AbstractApi
 {
     /**
-     * Endpoint: /industry/facilities.
+     * Endpoint: /industry/facilities/.
      *
      * HTTP Method: GET
      *
      * Return a list of industry facilities.
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -32,7 +31,6 @@ class Industry extends AbstractApi
      * HTTP Method: GET
      *
      * Return cost indices for solar systems.
-     *
      *
      * @throws \Http\Client\Exception
      *
