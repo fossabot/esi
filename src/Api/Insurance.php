@@ -16,7 +16,6 @@ class Insurance extends AbstractApi
      *
      * Return available insurance levels for all ship types.
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
