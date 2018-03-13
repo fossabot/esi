@@ -15,7 +15,7 @@ List Character Bookmarks
 :Summary: A list of your character's personal bookmarks.
 :Types: - int $characterId
         - int $page
-:Default: $page = 1
+:Default: - $page = 1
 
 .. code-block:: php
 
@@ -29,7 +29,7 @@ List Character Bookmark Folders
 :Summary: A list of your character's personal bookmark folders.
 :Types: - int $characterId
         - int $page
-:Default: $page = 1
+:Default: - $page = 1
 
 .. code-block:: php
 
@@ -43,7 +43,7 @@ List Corporation Bookmarks
 :Summary: A list of your corporation's bookmarks.
 :Types: - int $corporationId
         - int $page
-:Default: $page = 1
+:Default: - $page = 1
 
 .. code-block:: php
 
@@ -57,7 +57,7 @@ List Corporation Bookmark Folders
 :Summary: A list of your corporation's bookmark folders.
 :Types: - int $corporationId
         - int $page
-:Default: $page = 1
+:Default: - $page = 1
 
 .. code-block:: php
 

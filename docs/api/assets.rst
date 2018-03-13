@@ -15,7 +15,7 @@ Get Character Assets
 :Summary: Return a list of the characters assets.
 :Types: - int $characterId
         - int $page
-:Default: $page = 1
+:Default: - $page = 1
 
 .. code-block:: php
 
@@ -29,7 +29,7 @@ Get Character Asset Locations
 :Summary: Return locations for a set of item ids, which you can get from character assets endpoint. Coordinates for items in hangars or stations are set to (0,0,0).
 :Types: - int   $characterId
         - array $itemIds
-:Default: $itemIds = []
+:Default: - $itemIds = []
 
 .. code-block:: php
 
@@ -43,7 +43,7 @@ Get Character Asset Names
 :Summary: Return names for a set of item ids, which you can get from character assets endpoint. Typically used for items that can customize names, like containers or ships.
 :Types: - int   $characterId
         - array $itemIds
-:Default: $itemIds = []
+:Default: - $itemIds = []
 
 .. code-block:: php
 
@@ -57,7 +57,7 @@ Get Corporation Assets
 :Summary: Return a list of the corporation assets.
 :Types: - int $corporationId
         - int $page
-:Default: $page = 1
+:Default: - $page = 1
 
 .. code-block:: php
 
@@ -71,7 +71,7 @@ Get Corporation Asset Locations
 :Summary: Return locations for a set of item ids, which you can get from corporation assets endpoint. Coordinates for items in hangars or stations are set to (0,0,0).
 :Types: - int $corporationId
         - array $itemIds
-:Default: $itemIds = []
+:Default: - $itemIds = []
 
 .. code-block:: php
 
@@ -85,7 +85,7 @@ Get Corporation Asset Names
 :Summary: Return names for a set of item ids, which you can get from corporation assets endpoint. Only valid for items that can customize names, like containers or ships.
 :Types: - int $corporationId
         - array $itemIds
-:Default: $itemIds = []
+:Default: - $itemIds = []
 
 .. code-block:: php
 

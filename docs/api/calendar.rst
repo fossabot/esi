@@ -15,7 +15,7 @@ List Event Summaries
 :Summary: Get 50 event summaries from the calendar. If no from_event ID is given, the resource will return the next 50 chronological event summaries from now.
 :Types: - int      $characterId
         - int|null $fromEvent
-:Default: int $fromEvent = null
+:Default: - int $fromEvent = null
 
 .. code-block:: php
 
@@ -44,7 +44,7 @@ Respond to Event
 :Types: - int   $characterId
         - int   $eventId
         - array $response
-:Default: array $response = ['response' => 'accepted']
+:Default: - array $response = ['response' => 'accepted']
 
 .. code-block:: php
 

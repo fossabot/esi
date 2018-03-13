@@ -41,7 +41,7 @@ Get Blueprints
 :Summary: Return a list of blueprints the character owns.
 :Types: - int $characterId
         - int $page
-:Default: int $page = 1
+:Default: - int $page = 1
 
 .. code-block:: php
 
@@ -81,7 +81,7 @@ Calculate CSPA Charge
 :Summary: Takes a source character ID in the url and a set of target character ID's in the body, returns a CSPA charge cost.
 :Types: - int   $characterId
         - array $targetCharacters
-:Default: array $targetCharacters = []
+:Default: - array $targetCharacters = []
 
 .. code-block:: php
 
@@ -211,7 +211,7 @@ Get Affiliations
 :Endpoint: /characters/affiliation/
 :Summary: Bulk lookup of character IDs to corporation, alliance and faction.
 :Types: - array $characterIds
-:Default: array $characterIds = []
+:Default: - array $characterIds = []
 
 .. code-block:: php
 

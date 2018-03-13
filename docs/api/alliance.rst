@@ -66,7 +66,7 @@ Get Alliance Names
 :Endpoint:  /alliances/names/
 :Summary: Resolve a set of alliance IDs to alliance names.
 :Types: - array $allianceIds
-:Default: $allianceIds = []
+:Default: - $allianceIds = []
 
 .. code-block:: php
 
