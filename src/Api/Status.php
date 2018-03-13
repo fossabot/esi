@@ -16,7 +16,6 @@ class Status extends AbstractApi
      *
      * EVE Server status.
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass

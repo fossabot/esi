@@ -28,3 +28,4 @@ Esi is developed in PHP and is made possible by `httplug <http://httplug.io/>`_.
 
         About <about/index>
         Introduction <introduction/index>
+        API <api/index>

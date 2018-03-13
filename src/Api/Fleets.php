@@ -146,7 +146,7 @@ class Fleets extends AbstractApi
     /**
      * Endpoint: /fleets/{fleet_id}/wings/{wing_id}/squads/.
      *
-     * HTTP Method: GET
+     * HTTP Method: POST
      *
      * Create a new squad in a fleet.
      *

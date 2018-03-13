@@ -161,7 +161,6 @@ class Market extends AbstractApi
      *
      * Get a list of item groups.
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -195,7 +194,6 @@ class Market extends AbstractApi
      * HTTP Method: GET
      *
      * Return a list of prices.
-     *
      *
      * @throws \Http\Client\Exception
      *

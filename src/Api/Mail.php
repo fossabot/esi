@@ -104,7 +104,6 @@ class Mail extends AbstractApi
      *
      * Update metadata about a mail.
      *
-     *
      * @param int   $characterId
      * @param int   $mailId
      * @param array $contents

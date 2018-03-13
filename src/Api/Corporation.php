@@ -143,7 +143,6 @@ class Corporation extends AbstractApi
      *
      * Get a list of npc corporations.
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass

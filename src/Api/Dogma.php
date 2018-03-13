@@ -16,7 +16,6 @@ class Dogma extends AbstractApi
      *
      * Get a list of dogma attribute ids.
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -32,7 +31,6 @@ class Dogma extends AbstractApi
      * HTTP Method: GET
      *
      * Get information on a dogma attribute.
-     *
      *
      * @param int $attributeId
      *
@@ -51,7 +49,6 @@ class Dogma extends AbstractApi
      * HTTP Method: GET
      *
      * Get a list of dogma effect ids.
-     *
      *
      * @throws \Http\Client\Exception
      *

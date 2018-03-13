@@ -16,7 +16,6 @@ class Loyalty extends AbstractApi
      *
      * Return a list of loyalty points for all corporations the character has worked for.
      *
-     *
      * @param int $characterId
      *
      * @throws \Http\Client\Exception
