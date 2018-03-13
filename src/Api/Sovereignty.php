@@ -16,7 +16,6 @@ class Sovereignty extends AbstractApi
      *
      * Shows sovereignty data for campaigns.
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -33,7 +32,6 @@ class Sovereignty extends AbstractApi
      *
      * Shows sovereignty information for solar systems.
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -49,7 +47,6 @@ class Sovereignty extends AbstractApi
      * HTTP Method: GET
      *
      * Shows sovereignty data for structures.
-     *
      *
      * @throws \Http\Client\Exception
      *
