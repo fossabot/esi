@@ -84,7 +84,7 @@ class Contracts extends AbstractApi
      *
      * @return \stdClass
      */
-    public function getCorporationContracts(int $corporationId, int $page)
+    public function getCorporationContracts(int $corporationId, int $page = 1)
     {
         return $this->get('/corporations/' . $this->encodePath($corporationId) . '/contracts/', $this->paginateQuery($page));
     }
