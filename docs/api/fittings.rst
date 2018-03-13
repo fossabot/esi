@@ -1,5 +1,5 @@
-Fitting
-=======
+Fittings
+========
 
 All of the following examples use the following client:
 

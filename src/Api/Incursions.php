@@ -16,7 +16,6 @@ class Incursions extends AbstractApi
      *
      * Return a list of current incursions.
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
