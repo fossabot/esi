@@ -16,7 +16,6 @@ class Universe extends AbstractApi
      *
      * Get all character ancestries.
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -33,7 +32,6 @@ class Universe extends AbstractApi
      *
      * Get a list of bloodlines.
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -49,7 +47,6 @@ class Universe extends AbstractApi
      * HTTP Method: GET
      *
      * Get a list of item categories.
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -85,7 +82,6 @@ class Universe extends AbstractApi
      *
      * Get a list of constellations.
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -120,7 +116,6 @@ class Universe extends AbstractApi
      *
      * Get a list of factions.
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -136,7 +131,6 @@ class Universe extends AbstractApi
      * HTTP Method: GET
      *
      * Get a list of graphics.
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -290,7 +284,6 @@ class Universe extends AbstractApi
      *
      * Get a list of character races.
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -306,7 +299,6 @@ class Universe extends AbstractApi
      * HTTP Method: GET
      *
      * Get a list of regions.
-     *
      *
      * @throws \Http\Client\Exception
      *
@@ -396,7 +388,6 @@ class Universe extends AbstractApi
      *
      * List all public structures.
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -437,7 +428,6 @@ class Universe extends AbstractApi
      *
      * Only systems with jumps will be listed.
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -458,7 +448,6 @@ class Universe extends AbstractApi
      *
      * Only systems with kills will be listed.
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -474,7 +463,6 @@ class Universe extends AbstractApi
      * HTTP Method: GET
      *
      * Get a list of solar systems.
-     *
      *
      * @throws \Http\Client\Exception
      *
