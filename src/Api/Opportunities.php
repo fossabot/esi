@@ -34,7 +34,6 @@ class Opportunities extends AbstractApi
      *
      * Return a list of opportunities groups.
      *
-     *
      * @throws \Http\Client\Exception
      *
      * @return \stdClass
@@ -68,7 +67,6 @@ class Opportunities extends AbstractApi
      * HTTP Method: GET
      *
      * Return a list of opportunities tasks.
-     *
      *
      * @throws \Http\Client\Exception
      *
