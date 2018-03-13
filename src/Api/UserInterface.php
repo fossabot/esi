@@ -66,7 +66,7 @@ class UserInterface extends AbstractApi
     }
 
     /**
-     * Endpoint: /ui/openwindow/marketdetails/.
+     * Endpoint: /ui/openwindow/information/.
      *
      * HTTP Method: POST
      *
