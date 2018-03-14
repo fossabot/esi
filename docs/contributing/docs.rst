@@ -1,8 +1,16 @@
-Contributing
-============
+Contributing to ESI Documentation
+=================================
 
-The docs are built using `Sphinx <http://sphinx-doc.org>`_, `reStructuredText <http://sphinx-doc.org/rest.html>`_ and hosted by `ReadTheDocs <http://evemon.readthedocs.org>`_.
-Dependencies are managed by `pipenv <https://github.com/pypa/pipenv>`_.
+Firstly, thank you for considering contributing to esi. I really appreciate it!
+
+Please see the relevant section on how to build the docs you are changing. Once you can build the docs please
+familiarise yourself with either PHP doc blocks or restructured text documents to make changes.
+
+.. note::
+
+    The docs are built using `Sphinx <http://sphinx-doc.org>`_, `reStructuredText <http://sphinx-doc.org/rest.html>`_ and hosted by `ReadTheDocs <http://evemon.readthedocs.org>`_.
+
+    Do not commit build files!
 
 Building the Docs
 -----------------

@@ -27,5 +27,7 @@ Esi is developed in PHP and is made possible by `httplug <http://httplug.io/>`_.
     :maxdepth: 2
 
         About <about/index>
-        Introduction <introduction/index>
+        Getting Started <gettingstarted/index>
+        Contributing <contributing/index>
+        ESI Support <support/index>
         API <api/index>

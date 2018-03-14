@@ -21,7 +21,7 @@ Get Character Orders
     $esiClient->market()->getCharacterOrders(int $characterId);
 
 Get Character Historical Orders
----------------------
+-------------------------------
 
 :HTTP Method: GET
 :Endpoint: /characters/{character_id}/orders/history/

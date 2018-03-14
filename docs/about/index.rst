@@ -4,6 +4,6 @@ About
 .. toctree::
     :maxdepth: 1
 
-        Contributing <contributing>
+        Introduction <introduction>
         Contributors <contributors>
         License (LGPL v3) <license>
