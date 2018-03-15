@@ -22,8 +22,6 @@ Please see [usage of httplug](http://docs.php-http.org/en/latest/httplug/usage.h
 
 ### Installation
 
-### composer via (packagist)
-
 ``` shell
 $ composer require agrimes94/esi 
 ```

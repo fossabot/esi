@@ -6,6 +6,10 @@ How to submit a feature request to esi
     Please note that github issues should not be used for support questions! For support with esi
     please see :doc:`/support/index`.
 
+    If you find a security vulnerability, do not open an issue.
+    Email contact@anthonygrimes.co.uk instead.
+    All security vulnerabilities will be promptly addressed.
+
 When you are submitting request please use the provided template found on Github.
 
 Please ensure you fully read the template as it requires you to check all required prerequisites are met otherwise your
