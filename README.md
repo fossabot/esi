@@ -22,8 +22,6 @@ Please see [usage of httplug](http://docs.php-http.org/en/latest/httplug/usage.h
 
 ### Installation
 
-### composer via (packagist)
-
 ``` shell
 $ composer require agrimes94/esi 
 ```
@@ -96,4 +94,4 @@ If you find a security vulnerability, **do not** open an issue. Email [contact@a
 
 ## License
 
-This project is licensed under the [GNU Lesser General Public License](https://www.gnu.org/licenses/lgpl-3.0.en.html).
+This project is licensed under the [GNU Lesser General Public License Version 3](https://www.gnu.org/licenses/lgpl-3.0.en.html).

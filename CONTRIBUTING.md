@@ -34,13 +34,7 @@ The steps and prerequisites to suggesting a feature or enhancement are detailed 
 
 ## How to update documentation
 
-***Please make note of all changes made, and update the changelog as appropriate***
-
-Please see the [read the docs](http://esi.rtfd.io/) for up-to-date documentation. It's important to familiarise yourself with read the docs and sphinx before updating documentation.
-
-Everything you need to compile and get started with sphinx is included in the project. If you have any questions please email me at [contact@anthonygrimes.co.uk](mailto:contact@anthonygrimes.co.uk).
-
-Full API documentation can be generated automatically via [Sami](https://github.com/FriendsOfPHP/Sami). A `sami_config.php.dist` has been provided.
+Please see the contributing section on [read the docs](http://esi.rtfd.io/).
 
 ## Code review process
 

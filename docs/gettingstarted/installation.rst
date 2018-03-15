@@ -9,8 +9,10 @@ otherwise you will experience installation errors as mentioned in the docs at `c
 
 Please see `usage of httplug <http://docs.php-http.org/en/latest/httplug/usage.html>`_ for more info.
 
-Installation
-------------
+Installing via Composer
+-----------------------
+
+Esi is provided by `packagist <https://packagist.org/packages/aGrimes94/esi>`_.
 
 .. code-block:: shell
 
