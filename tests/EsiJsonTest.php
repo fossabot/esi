@@ -287,7 +287,7 @@ class EsiJsonTest extends TestCase
 
         curl_setopt_array($curl,
             [
-                CURLOPT_URL            => 'https://esi.tech.ccp.is/latest/swagger.json?datasource=tranquility',
+                CURLOPT_URL            => 'https://esi.evetech.net/latest/swagger.json?datasource=tranquility',
                 CURLOPT_RETURNTRANSFER => true,
                 CURLOPT_USERAGENT      => 'agrimes94-esi (https://github.com/aGrimes94/esi)',
             ]
