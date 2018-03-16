@@ -49,7 +49,7 @@ class EsiClient
 
         $this->httpClientFactory->addPlugin(new AddHostPlugin(
                 UriFactoryDiscovery::find()
-                    ->createUri('https://esi.tech.ccp.is'))
+                    ->createUri('https://esi.evetech.net'))
         );
 
         $this->httpClientFactory->addPlugin(new ErrorPlugin());
