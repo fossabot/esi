@@ -6,6 +6,7 @@
 <a href="https://travis-ci.org/aGrimes94/esi"><img src="https://img.shields.io/travis/aGrimes94/esi.svg" alt="Travis Build Status"></a>
 <a href="https://codeclimate.com/github/aGrimes94/esi/maintainability"><img src="https://api.codeclimate.com/v1/badges/b955d3eb7b589cf75597/maintainability" alt="Codeclimate Rating"></a>
 <a href="https://codeclimate.com/github/aGrimes94/esi/test_coverage"><img src="https://api.codeclimate.com/v1/badges/b955d3eb7b589cf75597/test_coverage" alt="Codeclimate Coverage"></a>
+<a href="https://app.fossa.io/projects/git%2Bgithub.com%2FaGrimes94%2Fesi?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2FaGrimes94%2Fesi.svg?type=shield"/></a>
 </p>
 
 esi is a PHP Http Client for ESI (EVE Swagger Interface).
@@ -75,6 +76,9 @@ The esi library exposes a simple and expressive api for you to interact with.
 Further usage documentation can be found at [read the docs](http://esi.rtfd.io/), if you have any questions please email me at [contact@anthonygrimes.co.uk](mailto:contact@anthonygrimes.co.uk).
 
 Please see the [guidelines for contributing](CONTRIBUTING.md) on how to generate complete API documentation.
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FaGrimes94%2Fesi.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FaGrimes94%2Fesi?ref=badge_large)
 
 ### Testing
 
